@@ -6,31 +6,27 @@ interface Category {
 }
 
 const categories: Category[] = [
+
   {
-    label: "Foundation Model",
-    tag: "foundation-model",
-    description: "Insights on powerful AI models at the foundation of tech.",
+    label: "Web3 Foundations",
+    tag: "concepts",
+    description: "For learners who want to understand blockchain and decentralized technologies in plain, accessible English.",
   },
   {
-    label: "Engineering",
-    tag: "engineering",
-    description: "Innovative engineering driving AI advancements.",
+    label: "English for Web3 Professionals",
+    tag: "english",
+    description: "For developers and professionals who want to improve their English communication while mastering blockchain concepts.",
   },
-  {
-    label: "Jobs",
-    tag: "jobs",
-    description: "Explore AI job trends and opportunities shaping a brighter future.",
-  },
-  {
-    label: "Startups",
-    tag: "startup",
-    description: "Spotlight on innovative AI startups transforming industries.",
-  },
-  {
-    label: "Ethics",
-    tag: "ethics",
-    description: "Promoting responsible AI for positive impact.",
-  },
+  // {
+  //   label: "Startups",
+  //   tag: "startup",
+  //   description: "Spotlight on innovative AI startups transforming industries.",
+  // },
+  // {
+  //   label: "Ethics",
+  //   tag: "ethics",
+  //   description: "Promoting responsible AI for positive impact.",
+  // },
 ];
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
