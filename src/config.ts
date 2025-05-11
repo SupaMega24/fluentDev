@@ -35,8 +35,8 @@ export const config = {
   blogId: process.env.NEXT_PUBLIC_BLOG_ID || "clvlugru90000o4g8ahxp069s",
   baseUrl,
   logoUrl: urlJoin(baseUrl, "logo.png"),
-  organization: process.env.NEXT_PUBLIC_BLOG_ORGANIZATION || "Example Org",
-  title: process.env.NEXT_PUBLIC_BLOG_TITLE || "Launched",
+  organization: process.env.NEXT_PUBLIC_BLOG_ORGANIZATION || "fluentDev",
+  title: process.env.NEXT_PUBLIC_BLOG_TITLE || "fluentDev",
   description:
     process.env.NEXT_PUBLIC_BLOG_DESCRIPTION ||
     "Let's build something amazing!",
