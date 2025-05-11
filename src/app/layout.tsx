@@ -3,6 +3,7 @@ import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Providers } from "./providers";
+import { Analytics } from "@vercel/analytics/next"
 
 const fontSans = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`${fontSans.variable} antialiased font-sans`}>
         <Providers>
           {children}
+          <Analytics />
           <Footer />
         </Providers>
       </body>
