@@ -1,33 +1,55 @@
-// app/courses/[courseId]/[lessonId]/page.tsx
 import { notFound } from 'next/navigation';
 import { getCourse } from '@/lib/data';
+import fs from 'fs/promises';
+import path from 'path';
+import matter from 'gray-matter';
+import { remark } from 'remark';
+import html from 'remark-html';
+import Quiz from '@/components/Quiz';
 
 export default async function LessonPage({
-    params
+    params,
 }: {
-    params: { courseId: string; lessonId: string }
+    params: { courseId: string; lessonId: string };
 }) {
-    const courseId = await Promise.resolve(params.courseId);
-    const lessonId = await Promise.resolve(params.lessonId);
-    const course = getCourse(courseId);
-    const lesson = course?.lessons.find(l => l.id === lessonId);
+    const course = getCourse(params.courseId);
+    if (!course) return notFound();
 
+    const lesson = course.lessons.find((l) => l.id === params.lessonId);
     if (!lesson) return notFound();
+
+    let htmlContent = '';
+    try {
+        const mdPath = path.join(process.cwd(), 'content', 'lessons', `${params.lessonId}.md`);
+        console.log("Markdown path:", mdPath);
+        const mdContent = await fs.readFile(mdPath, 'utf8');
+        const { content } = matter(mdContent);
+
+        const processed = await remark().use(html).process(content);
+        htmlContent = processed.toString();
+        console.log("HTML output:", htmlContent);
+    } catch (error) {
+        console.warn(`No markdown found for ${params.lessonId}:`, error);
+        htmlContent = `<p>${lesson.title} content coming soon!</p>`;
+    }
 
     return (
         <main className="min-h-screen bg-gray-900 text-white">
             <section className="container mx-auto px-4 py-16">
-                <h1 className="text-3xl font-bold mb-6">{lesson.title}</h1>
-                {/* Add your lesson content here */}
-                <div className="prose prose-invert max-w-none">
-                    {/* Temporary placeholder */}
-                    <p className="text-xl text-gray-300">
-                        Lesson content will be displayed here.
-                        Add to your data structure when ready.
-                    </p>
+                <div className="text-center mb-12">
+                    <h1 className="text-3xl md:text-4xl font-bold">{lesson.title}</h1>
                 </div>
+                <div className="max-w-3xl mx-auto">
+                    <article
+                        className="prose prose-invert prose-lg"
+                        dangerouslySetInnerHTML={{ __html: htmlContent }}
+                    />
+                </div>
+                <Quiz lessonId={params.lessonId} />
             </section>
         </main>
     );
 }
+
+
 

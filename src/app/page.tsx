@@ -36,16 +36,18 @@ export default async function Page(
 
   return (
     <>
-      <FullWidthHeader title={title} description={description} />
-      <div className="container mx-auto max-w-6xl">
-        <FilterBar active="latest" className="my-8" />
-        <BlogPostList posts={result.posts} />
-        <PostPagination
-          pagination={result.pagination}
-          className="my-16"
-          query={searchParams?.query}
-        />
-      </div>
+      <main className="min-h-screen bg-gray-900 text-white border-b border-gray-800">
+        <FullWidthHeader title={title} description={description} />
+        <div className="container mx-auto max-w-6xl ">
+          {/* <FilterBar active="latest" className="my-8" /> */}
+          <BlogPostList posts={result.posts} />
+          <PostPagination
+            pagination={result.pagination}
+            className="my-16"
+            query={searchParams?.query}
+          />
+        </div>
+      </main>
     </>
   );
 }
