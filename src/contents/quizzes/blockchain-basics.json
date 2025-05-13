@@ -1,0 +1,15 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "What makes blockchains immutable?",
+            "options": [
+                "Cryptographic hashing",
+                "Central authority",
+                "Frequent backups"
+            ],
+            "answer": 0,
+            "explanation": "Hash chains make altering previous blocks computationally infeasible."
+        }
+    ]
+}
