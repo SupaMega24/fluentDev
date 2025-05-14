@@ -6,7 +6,7 @@ export const courses = [
         title: "Web3 Fundamentals",
         description:
             "For learners who want to understand blockchain and decentralized technologies in plain, accessible English.",
-        image: "/courses/ethereum.png",
+        image: "/courses/web3-fundamentals.jpg",
         duration: "10 hours",
         level: "Beginner",
         lessons: [

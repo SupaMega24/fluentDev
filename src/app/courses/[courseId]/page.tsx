@@ -1,4 +1,3 @@
-// app/courses/[courseId]/page.tsx
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,11 +5,12 @@ import { getCourse } from "@/lib/data";
 
 
 export default async function CoursePage({
-    params
+    params,
 }: {
     params: { courseId: string }
 }) {
-    const courseId = await Promise.resolve(params.courseId);
+
+    const courseId = params.courseId;
     const course = getCourse(courseId);
 
     if (!course) return notFound();
@@ -20,7 +20,7 @@ export default async function CoursePage({
             <section className="container mx-auto px-4 py-16">
                 <div className="flex flex-col md:flex-row gap-8">
                     <div className="md:w-1/3">
-                        <div className="relative h-64 rounded-xl overflow-hidden border border-gray-700">
+                        <div className="relative h-96 rounded-xl overflow-hidden border border-gray-700">
                             <Image
                                 src={course.image}
                                 alt={course.title}

@@ -18,7 +18,9 @@ export default function Quiz({ lessonId }: { lessonId: string }) {
     useEffect(() => {
         const loadQuiz = async () => {
             try {
-                const data = await import(`@content/quizzes/${lessonId}.json`);
+                const res = await fetch(`/quizzes/${lessonId}.json`);
+                if (!res.ok) throw new Error('Quiz not found');
+                const data = await res.json();
                 setQuiz(data);
             } catch (err) {
                 setError('Quiz not available');
@@ -42,21 +44,8 @@ export default function Quiz({ lessonId }: { lessonId: string }) {
         setSubmitted(true);
     };
 
-    if (loading) {
-        return (
-            <div className="mt-8 p-4 bg-gray-800 rounded-lg text-center">
-                <p className="text-gray-400">Loading quiz...</p>
-            </div>
-        );
-    }
+    if (loading || error || !quiz) return null;
 
-    if (error || !quiz) {
-        return (
-            <div className="mt-8 p-4 bg-gray-800 rounded-lg text-center">
-                <p className="text-red-400">{error || 'Quiz data not found'}</p>
-            </div>
-        );
-    }
 
     return (
         <div className="mt-12 border-t border-gray-700 pt-8">
@@ -78,14 +67,14 @@ export default function Quiz({ lessonId }: { lessonId: string }) {
                                 <label
                                     key={i}
                                     className={`flex items-center space-x-3 p-3 rounded cursor-pointer transition-colors ${submitted
-                                            ? i === q.answer
-                                                ? 'bg-green-900/30'
-                                                : answers[q.id] === i
-                                                    ? 'bg-red-900/30'
-                                                    : 'opacity-70'
+                                        ? i === q.answer
+                                            ? 'bg-green-900/30'
                                             : answers[q.id] === i
-                                                ? 'bg-gray-700'
-                                                : 'hover:bg-gray-700/50'
+                                                ? 'bg-red-900/30'
+                                                : 'opacity-70'
+                                        : answers[q.id] === i
+                                            ? 'bg-gray-700'
+                                            : 'hover:bg-gray-700/50'
                                         }`}
                                 >
                                     <input
@@ -116,8 +105,8 @@ export default function Quiz({ lessonId }: { lessonId: string }) {
                     onClick={handleSubmit}
                     disabled={Object.keys(answers).length !== quiz.questions.length}
                     className={`mt-6 px-6 py-3 rounded-lg font-medium ${Object.keys(answers).length === quiz.questions.length
-                            ? 'bg-blue-600 hover:bg-blue-700'
-                            : 'bg-gray-600 cursor-not-allowed'
+                        ? 'bg-blue-600 hover:bg-blue-700'
+                        : 'bg-gray-600 cursor-not-allowed'
                         }`}
                 >
                     Submit Answers

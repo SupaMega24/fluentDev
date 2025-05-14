@@ -12,15 +12,17 @@ export default async function LessonPage({
 }: {
     params: { courseId: string; lessonId: string };
 }) {
-    const course = getCourse(params.courseId);
+    const courseId = params.courseId;
+    const lessonId = params.lessonId;
+    const course = getCourse(courseId);
     if (!course) return notFound();
 
-    const lesson = course.lessons.find((l) => l.id === params.lessonId);
+    const lesson = course.lessons.find((l) => l.id === lessonId);
     if (!lesson) return notFound();
 
     let htmlContent = '';
     try {
-        const mdPath = path.join(process.cwd(), 'content', 'lessons', `${params.lessonId}.md`);
+        const mdPath = path.join(process.cwd(), 'content', 'lessons', `${lessonId}.md`);
         console.log("Markdown path:", mdPath);
         const mdContent = await fs.readFile(mdPath, 'utf8');
         const { content } = matter(mdContent);
@@ -29,7 +31,7 @@ export default async function LessonPage({
         htmlContent = processed.toString();
         console.log("HTML output:", htmlContent);
     } catch (error) {
-        console.warn(`No markdown found for ${params.lessonId}:`, error);
+        console.warn(`No markdown found for ${lessonId}:`, error);
         htmlContent = `<p>${lesson.title} content coming soon!</p>`;
     }
 
@@ -45,7 +47,9 @@ export default async function LessonPage({
                         dangerouslySetInnerHTML={{ __html: htmlContent }}
                     />
                 </div>
-                <Quiz lessonId={params.lessonId} />
+                <div className="max-w-3xl mx-auto">
+                    <Quiz lessonId={lessonId} />
+                </div>
             </section>
         </main>
     );
