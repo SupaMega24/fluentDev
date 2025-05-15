@@ -22,7 +22,7 @@ export const courses = [
         title: "English for Web3 Professionals",
         description:
             "Improve your English communication while mastering blockchain concepts",
-        image: "/courses/ethereum.png",
+        image: "/courses/english.jpg",
         duration: "10 hours",
         level: "Intermediate",
         lessons: [],
@@ -31,7 +31,7 @@ export const courses = [
         id: "web3-essentials",
         title: "Web3 Essentials",
         description: "Master liquidity pools, yield farming, and DEXs",
-        image: "/courses/defi.png",
+        image: "/courses/web3-essentials.jpg",
         duration: "10 hours",
         level: "Intermediate",
         lessons: [],
