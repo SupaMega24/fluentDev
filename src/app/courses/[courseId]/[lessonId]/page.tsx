@@ -36,7 +36,7 @@ export default async function LessonPage({
         const processed = await remark().use(html).process(content);
         htmlContent = processed.toString();
         console.log("HTML output:", htmlContent);
-    } catch (error) {
+    } catch {
         return <ComingSoon />;
     }
 

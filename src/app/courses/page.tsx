@@ -11,7 +11,7 @@ export default function CoursesPage() {
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Courses</h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
                         Learn blockchain principles and improve your English skills with our curated courses.
-                        Whether you're a beginner or looking to enhance your knowledge, we have something for everyone.
+                        Whether you&apos;re a beginner or looking to enhance your knowledge, we have something for everyone.
                     </p>
                 </div>
 

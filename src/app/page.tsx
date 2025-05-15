@@ -5,7 +5,7 @@ import { PostPagination } from "@/components/PostPagination";
 import { getOgImageUrl } from "@/lib/ogImage";
 import { wisp } from "@/lib/wisp";
 import { Metadata } from "next";
-import { FilterBar } from "../components/FilterBar";
+//import { FilterBar } from "../components/FilterBar";
 import { FullWidthHeader } from "../components/FullWidthHeader";
 import { config } from "../config";
 
