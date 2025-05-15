@@ -28,6 +28,7 @@ export default function ContactPage() {
                 <form
                     action="https://formspree.io/f/movdypow"
                     method="POST"
+                    target="_blank"
                     className="space-y-6"
                 >
 
@@ -74,6 +75,7 @@ export default function ContactPage() {
                     >
                         Send Message
                     </button>
+                    <input type="hidden" name="_redirect" value="https://fluentdev.vercel.app/thank-you" />
                 </form>
 
             </section>

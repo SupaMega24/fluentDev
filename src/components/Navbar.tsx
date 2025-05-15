@@ -24,6 +24,7 @@ export const Navbar = () => {
                     {/* CENTER: Page Links */}
                     <ul className="hidden md:flex gap-6 text-xl text-white absolute left-1/2 transform -translate-x-1/2">
                         <li><Link href="/courses" className="hover:underline hover:text-blue-500">Courses</Link></li>
+                        <li><Link href="/glossary" className="hover:underline hover:text-blue-500">Glossary</Link></li>
                         <li><Link href="/about" className="hover:underline hover:text-blue-500">About</Link></li>
                         <li><Link href="/contact" className="hover:underline hover:text-blue-500">Contact</Link></li>
                     </ul>
@@ -72,6 +73,11 @@ export const Navbar = () => {
                             <li>
                                 <Link href="/courses" onClick={() => setIsOpen(false)} className="hover:underline">
                                     Courses
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/glossary" onClick={() => setIsOpen(false)} className="hover:underline">
+                                    Glossary
                                 </Link>
                             </li>
                             <li>

@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+import ComingSoon from '@/components/ComingSoon';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getCourse } from "@/lib/data";
@@ -13,7 +13,9 @@ export default async function CoursePage({
     const courseId = params.courseId;
     const course = getCourse(courseId);
 
-    if (!course) return notFound();
+    if (!course || course.lessons.length === 0) {
+        return <ComingSoon />;
+    }
 
     return (
         <main className="min-h-screen bg-gray-900 text-white">

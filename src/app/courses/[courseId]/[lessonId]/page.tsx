@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+import ComingSoon from '@/components/ComingSoon';
 import { getCourse } from '@/lib/data';
 import fs from 'fs/promises';
 import path from 'path';
@@ -15,10 +15,16 @@ export default async function LessonPage({
     const courseId = params.courseId;
     const lessonId = params.lessonId;
     const course = getCourse(courseId);
-    if (!course) return notFound();
+
+    if (!course) {
+        return <ComingSoon />;
+    }
 
     const lesson = course.lessons.find((l) => l.id === lessonId);
-    if (!lesson) return notFound();
+
+    if (!lesson) {
+        return <ComingSoon />;
+    }
 
     let htmlContent = '';
     try {
@@ -31,8 +37,7 @@ export default async function LessonPage({
         htmlContent = processed.toString();
         console.log("HTML output:", htmlContent);
     } catch (error) {
-        console.warn(`No markdown found for ${lessonId}:`, error);
-        htmlContent = `<p>${lesson.title} content coming soon!</p>`;
+        return <ComingSoon />;
     }
 
     return (

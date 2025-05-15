@@ -117,9 +117,9 @@ export default function Quiz({ lessonId }: { lessonId: string }) {
                         Score: <span className="font-bold">{score}/{quiz.questions.length}</span>
                     </p>
                     <p className="mt-2 text-sm text-gray-400">
-                        {score === quiz.questions.length
+                        {(score ?? 0) === quiz.questions.length
                             ? "Perfect! 🎉"
-                            : score > quiz.questions.length / 2
+                            : (score ?? 0) > quiz.questions.length / 2
                                 ? "Good job! 👍"
                                 : "Keep practicing! 💪"}
                     </p>

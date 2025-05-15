@@ -38,6 +38,14 @@ export default async function Page(
     <>
       <main className="min-h-screen bg-gray-900 text-white border-b border-gray-800">
         <FullWidthHeader title={title} description={description} />
+        <div className="text-center mt-6">
+          <a
+            href="https://fluentdev.vercel.app/courses"
+            className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition"
+          >
+            View Courses
+          </a>
+        </div>
         <div className="container mx-auto max-w-6xl ">
           {/* <FilterBar active="latest" className="my-8" /> */}
           <BlogPostList posts={result.posts} />
