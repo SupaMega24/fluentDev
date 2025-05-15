@@ -10,10 +10,10 @@ import Quiz from '@/components/Quiz';
 export default async function LessonPage({
     params,
 }: {
-    params: { courseId: string; lessonId: string };
+    params: Promise<{ courseId: string; lessonId: string }>;
 }) {
-    const courseId = params.courseId;
-    const lessonId = params.lessonId;
+
+    const { courseId, lessonId } = await params;
     const course = getCourse(courseId);
 
     if (!course) {

@@ -7,10 +7,11 @@ import { getCourse } from "@/lib/data";
 export default async function CoursePage({
     params,
 }: {
-    params: { courseId: string }
+    params: Promise<{ courseId: string }>
 }) {
 
-    const courseId = params.courseId;
+
+    const { courseId } = await params;
     const course = getCourse(courseId);
 
     if (!course || course.lessons.length === 0) {
