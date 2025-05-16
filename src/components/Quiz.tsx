@@ -8,10 +8,12 @@ type QuizData = {
 };
 
 export default function Quiz({ quiz }: { quiz: QuizData | null }) {
-    if (!quiz) return null;
+
     const [answers, setAnswers] = useState<Record<number, number | null>>({});
     const [submitted, setSubmitted] = useState(false);
     const [score, setScore] = useState<number | null>(null);
+
+    if (!quiz) return null;
 
     const handleSubmit = () => {
 
