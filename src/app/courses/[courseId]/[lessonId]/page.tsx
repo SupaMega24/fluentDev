@@ -6,6 +6,7 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 import Quiz from '@/components/Quiz';
+import { loadQuiz } from '@/lib/loadQuiz';
 
 export default async function LessonPage({
     params,
@@ -13,7 +14,7 @@ export default async function LessonPage({
     params: Promise<{ courseId: string; lessonId: string }>;
 }) {
 
-    const { courseId, lessonId } = await params;
+    const { courseId, lessonId, } = await params;
     const course = getCourse(courseId);
 
     if (!course) {
@@ -25,6 +26,8 @@ export default async function LessonPage({
     if (!lesson) {
         return <ComingSoon />;
     }
+
+    const quiz = await loadQuiz(lessonId);
 
     let htmlContent = '';
     try {
@@ -53,7 +56,8 @@ export default async function LessonPage({
                     />
                 </div>
                 <div className="max-w-3xl mx-auto">
-                    <Quiz lessonId={lessonId} />
+                    {quiz && <Quiz quiz={quiz} />}
+
                 </div>
             </section>
         </main>

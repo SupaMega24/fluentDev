@@ -22,7 +22,7 @@ export default function ComingSoonPage() {
                     href="/"
                     className="inline-block mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded transition"
                 >
-                    Back to Home
+                    Back to Courses
                 </Link>
             </div>
         </main>

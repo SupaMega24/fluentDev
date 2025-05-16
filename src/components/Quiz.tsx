@@ -1,40 +1,19 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import type { Question } from '@/lib/types';
 
 type QuizData = {
     questions: Question[];
 };
 
-export default function Quiz({ lessonId }: { lessonId: string }) {
-    const [quiz, setQuiz] = useState<QuizData | null>(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null);
+export default function Quiz({ quiz }: { quiz: QuizData | null }) {
+    if (!quiz) return null;
     const [answers, setAnswers] = useState<Record<number, number | null>>({});
     const [submitted, setSubmitted] = useState(false);
     const [score, setScore] = useState<number | null>(null);
 
-    useEffect(() => {
-        const loadQuiz = async () => {
-            try {
-                const res = await fetch(`/quizzes/${lessonId}.json`);
-                if (!res.ok) throw new Error('Quiz not found');
-                const data = await res.json();
-                setQuiz(data);
-            } catch (err) {
-                setError('Quiz not available');
-                console.error('Failed to load quiz:', err);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        loadQuiz();
-    }, [lessonId]);
-
     const handleSubmit = () => {
-        if (!quiz) return;
 
         const correctAnswers = quiz.questions.reduce((count, question) => {
             return count + (answers[question.id] === question.answer ? 1 : 0);
@@ -43,9 +22,6 @@ export default function Quiz({ lessonId }: { lessonId: string }) {
         setScore(correctAnswers);
         setSubmitted(true);
     };
-
-    if (loading || error || !quiz) return null;
-
 
     return (
         <div className="mt-12 border-t border-gray-700 pt-8">

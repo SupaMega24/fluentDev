@@ -1,28 +1,13 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-
-type GlossaryTerm = {
-    term: string;
-    definition: string;
-    analogy?: string;
-    learnMore?: string;
-};
+import { useState } from 'react';
+import { glossaryTerms, GlossaryTerm } from '@/lib/glossary';
 
 export default function GlossaryPage() {
-    const [terms, setTerms] = useState<GlossaryTerm[]>([]);
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedTerm, setSelectedTerm] = useState<GlossaryTerm | null>(null);
 
-
-    useEffect(() => {
-        fetch('/glossary/glossary.json')
-            .then((res) => res.json())
-            .then((data) => setTerms(data))
-            .catch((err) => console.error('Failed to load glossary:', err));
-    }, []);
-
-    const filteredTerms = terms.filter((item) =>
+    const filteredTerms = glossaryTerms.filter((item) =>
         item.term.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
@@ -31,7 +16,7 @@ export default function GlossaryPage() {
             <div className="max-w-6xl mx-auto">
                 <h1 className="text-4xl font-bold mb-6 text-center">Glossary</h1>
                 <p className="text-lg text-gray-300 text-center mb-8">
-                    Explore key Web3 and blockchain terms explained in plain English. Each term includes a definition, a simple analogy to enhance understanding, and a link to resources to learn more about the concept.
+                    Click on the cards below to explore key web3 and blockchain terms explained in plain English. Each term includes a definition, a simple analogy to enhance understanding, and a link to resources to learn more about the concept.
                 </p>
 
                 <div className="mb-10 max-w-md mx-auto">
@@ -44,13 +29,12 @@ export default function GlossaryPage() {
                     />
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6"
-
-                >
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {filteredTerms.map((item, index) => (
-                        <div key={index}
+                        <div
+                            key={index}
                             className="bg-gray-800 p-6 rounded-2xl shadow-md cursor-pointer 
-                                transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+                         transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
                             onClick={() => setSelectedTerm(item)}
                         >
                             <h2 className="text-2xl font-semibold mb-2 text-blue-400">{item.term}</h2>
@@ -72,6 +56,7 @@ export default function GlossaryPage() {
                     ))}
                 </div>
             </div>
+
             {selectedTerm && (
                 <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-8">
                     <div className="bg-white text-black p-12 rounded-xl shadow-2xl max-w-5xl w-full max-h-[90vh] overflow-y-auto relative">
@@ -102,5 +87,3 @@ export default function GlossaryPage() {
         </main>
     );
 }
-
-
