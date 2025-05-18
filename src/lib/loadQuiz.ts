@@ -12,11 +12,16 @@ export async function loadQuiz(lessonId: string): Promise<QuizData | null> {
         const fileContents = await fs.readFile(filePath, 'utf-8');
         return JSON.parse(fileContents);
     } catch (error: unknown) {
-        if (error instanceof Error) {
-            console.error(`Failed to load quiz for lesson "${lessonId}":`, error.message);
-        } else {
-            console.error(`Unknown error loading quiz for lesson "${lessonId}"`);
+        if (
+            error instanceof Error &&
+            'code' in error &&
+            (error as any).code === 'ENOENT'
+        ) {
+            // Quiz file doesn't exist — not an error, just return null silently
+            return null;
         }
+
+        console.error(`Failed to load quiz for lesson "${lessonId}":`, error);
         return null;
     }
 

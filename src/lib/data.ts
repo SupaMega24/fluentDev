@@ -10,11 +10,11 @@ export const courses = [
         duration: "10 hours",
         level: "Beginner",
         lessons: [
-            { id: "blockchain-basics", title: "Blockchain Basics: Essential Concepts of Web3" },
-            { id: "types-of-blockchains", title: "Types of Blockchains: Public, Private & Consortium" },
-            { id: "consensus-mechanisms", title: "Consensus Mechanisms: How Blockchains Reach Agreement" },
-            { id: "smart-contracts", title: "Smart Contracts: Code that Executes Itself" },
-            { id: "cryptocurrency", title: "Cryptocurrency: Digital Money Explained" },
+            { id: "blockchain-basics", title: "Blockchain Basics: Essential Concepts of Web3", topic: "Blockchain Basics" },
+            { id: "types-of-blockchains", title: "Types of Blockchains: Public, Private & Consortium", topic: "Types of Blockchains" },
+            { id: "consensus-mechanisms", title: "Consensus Mechanisms: How Blockchains Reach Agreement", topic: "Consensus Mechanisms" },
+            { id: "smart-contracts", title: "Smart Contracts: Code that Executes Itself", topic: "Smart Contracts" },
+            { id: "cryptocurrency", title: "Cryptocurrency: Digital Money Explained", topic: "Cryptocurrency" },
         ],
     },
     {

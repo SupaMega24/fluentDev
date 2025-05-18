@@ -2,6 +2,8 @@ import { config } from "@/config";
 import { Button } from "./ui/button";
 import { Rss } from "lucide-react";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXTwitter, faLinkedin, faDiscord, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 export const Footer = () => {
   return (
@@ -11,18 +13,20 @@ export const Footer = () => {
         <div className="text-sm mt-4">
           © {config.organization} {new Date().getFullYear()}
         </div>
-        <div className="text-xs text-muted-foreground hidden lg:block">
-          <Link
-            href={`https://wisp.blog/?utm_source=next-js-template&utm_medium=web&utm_campaign=${config.baseUrl}`}
-          >
-            Blog powered by wisp
+        <div className="hidden md:flex text-1xl gap-4 items-center">
+          <Link href="https://x.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faXTwitter} className="text-black hover:text-blue-500" />
+          </Link>
+          <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} className="text-black hover:text-blue-500" />
+          </Link>
+          <Link href="https://discord.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faDiscord} className="text-black hover:text-blue-500" />
+          </Link>
+          <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faYoutube} className="text-black hover:text-blue-500" />
           </Link>
         </div>
-        <Link href="/rss">
-          <Button variant="ghost">
-            <Rss className="w-4 h-4" />
-          </Button>
-        </Link>
       </div>
     </div>
   );

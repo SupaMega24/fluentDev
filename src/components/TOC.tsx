@@ -78,7 +78,9 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ items }) => {
             className="my-2 font-medium"
             style={{ marginLeft: `${(item.level - 1) * 20}px` }}
           >
-            <a href={`#${item.id}`}>{item.text}</a>
+            <a href={`#${item.id}`}
+              className="font-medium text-white hover:text-blue-400 transition-colors duration-200"
+            >{item.text}</a>
           </li>
         ))}
       </ul>
