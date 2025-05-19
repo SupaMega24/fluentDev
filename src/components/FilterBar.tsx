@@ -8,7 +8,7 @@ import { config } from "../config";
 import { cn } from "../lib/utils";
 import Link from "next/link";
 
-const categories = [{ label: "Latest", tag: "latest" }, ...config.categories];
+const categories = [{ label: "Recent Posts", tag: "latest" }, ...config.categories];
 
 export interface BlogNavigationBarProps {
   className?: string;
@@ -75,10 +75,10 @@ export const FilterBar = ({ className, active }: BlogNavigationBarProps) => {
           </button>
         </div>
       ) : (
-        <div className="flex w-full items-center justify-between">
-          <div className="flex gap-2 whitespace-nowrap  overflow-x-auto">
+        <div className="flex w-full items-center justify-between ">
+          <div className="flex gap-2 whitespace-nowrap  overflow-x-auto ">
             {categories.map((category) => (
-              <Link
+              <Link className="hover:text-blue-700 border-2 hover:border-blue-700 rounded-md"
                 href={
                   category.tag === "latest" ? `/` : `/category/${category.tag}`
                 }
@@ -87,8 +87,9 @@ export const FilterBar = ({ className, active }: BlogNavigationBarProps) => {
                 <button
                   className={cn(
                     "py-1 px-2",
-                    active === category.tag &&
-                      "border-b-2 border-black font-semibold"
+                    active === category.tag,
+                    //"border-b-2 border-black font-semibold ",
+                    className = ""
                   )}
                 >
                   {category.label}
@@ -96,9 +97,12 @@ export const FilterBar = ({ className, active }: BlogNavigationBarProps) => {
               </Link>
             ))}
           </div>
-          <div className="flex-shrink-0">
-            <button onClick={() => setIsSearchActive(true)}>
-              <Search className="bg-primary-foreground m-2 h-5 w-5 rounded" />
+          <div className="flex-shrink-0 pl-4">
+            <button onClick={() => setIsSearchActive(true)}
+              className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200"
+              aria-label="Open search"
+            >
+              <Search className="h-5 w-5 text-gray-600" />
             </button>
           </div>
         </div>

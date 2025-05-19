@@ -8,25 +8,11 @@ interface Category {
 const categories: Category[] = [
 
   {
-    label: "Web3 Foundations",
-    tag: "concepts",
+    label: "Web3 in plain English",
+    tag: "web3",
     description: "For learners who want to understand blockchain and decentralized technologies in plain, accessible English.",
   },
-  {
-    label: "English for Web3 Professionals",
-    tag: "english",
-    description: "For developers and professionals who want to improve their English communication while mastering blockchain concepts.",
-  },
-  // {
-  //   label: "Startups",
-  //   tag: "startup",
-  //   description: "Spotlight on innovative AI startups transforming industries.",
-  // },
-  // {
-  //   label: "Ethics",
-  //   tag: "ethics",
-  //   description: "Promoting responsible AI for positive impact.",
-  // },
+
 ];
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
