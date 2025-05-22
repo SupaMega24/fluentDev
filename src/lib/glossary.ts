@@ -12,14 +12,14 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "A unit that measures the amount of computational effort required to execute operations.",
         analogy: "Gas is like the fuel your car needs to run — without it, the blockchain can't process your transactions.",
         lessonIds: [""],
-        learnMore: "https://www.cyfrin.io/glossary/gas"
+        learnMore: ""
     },
     {
         term: "Smart Contract",
         definition: "A program stored on the blockchain that runs when predefined conditions are met.",
         analogy: "Think of it as a vending machine that automatically dispenses snacks when you insert money.",
         lessonIds: [""],
-        learnMore: "https://www.cyfrin.io/glossary/smart-contract"
+        learnMore: ""
     },
     {
         term: "Blockchain",

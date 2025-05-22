@@ -38,10 +38,10 @@ export default async function Page(
     <>
       <main className="min-h-screen bg-gray-900 text-white border-b border-gray-800">
         <FullWidthHeader title={title} description={description} />
-        <div className="text-center mt-6">
+        <div className="text-center">
           <a
             href="https://fluentdev.vercel.app/courses"
-            className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition"
+            className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition mb-8"
           >
             View Courses
           </a>

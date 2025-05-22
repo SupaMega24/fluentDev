@@ -25,7 +25,7 @@ export const FullWidthHeader: FunctionComponent<{
   return (
     <div
       className={cn(
-        "pb-8 lg:pb-16 pt-4",
+        "pb-8 lg:pb-16 pt-4 mb",
         //"bg-gradient-to-r from-gray-800 to-slate-800 text-white" // Replace className with additional styling ie "bg-gradient-to-r from-teal-50 to-blue-50"
       )}
     >

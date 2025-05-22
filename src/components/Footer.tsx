@@ -13,7 +13,7 @@ export const Footer = () => {
         <div className="text-sm mt-4">
           © {config.organization} {new Date().getFullYear()}
         </div>
-        <div className="hidden md:flex text-1xl gap-4 items-center">
+        {/* <div className="hidden md:flex text-1xl gap-4 items-center">
           <Link href="https://x.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faXTwitter} className="text-black hover:text-blue-500" />
           </Link>
@@ -26,7 +26,7 @@ export const Footer = () => {
           <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faYoutube} className="text-black hover:text-blue-500" />
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

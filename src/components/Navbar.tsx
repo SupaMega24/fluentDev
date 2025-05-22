@@ -27,10 +27,11 @@ export const Navbar = () => {
                         <li><Link href="/glossary" className="hover:underline hover:text-blue-500">Glossary</Link></li>
                         <li><Link href="/about" className="hover:underline hover:text-blue-500">About</Link></li>
                         <li><Link href="/contact" className="hover:underline hover:text-blue-500">Contact</Link></li>
+                        <li><Link href="/" className="hover:underline hover:text-blue-500">Blog</Link></li>
                     </ul>
 
                     {/* RIGHT: Social Icons + Hamburger */}
-                    <div className="hidden md:flex text-3xl gap-4 items-center">
+                    {/* <div className="hidden md:flex text-3xl gap-4 items-center">
                         <Link href="https://x.com" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faXTwitter} className="text-white hover:text-blue-500" />
                         </Link>
@@ -43,7 +44,7 @@ export const Navbar = () => {
                         <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faYoutube} className="text-white hover:text-blue-500" />
                         </Link>
-                    </div>
+                    </div> */}
 
                     {/* Mobile Menu Button */}
                     <button

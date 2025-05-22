@@ -75,7 +75,7 @@ export const FilterBar = ({ className, active }: BlogNavigationBarProps) => {
           </button>
         </div>
       ) : (
-        <div className="flex w-full items-center justify-between ">
+        <div className="hidden sm:flex w-full items-center justify-between  ">
           <div className="flex gap-2 whitespace-nowrap  overflow-x-auto ">
             {categories.map((category) => (
               <Link className="hover:text-blue-700 border-2 hover:border-blue-700 rounded-md"
