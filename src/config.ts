@@ -7,11 +7,11 @@ interface Category {
 
 const categories: Category[] = [
 
-  {
-    label: "Web3 in plain English",
-    tag: "web3",
-    description: "For learners who want to understand blockchain and decentralized technologies in plain, accessible English.",
-  },
+  // {
+  //   label: "Blockchain Basics",
+  //   tag: "blockchain-basics",
+  //   description: "For learners who want to understand blockchain and decentralized technologies in plain, accessible English.",
+  // },
 
 ];
 

@@ -104,6 +104,27 @@ export const glossaryTerms: GlossaryTerm[] = [
         analogy: "Like a community garden where everyone contributes and no single person is in charge of all decisions.",
         lessonIds: ["blockchain-basics"],
         learnMore: ""
+    },
+    {
+        term: "Proof of Work",
+        definition: "A consensus mechanism where participants compete to solve complex puzzles to validate transactions.",
+        analogy: "Like a race where miners solve math problems, and the first to finish gets to write the next ledger page.",
+        lessonIds: ["blockchain-basics"],
+        learnMore: ""
+    },
+    {
+        term: "Proof of Stake",
+        definition: "A consensus mechanism where validators stake cryptocurrency as collateral and are pseudo-randomly selected to create blocks.",
+        analogy: "Like a weighted lottery where you must buy tickets (stake) to enter, then winners are randomly chosen to validate.",
+        lessonIds: ["blockchain-basics"],
+        learnMore: ""
+    },
+    {
+        term: "Proof of Authority",
+        definition: "A consensus mechanism where only pre-approved, trusted validators can validate transactions and create blocks.",
+        analogy: "Like a private club where only verified members can vote - faster but less decentralized.",
+        lessonIds: ["blockchain-basics"],
+        learnMore: ""
     }
 ].sort((a, b) => a.term.localeCompare(b.term));
 

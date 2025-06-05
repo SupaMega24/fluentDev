@@ -1,3 +1,4 @@
+import LessonClientWrapper from '@/components/LessonClientWrapper';
 import ComingSoon from '@/components/ComingSoon';
 import { getCourse } from '@/lib/data';
 import fs from 'fs/promises';
@@ -11,7 +12,7 @@ import { getTermsByLesson } from '@/lib/glossary';
 import dynamic from 'next/dynamic';
 import ScrollToTop from '@/components/ScrolToTop';
 import { processTableOfContents } from '@/lib/lessonTOC';
-import { TableOfContents } from '@/components/TOC';
+//import { TableOfContents } from '@/components/TOC';
 
 
 const GlossaryCards = dynamic(() => import('@/components/GlossaryCards'));
@@ -67,16 +68,15 @@ export default async function LessonPage({
 
     const terms = getTermsByLesson(lessonId);
 
-
     return (
         <main className="min-h-screen bg-gray-900 text-white">
             <section className="container mx-auto px-4 py-16">
 
-                {/* Table of Contents */}
+                {/* Table of Contents
                 <div className="max-w-3xl mx-auto mb-12 p-4 border border-gray-700 rounded-lg">
                     <h2 className="text-xl font-bold mb-4">Table of Contents</h2>
                     <TableOfContents items={tableOfContents} />
-                </div>
+                </div> */}
 
 
                 <div className="text-center mb-12">
@@ -99,6 +99,9 @@ export default async function LessonPage({
 
                 </div>
 
+                {/* Reading assignment modal */}
+                <LessonClientWrapper lessonId={lessonId} />
+
                 {/* Lesson Quiz */}
                 <div className="max-w-3xl mx-auto">
                     {quiz && <Quiz quiz={quiz} />}
@@ -106,6 +109,7 @@ export default async function LessonPage({
                 </div>
             </section>
             <ScrollToTop />
+
         </main>
     );
 }
