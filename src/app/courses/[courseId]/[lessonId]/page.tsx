@@ -14,7 +14,6 @@ import ScrollToTop from '@/components/ScrolToTop';
 import { processTableOfContents } from '@/lib/lessonTOC';
 //import { TableOfContents } from '@/components/TOC';
 
-
 const GlossaryCards = dynamic(() => import('@/components/GlossaryCards'));
 
 export default async function LessonPage({
@@ -104,7 +103,8 @@ export default async function LessonPage({
 
                 {/* Lesson Quiz */}
                 <div className="max-w-3xl mx-auto">
-                    {quiz && <Quiz quiz={quiz} />}
+                    {quiz && <Quiz quiz={quiz} courseId={courseId}
+                        lessonId={lessonId} />}
 
                 </div>
             </section>
