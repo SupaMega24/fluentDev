@@ -11,14 +11,70 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Gas",
         definition: "A unit that measures the amount of computational effort required to execute operations.",
         analogy: "Gas is like the fuel your car needs to run — without it, the blockchain can't process your transactions.",
-        lessonIds: [""],
+        lessonIds: ["explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
+        term: "Signature",
+        definition: "A cryptographic proof that an account authorized a transaction without revealing the private key.",
+        analogy: "Like a unique stamp that proves ‘I agreed to this’ without showing your password.",
+        lessonIds: ["explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
+        term: "Nonce",
+        definition: "A number that counts how many transactions an account has sent, preventing replay.",
+        analogy: "Like a ticket number that must be in order—no skipping or reusing.",
+        lessonIds: ["explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
+        term: "EVM",
+        definition: "The computer that runs all smart contracts and processes transactions on Ethereum.",
+        analogy: "Like the engine of Ethereum—it's what actually does the work when you send a transaction.",
+        lessonIds: ["explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
+        term: "Finality",
+        definition: "When a transaction is permanently confirmed and cannot be reversed or changed.",
+        analogy: "Like when concrete fully dries—once it's final, you can't change it anymore.",
+        lessonIds: ["explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
+        term: "Base Fee",
+        definition: "The minimum gas price that all transactions must pay, burned by the network.",
+        analogy: "Like a mandatory entry fee to use the Ethereum highway.",
+        lessonIds: [],
+        learnMore: ""
+    },
+    {
+        term: "Priority Fee",
+        definition: "An optional extra fee to incentivize validators to process your transaction faster.",
+        analogy: "Like tipping a delivery driver to speed things up.",
+        lessonIds: [],
+        learnMore: ""
+    },
+    {
+        term: "blob",
+        definition: "A large data package used in Ethereum to store extra information more efficiently, introduced in EIP-4844.",
+        analogy: "Like a suitcase you attach to a car to carry more stuff without slowing it down.",
+        lessonIds: ["explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
+        term: "EIP",
+        definition: "Ethereum Improvement Proposal—a formal suggestion for updating Ethereum’s protocol.",
+        analogy: "Like submitting a proposal to improve the rules of a club everyone follows.",
+        lessonIds: ["explaining-technical-processes"],
         learnMore: ""
     },
     {
         term: "Smart Contract",
         definition: "A program stored on the blockchain that runs when predefined conditions are met.",
         analogy: "Think of it as a vending machine that automatically dispenses snacks when you insert money.",
-        lessonIds: [""],
+        lessonIds: ["explaining-technical-processes"],
         learnMore: ""
     },
     {
@@ -32,7 +88,28 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Cryptography",
         definition: "The practice of using mathematical techniques to secure data and communications from unauthorized access.",
         analogy: "Seals information with a secret code—only those with the right key can read or verify it.",
-        lessonIds: ["blockchain-basics"],
+        lessonIds: ["blockchain-basics", "explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
+        term: "Externally-owned Account (EOA)",
+        definition: "A regular Ethereum account controlled by a private key, allows users to send transactions.",
+        analogy: "Like a bank account you manage with your password (private key).",
+        lessonIds: ["explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
+        term: "State",
+        definition: "The current data stored on the blockchain, such as balances, contract values, and user actions.",
+        analogy: "Like the memory of a game showing each player’s score and position right now.",
+        lessonIds: [],
+        learnMore: ""
+    },
+    {
+        term: "ETH",
+        definition: "Ethereum’s native cryptocurrency, used for payments and transaction fees.",
+        analogy: "Like digital fuel or money used to power actions on the Ethereum network.",
+        lessonIds: ["explaining-technical-processes"],
         learnMore: ""
     },
     {
@@ -67,7 +144,49 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Consensus Mechanism",
         definition: "A protocol that allows a decentralized network of nodes to agree on a single version of truth.",
         analogy: "It’s a democratic process where a majority of participants must approve any new page before it’s added to the book.",
-        lessonIds: ["blockchain-basics"],
+        lessonIds: ["blockchain-basics", "explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
+        term: "Validators",
+        definition: "Network participants who verify and add transactions to the blockchain under proof-of-stake.",
+        analogy: "Like referees in a game who check that all the rules are followed.",
+        lessonIds: ["explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
+        term: "On-chain",
+        definition: "Data or activity that is recorded directly on the blockchain.",
+        analogy: "Like carving something into stone—it’s public and permanent.",
+        lessonIds: ["explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
+        term: "Layer-2",
+        definition: "A blockchain built on top of Ethereum to handle transactions faster and cheaper.",
+        analogy: "Like building a second floor on a busy shop to serve more people without crowding the main floor.",
+        lessonIds: ["explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
+        term: "Rollup",
+        definition: "A layer-2 solution that bundles many transactions and posts a summary to Ethereum for security.",
+        analogy: "Like sending a group report to the teacher instead of turning in 100 individual papers.",
+        lessonIds: ["explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
+        term: "Account Abstraction",
+        definition: "A design upgrade that lets smart contracts act like wallets, allowing custom rules for transactions.",
+        analogy: "Like programming your wallet to auto-pay bills or require multi-signatures.",
+        lessonIds: ["explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
+        term: "Scalability",
+        definition: "The blockchain’s ability to handle more users and transactions efficiently.",
+        analogy: "Like widening a highway so more cars can drive without traffic jams.",
+        lessonIds: [],
         learnMore: ""
     },
     {
@@ -78,10 +197,24 @@ export const glossaryTerms: GlossaryTerm[] = [
         learnMore: ""
     },
     {
+        term: "ECDSA",
+        definition: "Stands for Elliptic Curve Digital Signature Algorithm, the cryptographic method Ethereum uses for account keys and transaction signatures.",
+        analogy: "Like a complex math lock used to prove who owns what without sharing secrets.",
+        lessonIds: ["explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
+        term: "Mempools",
+        definition: "The waiting area where unconfirmed transactions sit before being added to the blockchain.",
+        analogy: "Like a queue outside a nightclub—transactions wait their turn to get in.",
+        lessonIds: ["explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
         term: "Private Key",
         definition: "A secret cryptographic key that proves ownership and allows control of blockchain assets.",
         analogy: "This is your master password—whoever holds it controls the funds or identity tied to that key.",
-        lessonIds: ["blockchain-basics"],
+        lessonIds: ["blockchain-basics", "explaining-technical-processes"],
         learnMore: ""
     },
     {
@@ -125,7 +258,15 @@ export const glossaryTerms: GlossaryTerm[] = [
         analogy: "Like a private club where only verified members can vote - faster but less decentralized.",
         lessonIds: ["blockchain-basics"],
         learnMore: ""
-    }
+    },
+    {
+        term: "Transaction",
+        definition: "An action initiated by an account on the blockchain, such as transferring ETH or calling a smart contract.",
+        analogy: "Like sending a message or payment—once sent, it can’t be undone and is recorded for everyone to see.",
+        lessonIds: ["explaining-technical-processes"],
+        learnMore: ""
+    },
+
 ].sort((a, b) => a.term.localeCompare(b.term));
 
 // Helper function to get terms for a lesson:

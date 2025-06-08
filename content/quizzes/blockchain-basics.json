@@ -2,83 +2,113 @@
     "questions": [
         {
             "id": 1,
-            "question": "What is the best analogy used in the lesson to describe a blockchain?",
+            "question": "According to the lesson, what analogy is used to help explain how a blockchain works?",
             "options": [
-                "A giant group chat where every message is a transaction",
-                "A spreadsheet managed by a single company",
-                "A private diary that only one person can write in"
+                "A giant group chat where every message is a transaction that must be confirmed by the group",
+                "A private email system managed by one company",
+                "A phone book that only certain people can edit"
             ],
             "answer": 0,
-            "explanation": "The lesson compares a blockchain to a giant group chat where transactions are like messages that everyone can see and verify."
+            "explanation": "The lesson uses a group chat analogy where transactions are like messages that everyone can see, and the whole group must agree they're valid before they get locked in permanently."
         },
         {
             "id": 2,
-            "question": "Which of these is NOT one of the three fundamental characteristics of blockchains mentioned in the lesson?",
+            "question": "What are the three fundamental characteristics that every blockchain has?",
             "options": [
-                "Immutability",
-                "Transparency",
-                "Anonymity",
-                "Decentralization"
+                "Speed, cost-effectiveness, and privacy",
+                "Immutability, transparency, and decentralization",
+                "Security, simplicity, and scalability"
             ],
-            "answer": 2,
-            "explanation": "The three key properties are immutability, transparency, and decentralization. While blockchains protect identities, complete anonymity isn't guaranteed."
+            "answer": 1,
+            "explanation": "The lesson identifies immutability (can't be changed), transparency (everyone can see transactions), and decentralization (no single controller) as the three key properties of blockchains."
         },
         {
             "id": 3,
-            "question": "What happens if you lose your private key in a blockchain system?",
+            "question": "Why can't blockchain data be easily tampered with once it's recorded?",
             "options": [
-                "No one can help you recover it",
-                "You can contact the blockchain creators for help",
-                "The network can vote to restore your access"
+                "It's stored on government servers that are heavily protected",
+                "Each block contains a unique hash of the previous block, making changes easily detectable",
+                "Only the blockchain creators have permission to make changes"
             ],
-            "answer": 0,
-            "explanation": "Your private key is like the password to your digital assets. Lose it, and no one can help you recover it—not even the blockchain creators."
+            "answer": 1,
+            "explanation": "Each block contains a digital fingerprint (hash) of the previous block. If someone tries to change old data, they'd have to recalculate every block after it, which is practically impossible."
         },
         {
             "id": 4,
-            "question": "What is the name of the process by which blockchain networks agree on what's valid?",
+            "question": "When you look up a Bitcoin transaction, what do you see instead of people's real names?",
             "options": [
-                "Consensus",
-                "Verification",
-                "Authentication",
-                "Authorization"
+                "Their email addresses",
+                "Cryptographic wallet addresses like '1A2B3C...'",
+                "Their phone numbers"
             ],
-            "answer": 0,
-            "explanation": "Since there's no central server, blockchain networks use consensus mechanisms for all participants to agree on what's valid."
+            "answer": 1,
+            "explanation": "Transparency is a key aspect of blockchain. It means everyone can see transactions. However, identities are protected through cryptographic addresses instead of real names."
         },
         {
             "id": 5,
-            "question": "What does the 'blockchain trilemma' refer to?",
+            "question": "What critical warning does the lesson give about private keys?",
             "options": [
-                "The balance between security, speed, and decentralization",
-                "The choice between transparency, immutability, and cost",
-                "The decision between public, private, and hybrid blockchains"
+                "You should share them with trusted friends for backup",
+                "They expire after one year and need renewal",
+                "If you lose your private key, no one can help you recover it and you lose access to your assets"
             ],
-            "answer": 0,
-            "explanation": "Every blockchain must balance three things—security, speed, and decentralization. Improving two usually means compromising the third."
+            "answer": 2,
+            "explanation": "Your private key is like a password to your digital assets, and losing it means permanent loss of access to your assets."
         },
         {
             "id": 6,
-            "question": "What can tokens on a blockchain represent?",
+            "question": "What is 'consensus' in blockchain terminology?",
             "options": [
-                "Digital money",
-                "Ownership of digital art",
-                "Voting rights in organizations",
-                "All of the above"
+                "The process by which all network participants agree on what's valid",
+                "A voting system for electing blockchain leaders",
+                "The speed at which transactions are processed"
             ],
-            "answer": 3,
-            "explanation": "Tokens are programmable digital assets that can represent digital money, NFTs, voting rights, and more."
+            "answer": 0,
+            "explanation": "Since there's no central server, blockchain networks use consensus mechanisms for all participants to agree on what transactions and data are valid."
         },
         {
             "id": 7,
-            "question": "What is a node in blockchain terminology?",
+            "question": "What does the 'blockchain trilemma' described in the lesson refer to?",
             "options": [
-                "A computer that helps run the blockchain network",
-                "A point of failure in the system",
-                "A type of cryptocurrency"
+                "The choice between three different cryptocurrencies",
+                "The balance between security, scalability, and decentralization",
+                "The decision of whether to invest, mine, or trade"
+            ],
+            "answer": 1,
+            "explanation": "Every blockchain must balance three things—security, speed, and decentralization—and that improving two usually means compromising the third."
+        },
+        {
+            "id": 8,
+            "question": "According to the lesson, what can blockchain tokens represent besides digital money?",
+            "options": [
+                "Only Bitcoin and Ethereum",
+                "Ownership of digital art, voting rights, and access to services",
+                "Stock certificates from traditional companies"
+            ],
+            "answer": 1,
+            "explanation": "Tokens are programmable digital assets that can represent various things: digital money, NFTs (digital art ownership), voting rights in organizations, and access to platforms."
+        },
+        {
+            "id": 9,
+            "question": "What key trade-off does the lesson mention about decentralized systems?",
+            "options": [
+                "They are usually slower and more complex than centralized ones",
+                "They cost more money to use than traditional systems",
+                "They require special government permission to access"
             ],
             "answer": 0,
-            "explanation": "A node is a computer that helps run the blockchain network, maintaining copies of the ledger and validating transactions."
+            "explanation": "While decentralization provides benefits like less censorship and more user control, decentralized systems are typically slower and more complex than centralized alternatives."
+        },
+        {
+            "id": 10,
+            "question": "What does it mean that 'you have complete control over your assets—and complete responsibility' in blockchain systems?",
+            "options": [
+                "You can change the blockchain rules whenever you want",
+                "You directly own your digital assets but must manage your own security with no recovery help",
+                "You automatically become responsible for validating other people's transactions"
+            ],
+            "answer": 1,
+            "explanation": "This key concept from the lesson emphasizes that blockchain gives you direct ownership and control of your assets, but also places the full burden of security (like protecting your private keys) entirely on you, with no safety net."
         }
     ]
 }

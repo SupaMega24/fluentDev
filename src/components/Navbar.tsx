@@ -91,6 +91,11 @@ export const Navbar = () => {
                                     Contact
                                 </Link>
                             </li>
+                            <li>
+                                <Link href="/" className="hover:underline hover:text-blue-500">
+                                    Blog
+                                </Link>
+                            </li>
                         </ul>
                     </nav>
                 </div>

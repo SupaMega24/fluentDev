@@ -35,7 +35,7 @@ export default function CoursesPage() {
                                 <div className="flex justify-between items-start mb-2">
                                     <h2 className="text-xl font-bold">{course.title}</h2>
                                     <span className="text-sm bg-blue-600 text-white px-2 py-1 rounded">
-                                        {course.level}
+                                        {course.skill}
                                     </span>
                                 </div>
                                 <p className="text-gray-300 mb-4">{course.description}</p>
