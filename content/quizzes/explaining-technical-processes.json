@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Which of the following expressions signals the beginning of a process?",
+            "options": [
+                "To begin with",
+                "Subsequently",
+                "Ultimately"
+            ],
+            "answer": 0,
+            "explanation": "‘To begin with’ introduces the first step in a sequence."
+        },
+        {
+            "id": 2,
+            "question": "Which expression is best used to indicate a result after several steps are completed?",
+            "options": [
+                "Once",
+                "Ultimately",
+                "Prior to"
+            ],
+            "answer": 1,
+            "explanation": "‘Ultimately’ is used to introduce the final step or outcome of a process."
+        },
+        {
+            "id": 3,
+            "question": "Choose the sentence that correctly uses the sequencer 'prior to'.",
+            "options": [
+                "Prior to executing, the validator signs the transaction.",
+                "Prior to execution, validators select transactions from the mempool.",
+                "Validators choose the transaction prior to it signed."
+            ],
+            "answer": 1,
+            "explanation": "‘Prior to execution, validators select transactions...’ is grammatically correct and uses the sequencer properly."
+        },
+        {
+            "id": 4,
+            "question": "In the sentence ‘At this point, the transaction is considered permanently settled,’ what does 'at this point' refer to?",
+            "options": [
+                "The start of the transaction",
+                "The point when the transaction is added to the mempool",
+                "The moment the block reaches finality"
+            ],
+            "answer": 2,
+            "explanation": "‘At this point’ refers to when the block has reached finality and the transaction is fully confirmed."
+        },
+        {
+            "id": 5,
+            "question": "Which sequencer shows that one action depends on the completion of another?",
+            "options": [
+                "Once",
+                "Subsequently",
+                "At this point"
+            ],
+            "answer": 0,
+            "explanation": "‘Once’ is used to show that an action happens only after a condition is fulfilled."
+        },
+        {
+            "id": 6,
+            "question": "__________ the user constructs the transaction, it is signed and broadcasted to the network.",
+            "options": [
+                "Once",
+                "Prior to",
+                "Ultimately"
+            ],
+            "answer": 0,
+            "explanation": "‘Once’ correctly shows that signing and broadcasting happen after the transaction is constructed. ‘Prior to’ would mean signing happens *before* construction, which is illogical. ‘Ultimately’ refers to a final step, not an immediate sequence."
+        },
+        {
+            "id": 7,
+            "question": "Validators select transactions from the mempool _________ execution.",
+            "options": [
+                "subsequently",
+                "at this point",
+                "prior to"
+            ],
+            "answer": 2,
+            "explanation": "‘Prior to’ is correct because selection happens before execution. ‘Subsequently’ means after, which reverses the order. ‘At this point’ refers to the current moment, not a step before another."
+        },
+        {
+            "id": 8,
+            "question": "Gas is consumed during execution. __________, the base fee is burned.",
+            "options": [
+                "Subsequently",
+                "Once",
+                "Prior to"
+            ],
+            "answer": 0,
+            "explanation": "‘Subsequently’ correctly connects two steps in order: first gas is used, then the base fee is burned. ‘Once’ is used for conditions rather than sequences. ‘Prior to’ would suggest the fee is burned before execution, which is inaccurate."
+        },
+        {
+            "id": 9,
+            "question": "__________, the transaction is permanently settled and state changes are confirmed.",
+            "options": [
+                "Prior to that",
+                "At this point",
+                "To begin with"
+            ],
+            "answer": 1,
+            "explanation": "‘At this point’ indicates that a condition has been met — the block has reached finality. ‘Prior to that’ refers to an earlier step, which doesn't match. ‘To begin with’ marks a starting point, not a conclusion."
+        },
+        {
+            "id": 10,
+            "question": "__________, the user prepares the transaction fields such as nonce, gas limit, and value.",
+            "options": [
+                "Ultimately",
+                "To begin with",
+                "Subsequently"
+            ],
+            "answer": 1,
+            "explanation": "‘To begin with’ signals the first step of a process. ‘Ultimately’ is used to express an end result. ‘Subsequently’ means something that comes *after*, so it wouldn't logically open the process."
+        }
+    ]
+}

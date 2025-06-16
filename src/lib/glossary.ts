@@ -60,7 +60,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "blob",
         definition: "A large data package used in Ethereum to store extra information more efficiently, introduced in EIP-4844.",
         analogy: "Like a suitcase you attach to a car to carry more stuff without slowing it down.",
-        lessonIds: ["explaining-technical-processes"],
+        lessonIds: [],
         learnMore: ""
     },
     {
@@ -72,7 +72,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     },
     {
         term: "Smart Contract",
-        definition: "A program stored on the blockchain that runs when predefined conditions are met.",
+        definition: "A self-executing program stored on the blockchain that runs when predefined conditions are met.",
         analogy: "Think of it as a vending machine that automatically dispenses snacks when you insert money.",
         lessonIds: ["explaining-technical-processes"],
         learnMore: ""
@@ -172,14 +172,14 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Rollup",
         definition: "A layer-2 solution that bundles many transactions and posts a summary to Ethereum for security.",
         analogy: "Like sending a group report to the teacher instead of turning in 100 individual papers.",
-        lessonIds: ["explaining-technical-processes"],
+        lessonIds: [],
         learnMore: ""
     },
     {
         term: "Account Abstraction",
         definition: "A design upgrade that lets smart contracts act like wallets, allowing custom rules for transactions.",
         analogy: "Like programming your wallet to auto-pay bills or require multi-signatures.",
-        lessonIds: ["explaining-technical-processes"],
+        lessonIds: [],
         learnMore: ""
     },
     {
