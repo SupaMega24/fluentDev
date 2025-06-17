@@ -1,8 +1,5 @@
 'use client';
 
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
 import { useState } from 'react';
 import { wisp } from '@/lib/wisp';
 import BlogModal from '@/components/BlogModal';
