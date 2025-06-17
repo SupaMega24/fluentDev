@@ -71,6 +71,7 @@ export const PostPagination = ({
               <PaginationLink
                 href={buildPath(pageNumber)}
                 isActive={pageNumber === pagination.page}
+                className={pageNumber === pagination.page ? "text-black" : "text-blue-600"}
               >
                 {pageNumber}
               </PaginationLink>

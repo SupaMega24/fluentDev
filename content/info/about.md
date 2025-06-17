@@ -19,7 +19,7 @@ These courses focus on developing deep knowledge related to Web3 and blockchain 
 - Native or fluent English speakers wanting to deepen their Web3 knowledge  
 - Learners aiming to stay current with evolving blockchain concepts and terminology  
 
-[Explore Advanced Courses](https://fluentdev.vercel.app/courses/web3-fundamentals)
+[Learn Fundamental Web3 Vocabulary](https://fluentdev.vercel.app/courses/web3-fundamentals)
 
 ---
 
@@ -33,7 +33,7 @@ Designed for intermediate English learners, these courses build professional lan
 - Professionals seeking to improve both English proficiency and technical vocabulary  
 - Learners who want practical, scenario-based lessons tailored to real-world Web3 communication  
 
-[Explore Intermediate Courses](https://fluentdev.vercel.app/courses/english-for-web3)
+[Imporve English Language for Web3](https://fluentdev.vercel.app/courses/english-for-web3)
 
 ---
 

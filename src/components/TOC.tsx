@@ -79,7 +79,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ items }) => {
             style={{ marginLeft: `${(item.level - 1) * 20}px` }}
           >
             <a href={`#${item.id}`}
-              className="font-medium text-white hover:text-blue-400 transition-colors duration-200"
+              className="text-large font-medium text-black hover:text-blue-400 transition-colors duration-200"
             >{item.text}</a>
           </li>
         ))}

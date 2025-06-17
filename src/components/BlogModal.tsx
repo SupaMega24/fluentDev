@@ -13,8 +13,12 @@ export default function BlogModal({ post, onClose }: { post: any; onClose: () =>
     }, []);
 
     return (
-        <div className="fixed inset-0 z-50 bg-black bg-opacity-80 flex justify-center items-start p-4 pt-12 overflow-y-auto">
-            <div className="relative w-full max-w-5xl bg-white text-black rounded-lg shadow-lg">
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-80 flex justify-center items-start p-4 pt-12 overflow-y-auto"
+            onClick={onClose}
+        >
+            <div className="relative w-full max-w-5xl bg-white text-black rounded-lg shadow-lg"
+                onClick={(e) => e.stopPropagation()}
+            >
                 <button
                     onClick={onClose}
                     className="absolute top-4 right-4 text-black hover:text-red-500"

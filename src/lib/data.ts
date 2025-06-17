@@ -8,7 +8,7 @@ export const courses = [
             "For learners who want to understand blockchain and decentralized technologies in plain, accessible English.",
         image: "/courses/web3-fundamentals.jpg",
         duration: "10 hours",
-        skill: "Reading",
+        skill: "Vocabulary",
         lessons: [
             {
                 id: "blockchain-basics",
@@ -79,7 +79,7 @@ export const courses = [
         description: "Master liquidity pools, yield farming, and DEXs",
         image: "/courses/web3-essentials.jpg",
         duration: "10 hours",
-        skill: "Reading",
+        skill: "Vocabulary",
         lessons: [
             // {
             //     id: "",

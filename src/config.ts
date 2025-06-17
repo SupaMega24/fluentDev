@@ -7,11 +7,16 @@ interface Category {
 
 const categories: Category[] = [
 
-  // {
-  //   label: "Blockchain Basics",
-  //   tag: "blockchain-basics",
-  //   description: "For learners who want to understand blockchain and decentralized technologies in plain, accessible English.",
-  // },
+  {
+    label: "Blockchain Concepts",
+    tag: "blockchain-concepts",
+    description: "For learners who want to understand blockchain and decentralized technologies in plain, accessible English.",
+  },
+  {
+    label: "Blockchain English",
+    tag: "blockchain-english",
+    description: "For professionals and learners who need to 'level up' their language skills for blockchain and decentralized technologies.",
+  },
 
 ];
 
