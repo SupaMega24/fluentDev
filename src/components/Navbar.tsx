@@ -3,8 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXTwitter, faLinkedin, faDiscord, faYoutube } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faXTwitter, faLinkedin, faDiscord, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);

@@ -1,9 +1,9 @@
 import { config } from "@/config";
-import { Button } from "./ui/button";
-import { Rss } from "lucide-react";
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXTwitter, faLinkedin, faDiscord, faYoutube } from "@fortawesome/free-brands-svg-icons";
+// import { Button } from "./ui/button";
+// import { Rss } from "lucide-react";
+// import Link from "next/link";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faXTwitter, faLinkedin, faDiscord, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 export const Footer = () => {
   return (

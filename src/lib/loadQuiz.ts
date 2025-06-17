@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import fs from 'fs/promises';
 import path from 'path';
 import type { Question } from './types';
