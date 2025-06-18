@@ -3,8 +3,9 @@
 import { X } from 'lucide-react';
 import { BlogContent } from './BlogContent';
 import { useEffect } from 'react';
+import type { BlogPost } from "@/lib/blog";
 
-export default function BlogModal({ post, onClose }: { post: any; onClose: () => void }) {
+export default function BlogModal({ post, onClose }: { post: BlogPost; onClose: () => void }) {
     useEffect(() => {
         document.body.style.overflow = 'hidden';
         return () => {

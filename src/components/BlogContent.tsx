@@ -5,7 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Author, GetRelatedPostsResult, TagInPost } from "@wisp-cms/client";
+import { GetRelatedPostsResult } from "@wisp-cms/client";
 import Image from "next/image";
 import Link from "next/link";
 import { FullWidthHeader } from "./FullWidthHeader";
@@ -15,26 +15,14 @@ import { ContentWithCustomComponents } from "@wisp-cms/react-custom-component";
 import { FAQ } from "./WispComponents/FAQ";
 import { formatFullDate } from "@/lib/date";
 import { CommentSection } from "./CommentSection";
+import type { BlogPost } from "@/lib/blog";
+
 
 export const BlogContent = ({
   post: { title, content, author, publishedAt, tags, slug },
   relatedPosts,
 }: {
-  post: {
-    id: string;
-    createdAt: Date;
-    teamId: string;
-    description: string | null;
-    title: string;
-    content: string;
-    slug: string;
-    image: string | null;
-    authorId: string;
-    updatedAt: Date;
-    publishedAt: Date | null;
-    tags: TagInPost[];
-    author: Author;
-  };
+  post: BlogPost;
   relatedPosts: GetRelatedPostsResult["posts"];
 }) => {
   const { modifiedHtml, tableOfContents } = processTableOfContents(content, {

@@ -7,7 +7,7 @@ import type { GetPostResult } from "@wisp-cms/client";
 
 export default function LessonClientWrapper({ lessonId }: { lessonId: string }) {
     const [showModal, setShowModal] = useState(false);
-    const [blogPost, setBlogPost] = useState<GetPostResult<Record<string, any>>["post"]>(null);
+    const [blogPost, setBlogPost] = useState<GetPostResult<Record<string, unknown>>["post"]>(null);
 
     const handleOpenBlog = async (slug: string) => {
         const result = await wisp.getPost(slug);

@@ -37,9 +37,9 @@ export default async function LessonPage({
 
     const quiz = await loadQuiz(lessonId);
 
-    let htmlContent = '';
+
     let modifiedHtml = '';
-    let tableOfContents = [];
+
     try {
         const mdPath = path.join(process.cwd(), 'content', 'lessons', `${lessonId}.md`);
         console.log("Markdown path:", mdPath);
@@ -56,9 +56,9 @@ export default async function LessonPage({
         });
 
         modifiedHtml = tocResult.modifiedHtml;
-        tableOfContents = tocResult.tableOfContents;
+        //tableOfContents = tocResult.tableOfContents;
 
-        htmlContent = processedHtml;
+        //htmlContent = processedHtml;
 
 
     } catch {

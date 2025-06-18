@@ -10,7 +10,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     {
         term: "Gas",
         definition: "A unit that measures the amount of computational effort required to execute operations.",
-        analogy: "Gas is like the fuel your car needs to run — without it, the blockchain can't process your transactions.",
+        analogy: "Gas is like the fuel your car needs to run. Without it, the blockchain can't process your transactions.",
         lessonIds: ["explaining-technical-processes"],
         learnMore: ""
     },
@@ -24,21 +24,21 @@ export const glossaryTerms: GlossaryTerm[] = [
     {
         term: "Nonce",
         definition: "A number that counts how many transactions an account has sent, preventing replay.",
-        analogy: "Like a ticket number that must be in order—no skipping or reusing.",
+        analogy: "Like a ticket number that must be in order, no skipping or reusing.",
         lessonIds: ["explaining-technical-processes"],
         learnMore: ""
     },
     {
         term: "EVM",
         definition: "The computer that runs all smart contracts and processes transactions on Ethereum.",
-        analogy: "Like the engine of Ethereum—it's what actually does the work when you send a transaction.",
+        analogy: "Like the engine of Ethereum, it's what actually does the work when you send a transaction.",
         lessonIds: ["explaining-technical-processes"],
         learnMore: ""
     },
     {
         term: "Finality",
         definition: "When a transaction is permanently confirmed and cannot be reversed or changed.",
-        analogy: "Like when concrete fully dries—once it's final, you can't change it anymore.",
+        analogy: "Like when concrete fully dries. Once it's final, you can't change it anymore.",
         lessonIds: ["explaining-technical-processes"],
         learnMore: ""
     },
@@ -65,7 +65,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     },
     {
         term: "EIP",
-        definition: "Ethereum Improvement Proposal—a formal suggestion for updating Ethereum’s protocol.",
+        definition: "Ethereum Improvement Proposal is a formal suggestion for updating Ethereum’s protocol.",
         analogy: "Like submitting a proposal to improve the rules of a club everyone follows.",
         lessonIds: ["explaining-technical-processes"],
         learnMore: ""
@@ -87,7 +87,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     {
         term: "Cryptography",
         definition: "The practice of using mathematical techniques to secure data and communications from unauthorized access.",
-        analogy: "Seals information with a secret code—only those with the right key can read or verify it.",
+        analogy: "Seals information with a secret code, only those with the right key can read or verify it.",
         lessonIds: ["blockchain-basics", "explaining-technical-processes"],
         learnMore: ""
     },
@@ -115,7 +115,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     {
         term: "Hash Function",
         definition: "A function that transforms any input into a fixed-length string of characters, uniquely representing the original data.",
-        analogy: "Works like a fingerprint for data—unique, tamper-evident, and impossible to reverse.",
+        analogy: "Works like a fingerprint for data: unique, tamper-evident, and impossible to reverse.",
         lessonIds: ["blockchain-basics"],
         learnMore: ""
     },
@@ -129,7 +129,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     {
         term: "Distributed Ledger Technology (DLT)",
         definition: "A system where identical copies of a ledger are maintained across multiple computers (nodes) and updated collectively.",
-        analogy: "Imagine a shared online spreadsheet that thousands of people update together—but no one can secretly change past entries.",
+        analogy: "Imagine a shared online spreadsheet that thousands of people update together, but no one can secretly change past entries.",
         lessonIds: ["blockchain-basics"],
         learnMore: ""
     },
@@ -157,13 +157,13 @@ export const glossaryTerms: GlossaryTerm[] = [
     {
         term: "On-chain",
         definition: "Data or activity that is recorded directly on the blockchain.",
-        analogy: "Like carving something into stone—it’s public and permanent.",
+        analogy: "Like carving something into stone; it’s public and permanent.",
         lessonIds: ["explaining-technical-processes"],
         learnMore: ""
     },
     {
         term: "Layer-2",
-        definition: "A blockchain built on top of Ethereum to handle transactions faster and cheaper.",
+        definition: "A blockchain or protocol that processes transactions off the main blockchain (Layer 1) while inheriting its security properties.",
         analogy: "Like building a second floor on a busy shop to serve more people without crowding the main floor.",
         lessonIds: ["explaining-technical-processes"],
         learnMore: ""
@@ -192,7 +192,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     {
         term: "Public Key",
         definition: "A cryptographic key that allows others to send encrypted information or verify a digital signature.",
-        analogy: "Think of it as your public address—anyone can send you mail, but only you can open it with your private key.",
+        analogy: "Think of it as your public address. Anyone can send you mail, but only you can open it with your private key.",
         lessonIds: ["blockchain-basics"],
         learnMore: ""
     },
@@ -206,28 +206,28 @@ export const glossaryTerms: GlossaryTerm[] = [
     {
         term: "Mempools",
         definition: "The waiting area where unconfirmed transactions sit before being added to the blockchain.",
-        analogy: "Like a queue outside a nightclub—transactions wait their turn to get in.",
+        analogy: "Like a queue outside a nightclub. Transactions wait their turn to get in.",
         lessonIds: ["explaining-technical-processes"],
         learnMore: ""
     },
     {
         term: "Private Key",
         definition: "A secret cryptographic key that proves ownership and allows control of blockchain assets.",
-        analogy: "This is your master password—whoever holds it controls the funds or identity tied to that key.",
+        analogy: "This is your master password. Whoever holds it controls the funds or identity tied to that key.",
         lessonIds: ["blockchain-basics", "explaining-technical-processes"],
         learnMore: ""
     },
     {
         term: "Wallet",
-        definition: "A tool—software, hardware, or paper—that stores and manages your public/private key pair and interacts with the blockchain.",
-        analogy: "It doesn’t hold money directly—it holds the keys to access it.",
+        definition: "A tool (software, hardware, or paper) that stores and manages your public/private key pair and interacts with the blockchain.",
+        analogy: "It doesn’t hold money directly, it holds the keys to access it.",
         lessonIds: ["blockchain-basics"],
         learnMore: ""
     },
     {
         term: "Token",
         definition: "A digital unit of value or utility issued on a blockchain, often used to represent currency, rights, or access.",
-        analogy: "Like arcade tokens—they have value in a specific environment and let you use certain machines or services.",
+        analogy: "Like arcade tokens. They have value in a specific environment and let you use certain machines or services.",
         lessonIds: ["blockchain-basics"],
         learnMore: ""
     },
@@ -262,7 +262,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     {
         term: "Transaction",
         definition: "An action initiated by an account on the blockchain, such as transferring ETH or calling a smart contract.",
-        analogy: "Like sending a message or payment—once sent, it can’t be undone and is recorded for everyone to see.",
+        analogy: "Like sending a message or payment. Once sent, it can’t be undone and is recorded for everyone to see.",
         lessonIds: ["explaining-technical-processes"],
         learnMore: ""
     },
