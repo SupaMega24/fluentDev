@@ -23,10 +23,10 @@ export const BlogPostList = ({ posts }: { posts: GetPostsResult["posts"] }) => {
             </div>
           </Link>
           <div className="grid grid-cols-1 gap-3 md:col-span-2 mt-4">
-            <h2 className="font-sans font-semibold tracking-tighter text-primary text-2xl md:text-3xl">
+            <h2 className="font-sans font-semibold tracking-tighter text-blue-500 text-2xl md:text-3xl">
               <Link href={`/post/${post.slug}`}>{post.title}</Link>
             </h2>
-            <div className="prose lg:prose-lg leading-relaxed md:text-lg line-clamp-4 text-muted-foreground">
+            <div className="prose lg:prose-lg leading-relaxed md:text-lg line-clamp-4 text-gray-500">
               {post.description}
             </div>
             <div className="flex items-center gap-2">
