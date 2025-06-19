@@ -1,0 +1,169 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Which of the following best describes a public blockchain?",
+            "options": [
+                "A network where only invited members can validate transactions",
+                "A blockchain open to anyone for participation and viewing",
+                "A private database run by a single company"
+            ],
+            "answer": 1,
+            "explanation": "Public blockchains are permissionless and fully open. Private databases and invitation-only networks refer to private or consortium chains."
+        },
+        {
+            "id": 2,
+            "question": "Why might a business choose a private blockchain instead of a public one?",
+            "options": [
+                "To allow anyone to participate in governance",
+                "To increase transparency with the public",
+                "To maintain control over access and data privacy"
+            ],
+            "answer": 2,
+            "explanation": "Private blockchains offer restricted access and centralized governance. Public participation and full transparency are features of public blockchains."
+        },
+        {
+            "id": 3,
+            "question": "What makes a consortium blockchain different from a private blockchain?",
+            "options": [
+                "It is completely open to the public",
+                "It shares control between multiple organizations",
+                "It uses Proof of Work to reach consensus"
+            ],
+            "answer": 1,
+            "explanation": "Consortium chains are jointly controlled by multiple trusted parties. Private blockchains are controlled by a single entity, while PoW is typically used in public blockchains."
+        },
+        {
+            "id": 4,
+            "question": "What problem does Sybil resistance solve in blockchain networks?",
+            "options": [
+                "To speed up block confirmation times",
+                "To prevent one user from creating many fake identities",
+                "To ensure all data remains private"
+            ],
+            "answer": 1,
+            "explanation": "Sybil resistance prevents one party from manipulating the network through fake identities. Privacy and speed relate to other blockchain features."
+        },
+        {
+            "id": 5,
+            "question": "Which term refers to blockchain-based financial services that operate without traditional banks?",
+            "options": [
+                "DAO",
+                "NFT",
+                "DeFi"
+            ],
+            "answer": 2,
+            "explanation": "Decentralized Finance (DeFi) replaces traditional financial services with blockchain protocols. DAOs are for governance, and NFTs represent digital assets."
+        },
+        {
+            "id": 6,
+            "question": "What is the function of PBFT in some blockchain systems?",
+            "options": [
+                "To create NFTs on Ethereum",
+                "To allow anyone to validate blocks without permission",
+                "To reach consensus even if some nodes are unreliable"
+            ],
+            "answer": 2,
+            "explanation": "PBFT is used in permissioned networks to reach agreement despite faulty or malicious nodes. NFT creation and public validation are unrelated."
+        },
+        {
+            "id": 7,
+            "question": "Which of the following is true about permissioned blockchains?",
+            "options": [
+                "They allow anonymous access and participation",
+                "They restrict access to selected participants",
+                "They require mining to reach consensus"
+            ],
+            "answer": 1,
+            "explanation": "Permissioned blockchains limit access to authorized users. Mining is typical of permissionless systems like Bitcoin."
+        },
+        {
+            "id": 8,
+            "question": "What is the main characteristic of a DAO?",
+            "options": [
+                "It is governed by a single company",
+                "It automates decision-making using community voting and smart contracts",
+                "It is a file-sharing system"
+            ],
+            "answer": 1,
+            "explanation": "DAOs are decentralized organizations that use smart contracts and voting mechanisms. Centralized governance and file-sharing are unrelated."
+        },
+        {
+            "id": 9,
+            "question": "Fill in the blank: A ________ blockchain allows anyone to join and participate without needing permission.",
+            "options": [
+                "private",
+                "public",
+                "consortium"
+            ],
+            "answer": 1,
+            "explanation": "Public blockchains are permissionless and open to all. Private and consortium blockchains require permission."
+        },
+        {
+            "id": 10,
+            "question": "Fill in the blank: ________ is a consensus mechanism designed for permissioned networks to handle faulty or malicious nodes.",
+            "options": [
+                "PoW",
+                "PBFT",
+                "PoS"
+            ],
+            "answer": 1,
+            "explanation": "Practical Byzantine Fault Tolerance (PBFT) is used in permissioned blockchain systems to reach consensus despite malicious nodes."
+        },
+        {
+            "id": 11,
+            "question": "Fill in the blank: ________ means that control is distributed among many participants rather than a single authority.",
+            "options": [
+                "Decentralization",
+                "Governance",
+                "Sybil resistance"
+            ],
+            "answer": 0,
+            "explanation": "Decentralization describes distributed control; governance is about rules and decision-making; Sybil resistance is a security feature."
+        },
+        {
+            "id": 12,
+            "question": "Fill in the blank: In a ________ blockchain, multiple organizations share control and governance.",
+            "options": [
+                "public",
+                "private",
+                "consortium"
+            ],
+            "answer": 2,
+            "explanation": "Consortium blockchains have shared control among trusted organizations; private blockchains are controlled by one entity."
+        },
+        {
+            "id": 13,
+            "question": "Fill in the blank: ________ represent unique digital assets and are not interchangeable.",
+            "options": [
+                "NFTs",
+                "DAOs",
+                "DeFi"
+            ],
+            "answer": 0,
+            "explanation": "NFTs (Non-Fungible Tokens) are unique digital assets. DAOs and DeFi relate to governance and financial services respectively."
+        },
+        {
+            "id": 14,
+            "question": "Fill in the blank: ________ refers to blockchain-based financial applications without traditional banks.",
+            "options": [
+                "DAO",
+                "DeFi",
+                "NFT"
+            ],
+            "answer": 1,
+            "explanation": "DeFi stands for Decentralized Finance, replacing traditional finance with blockchain protocols."
+        },
+        {
+            "id": 15,
+            "question": "Fill in the blank: ________ is a system that restricts access and operations to authorized participants.",
+            "options": [
+                "Permissioned",
+                "Permissionless",
+                "Sybil resistance"
+            ],
+            "answer": 0,
+            "explanation": "Permissioned systems require explicit approval to participate, unlike permissionless ones."
+        }
+    ]
+}

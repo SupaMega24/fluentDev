@@ -235,21 +235,21 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Decentralization",
         definition: "A system design where control and decision-making are distributed across many participants rather than held by a central authority.",
         analogy: "Like a community garden where everyone contributes and no single person is in charge of all decisions.",
-        lessonIds: ["blockchain-basics"],
+        lessonIds: ["blockchain-basics", "types-of-blockchains"],
         learnMore: ""
     },
     {
         term: "Proof of Work",
         definition: "A consensus mechanism where participants compete to solve complex puzzles to validate transactions.",
         analogy: "Like a race where miners solve math problems, and the first to finish gets to write the next ledger page.",
-        lessonIds: ["blockchain-basics"],
+        lessonIds: ["blockchain-basics", "types-of-blockchains"],
         learnMore: ""
     },
     {
         term: "Proof of Stake",
         definition: "A consensus mechanism where validators stake cryptocurrency as collateral and are pseudo-randomly selected to create blocks.",
         analogy: "Like a weighted lottery where you must buy tickets (stake) to enter, then winners are randomly chosen to validate.",
-        lessonIds: ["blockchain-basics"],
+        lessonIds: ["blockchain-basics", "types-of-blockchains"],
         learnMore: ""
     },
     {
@@ -264,6 +264,90 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "An action initiated by an account on the blockchain, such as transferring ETH or calling a smart contract.",
         analogy: "Like sending a message or payment. Once sent, it can’t be undone and is recorded for everyone to see.",
         lessonIds: ["explaining-technical-processes"],
+        learnMore: ""
+    },
+    {
+        term: "Public blockchain",
+        definition: "A blockchain network that is open to anyone for participation and viewing. No permission is required to read, write, or validate data.",
+        analogy: "Think of a city square where anyone can show up, speak, and observe. Open and visible to all.",
+        lessonIds: ["types-of-blockchains"],
+        learnMore: ""
+    },
+    {
+        term: "Private blockchain",
+        definition: "A permissioned blockchain controlled by a single organization, with restricted access and centralized governance.",
+        analogy: "Access works like an employee ID badge system. Only pre-approved users can participate or see the records.",
+        lessonIds: ["types-of-blockchains"],
+        learnMore: ""
+    },
+    {
+        term: "Consortium blockchain",
+        definition: "A blockchain shared and governed by a group of organizations, allowing collaboration without full decentralization.",
+        analogy: "Imagine a project managed jointly by several companies, where decisions require input from all stakeholders.",
+        lessonIds: ["types-of-blockchains"],
+        learnMore: ""
+    },
+    {
+        term: "Permissionless",
+        definition: "A system that allows anyone to join and interact without needing approval or access rights.",
+        analogy: "Similar to a public Wi-Fi hotspot, anyone with the right tools can connect and participate.",
+        lessonIds: ["types-of-blockchains"],
+        learnMore: ""
+    },
+    {
+        term: "Permissioned",
+        definition: "A system that requires explicit access rights to read, write, or validate data.",
+        analogy: "Comparable to a locked building, only those with the right keys or clearance can enter or operate inside.",
+        lessonIds: ["types-of-blockchains"],
+        learnMore: ""
+    },
+    {
+        term: "Consensus",
+        definition: "The process by which blockchain nodes agree on the state of the ledger, ensuring everyone shares the same record of transactions.",
+        analogy: "It’s the digital equivalent of getting everyone in a room to agree on what just happened, then writing it down permanently.",
+        lessonIds: ["types-of-blockchains"],
+        learnMore: ""
+    },
+    {
+        term: "PBFT",
+        definition: "Practical Byzantine Fault Tolerance. A consensus algorithm used in permissioned networks to reach agreement even if some nodes act maliciously.",
+        analogy: "Functions like a jury decision where a majority can still reach a verdict, even if one or two members are disruptive.",
+        lessonIds: ["types-of-blockchains"],
+        learnMore: ""
+    },
+    {
+        term: "DAO",
+        definition: "A Decentralized Autonomous Organization. It is a community-led entity with no central authority, where decisions are made by members through token-based voting.",
+        analogy: "Think of it as a digital co-op run by code, where members vote on proposals to guide the organization’s direction.",
+        lessonIds: ["types-of-blockchains"],
+        learnMore: ""
+    },
+    {
+        term: "DeFi",
+        definition: "Short for Decentralized Finance. It refers to blockchain-based financial applications that operate without traditional banks or intermediaries.",
+        analogy: "It’s like rebuilding financial services (loans, exchanges, savings) using open-source software instead of relying on banks.",
+        lessonIds: ["types-of-blockchains"],
+        learnMore: ""
+    },
+    {
+        term: "Sybil resistance",
+        definition: "Techniques that prevent one participant from creating many fake identities to gain disproportionate influence over a blockchain network.",
+        analogy: "Similar to checking photo IDs at the door so one person can’t sneak in under multiple disguises.",
+        lessonIds: ["types-of-blockchains"],
+        learnMore: ""
+    },
+    {
+        term: "NFT",
+        definition: "Non-Fungible Token. A unique digital asset stored on a blockchain, often used to represent art, music, collectibles, or in-game items.",
+        analogy: "Think of an NFT as a digital certificate of authenticity—no two are exactly the same, even if they look similar.",
+        lessonIds: ["types-of-blockchains"],
+        learnMore: ""
+    },
+    {
+        term: "Governance",
+        definition: "The system of rules and decision-making processes that determines how a blockchain evolves over time.",
+        analogy: "Think of it as a rulebook that outlines who can make changes, how updates happen, and who has voting power.",
+        lessonIds: ["types-of-blockchains"],
         learnMore: ""
     },
 
