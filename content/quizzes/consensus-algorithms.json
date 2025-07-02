@@ -1,0 +1,198 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Which of the following is a Sybil resistance mechanism used in Bitcoin?",
+            "options": [
+                "Proof of Stake",
+                "Proof of History",
+                "Proof of Work"
+            ],
+            "answer": 2,
+            "explanation": "Bitcoin uses Proof of Work, which requires energy and computation to participate."
+        },
+        {
+            "id": 2,
+            "question": "True or False: In Ethereum, finalized blocks can be reverted without penalty.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 1,
+            "explanation": "Reverting finality in Ethereum requires slashing at least one-third of the total staked ETH."
+        },
+        {
+            "id": 3,
+            "question": "The __________ chain rule tells nodes to adopt the version of the blockchain with the most accumulated work.",
+            "options": [
+                "shortest",
+                "random",
+                "longest"
+            ],
+            "answer": 2,
+            "explanation": "The longest chain rule ensures consistency in Proof of Work networks like Bitcoin."
+        },
+        {
+            "id": 4,
+            "question": "What does the acronym GHOST stand for in Ethereum's consensus?",
+            "options": [
+                "General Hash Ordering State Tracker",
+                "Greedy Heaviest-Observed SubTree",
+                "Global History of Stake Transactions"
+            ],
+            "answer": 1,
+            "explanation": "GHOST stands for Greedy Heaviest Observed SubTree and helps select the heaviest chain by validator votes."
+        },
+        {
+            "id": 5,
+            "question": "In Proof of Stake, participants must __________ tokens to become validators.",
+            "options": [
+                "withdraw",
+                "stake",
+                "spend"
+            ],
+            "answer": 1,
+            "explanation": "Validators stake their tokens as collateral in PoS systems."
+        },
+        {
+            "id": 6,
+            "question": "True or False: Solana achieves finality deterministically after two epochs.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 1,
+            "explanation": "Solana’s finality is fast but not deterministic—it relies on validator supermajority and can theoretically be reversed."
+        },
+        {
+            "id": 7,
+            "question": "Which of the following is a potential drawback of Proof of Authority?",
+            "options": [
+                "Low energy usage",
+                "Centralization",
+                "High validator costs"
+            ],
+            "answer": 1,
+            "explanation": "Proof of Authority trades decentralization for efficiency, making it more centralized."
+        },
+        {
+            "id": 8,
+            "question": "What term refers to a mechanism that prevents attackers from creating many fake identities to influence consensus?",
+            "options": [
+                "Hashing",
+                "Chain selection",
+                "Sybil resistance"
+            ],
+            "answer": 2,
+            "explanation": "Sybil resistance limits participation to those who can pay a real-world cost, such as energy or staked tokens."
+        },
+        {
+            "id": 9,
+            "question": "Solana uses __________ as a cryptographic clock to sequence transactions.",
+            "options": [
+                "Proof of Stake",
+                "Proof of Authority",
+                "Proof of History"
+            ],
+            "answer": 2,
+            "explanation": "Proof of History generates a verifiable sequence of hashes to order events before consensus."
+        },
+        {
+            "id": 10,
+            "question": "True or False: Ethereum still uses Proof of Work for consensus.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 1,
+            "explanation": "Ethereum transitioned to Proof of Stake with the launch of Ethereum 2.0."
+        },
+        {
+            "id": 11,
+            "question": "Finality in Bitcoin is considered:",
+            "options": [
+                "Immediate",
+                "Probabilistic",
+                "Deterministic"
+            ],
+            "answer": 1,
+            "explanation": "Bitcoin uses probabilistic finality—transactions become harder to reverse as more blocks are added."
+        },
+        {
+            "id": 12,
+            "question": "A __________ is a fixed-length digital fingerprint used to verify data integrity.",
+            "options": [
+                "block",
+                "node",
+                "hash"
+            ],
+            "answer": 2,
+            "explanation": "Hashes ensure data has not been altered."
+        },
+        {
+            "id": 13,
+            "question": "Which consensus model is most commonly viewed as centralized due to permissioned, identity-verified validator selection?",
+            "options": [
+                "Proof of Work",
+                "Proof of Authority",
+                "Proof of History"
+            ],
+            "answer": 1,
+            "explanation": "PoA is often used in controlled environments where identity and trust are pre-established."
+        },
+        {
+            "id": 14,
+            "question": "In Solana, a new tick is generated using which cryptographic function?",
+            "options": [
+                "SHA-256",
+                "ECDSA",
+                "Keccak-256"
+            ],
+            "answer": 0,
+            "explanation": "PoH uses a continuous stream of SHA-256 hashes to build a timestamped sequence."
+        },
+        {
+            "id": 15,
+            "question": "True or False: In Ethereum, slashing only occurs if validators miss a block proposal.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 1,
+            "explanation": "Slashing occurs for malicious actions such as double signing or voting inconsistently, not merely for inactivity."
+        },
+        {
+            "id": 16,
+            "question": "In consensus terminology, what does 'deterministic finality' mean?",
+            "options": [
+                "Finality is reached only after an hour",
+                "Finality depends on block length",
+                "Finality is guaranteed after a rule-based threshold is met"
+            ],
+            "answer": 2,
+            "explanation": "Deterministic finality means the system defines clear rules (e.g. validator supermajority) after which blocks are final."
+        },
+        {
+            "id": 17,
+            "question": "Validators who act dishonestly in PoS risk a penalty called __________.",
+            "options": [
+                "staking",
+                "rewarding",
+                "slashing"
+            ],
+            "answer": 2,
+            "explanation": "Slashing removes part of a validator’s stake to discourage malicious behavior."
+        },
+        {
+            "id": 18,
+            "question": "Which term refers to the official and accepted version of the blockchain?",
+            "options": [
+                "duplicate",
+                "random",
+                "canonical"
+            ],
+            "answer": 2,
+            "explanation": "The canonical chain is the one agreed upon by the majority of nodes as valid."
+        }
+    ]
+}

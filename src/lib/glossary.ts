@@ -408,7 +408,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     },
     {
         term: "GHOST",
-        definition: "A chain selection rule in Ethereum that favors the branch with the most validator votes (weight), not just length.",
+        definition: "Greediest Heaviest Observed SubTree. Ethereum chain selection rule favoring the branch with the most validator votes (weight).",
         analogy: "Rather than choosing the longest road, the protocol chooses the one with the most people driving on it.",
         lessonIds: ["consensus-algorithms"],
         learnMore: ""
