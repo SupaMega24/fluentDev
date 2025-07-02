@@ -21,9 +21,9 @@ export const courses = [
                 topic: "Types of Blockchains"
             },
             {
-                id: "consensus-mechanisms",
-                title: "Consensus Mechanisms: How Blockchains Reach Agreement",
-                topic: "Consensus Mechanisms"
+                id: "consensus-algorithms",
+                title: "Consensus Algorithms: How Blockchains Reach Agreement",
+                topic: "Consensus Algorithms"
             },
             {
                 id: "smart-contracts",
