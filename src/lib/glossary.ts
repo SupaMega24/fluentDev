@@ -11,7 +11,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Gas",
         definition: "A unit that measures the amount of computational effort required to execute operations.",
         analogy: "Gas is like the fuel your car needs to run. Without it, the blockchain can't process your transactions.",
-        lessonIds: ["explaining-technical-processes"],
+        lessonIds: ["explaining-technical-processes", "smart-contracts"],
         learnMore: ""
     },
     {
@@ -81,7 +81,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Blockchain",
         definition: "A type of distributed ledger where data is stored in blocks that are linked together and secured using cryptography.",
         analogy: "Think of it as a digital chain of sealed boxes, each containing a record of transactions, permanently linked to form a timeline.",
-        lessonIds: ["blockchain-basics"],
+        lessonIds: ["blockchain-basics", "smart-contracts"],
         learnMore: ""
     },
     {
@@ -326,7 +326,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "DeFi",
         definition: "Short for Decentralized Finance. It refers to blockchain-based financial applications that operate without traditional banks or intermediaries.",
         analogy: "It’s like rebuilding financial services (loans, exchanges, savings) using open-source software instead of relying on banks.",
-        lessonIds: ["types-of-blockchains"],
+        lessonIds: ["types-of-blockchains", "smart-contracts"],
         learnMore: ""
     },
     {
@@ -340,7 +340,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "NFT",
         definition: "Non-Fungible Token. A unique digital asset stored on a blockchain, often used to represent art, music, collectibles, or in-game items.",
         analogy: "Think of an NFT as a digital certificate of authenticity—no two are exactly the same, even if they look similar.",
-        lessonIds: ["types-of-blockchains"],
+        lessonIds: ["types-of-blockchains", "smart-contracts"],
         learnMore: ""
     },
     {
@@ -427,6 +427,84 @@ export const glossaryTerms: GlossaryTerm[] = [
         lessonIds: ["consensus-algorithms"],
         learnMore: ""
     },
+    {
+        term: "Atomicity",
+        definition: "The guarantee that a smart contract’s execution either completes fully or not at all, with no partial changes.",
+        analogy: "It’s like a light switch. You can’t leave it half-on. Either the whole operation succeeds or the system reverts everything.",
+        lessonIds: ["smart-contracts"],
+        learnMore: ""
+    },
+    {
+        term: "Trustless",
+        definition: "A system where participants don’t need to trust each other or a third party, because the rules are enforced by code.",
+        analogy: "It’s like using a vending machine. You get what you paid for automatically, without needing to trust the owner.",
+        lessonIds: ["smart-contracts"],
+        learnMore: ""
+    },
+    {
+        term: "Composability",
+        definition: "The ability of smart contracts to interact with and build upon each other like modular components.",
+        analogy: "Smart contracts behave like Lego bricks. You can snap them together to build more complex systems.",
+        lessonIds: ["smart-contracts"],
+        learnMore: ""
+    },
+    {
+        term: "Gas Fee",
+        definition: "The payment required to perform operations on a blockchain, used to compensate validators and limit computation.",
+        analogy: "It’s like paying for postage. You must cover the cost to send data through the blockchain.",
+        lessonIds: ["smart-contracts"],
+        learnMore: ""
+    },
+    {
+        term: "Immutable",
+        definition: "A property of smart contracts that prevents them from being altered after deployment.",
+        analogy: "Publishing a smart contract is like etching something in stone. You can’t edit it once it’s live.",
+        lessonIds: ["smart-contracts"],
+        learnMore: ""
+    },
+    {
+        term: "Proxy Contract",
+        definition: "A design pattern where a smart contract delegates calls to another contract, allowing for upgradability.",
+        analogy: "Think of it as a receptionist who forwards all calls to a manager behind the scenes. You interact with one, but the real work happens elsewhere.",
+        lessonIds: ["smart-contracts"],
+        learnMore: ""
+    },
+    {
+        term: "DEX",
+        definition: "Short for Decentralized Exchange, a platform where users can swap tokens directly via smart contracts without intermediaries.",
+        analogy: "A DEX is like a self-service currency exchange kiosk. You trade assets without needing a bank or broker.",
+        lessonIds: ["smart-contracts"],
+        learnMore: ""
+    },
+    {
+        term: "Solidity",
+        definition: "The most widely used programming language for writing smart contracts on Ethereum and EVM-compatible chains.",
+        analogy: "Solidity is to Ethereum what JavaScript is to the web. It's the language that powers most of the apps.",
+        lessonIds: ["smart-contracts"],
+        learnMore: ""
+    },
+    {
+        term: "Function",
+        definition: "A block of code in a smart contract that performs a specific task when called.",
+        analogy: "Functions are like buttons in an app. Press one, and something specific happens behind the scenes.",
+        lessonIds: ["smart-contracts"],
+        learnMore: ""
+    },
+    {
+        term: "dApp",
+        definition: "Short for decentralized application, a dApp is a program that runs on a blockchain using smart contracts instead of centralized servers.",
+        analogy: "A dApp is like a web app, but instead of using a company’s backend, it runs entirely on public infrastructure and is controlled by users, not corporations.",
+        lessonIds: ["smart-contracts"],
+        learnMore: ""
+    },
+    {
+        term: "Oracle",
+        definition: "A service that provides external data to a smart contract, allowing it to interact with the outside world.",
+        analogy: "Oracles act like a messenger. They deliver real-world information, like prices or weather, to blockchain contracts that can’t see beyond their own network.",
+        lessonIds: ["smart-contracts"],
+        learnMore: ""
+    }
+
 
 ].sort((a, b) => a.term.localeCompare(b.term));
 

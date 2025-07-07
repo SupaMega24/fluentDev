@@ -1,0 +1,218 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "What does 'trustless' mean in the context of smart contracts?",
+            "options": [
+                "You must trust a third party to execute the contract",
+                "The blockchain automatically enforces the rules without needing trust",
+                "Contracts are only executed after approval from a judge"
+            ],
+            "answer": 1,
+            "explanation": "Trustless execution means the blockchain enforces the contract without needing to trust the other party or a middleman."
+        },
+        {
+            "id": 2,
+            "question": "A smart contract is a type of _______ that runs on a blockchain.",
+            "options": [
+                "computer program",
+                "legal document",
+                "physical contract"
+            ],
+            "answer": 0,
+            "explanation": "A smart contract is a type of computer program that runs on a blockchain."
+        },
+        {
+            "id": 3,
+            "question": "Smart contracts became popular with which blockchain platform?",
+            "options": [
+                "Bitcoin",
+                "Ethereum",
+                "Solana"
+            ],
+            "answer": 1,
+            "explanation": "Smart contracts became popular with Ethereum, a blockchain launched in 2015."
+        },
+        {
+            "id": 4,
+            "question": "Once added to the blockchain, most smart contracts cannot be changed or deleted.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 0,
+            "explanation": "This is called immutability. Most smart contracts cannot be changed or deleted once deployed."
+        },
+        {
+            "id": 5,
+            "question": "Which property ensures that actions in a smart contract either happen completely or not at all?",
+            "options": [
+                "Transparency",
+                "Composability",
+                "Atomicity"
+            ],
+            "answer": 2,
+            "explanation": "Atomicity means actions in a smart contract either happen completely or not at all."
+        },
+        {
+            "id": 6,
+            "question": "Every action a smart contract takes costs a small fee called a _______ fee.",
+            "options": [
+                "gas",
+                "processing",
+                "transaction"
+            ],
+            "answer": 0,
+            "explanation": "Every action a smart contract takes costs a small fee called a gas fee."
+        },
+        {
+            "id": 7,
+            "question": "DeFi stands for Decentralized Finance.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 0,
+            "explanation": "DeFi stands for Decentralized Finance, which includes apps that let people lend, borrow, or swap tokens without banks."
+        },
+        {
+            "id": 8,
+            "question": "Which function visibility allows anyone to call the function?",
+            "options": [
+                "private",
+                "public",
+                "internal"
+            ],
+            "answer": 1,
+            "explanation": "Public functions can be called by anyone."
+        },
+        {
+            "id": 9,
+            "question": "_______ functions read data without changing it.",
+            "options": [
+                "View",
+                "Pure",
+                "Private"
+            ],
+            "answer": 0,
+            "explanation": "View functions read data without changing it."
+        },
+        {
+            "id": 10,
+            "question": "Smart contracts can run by themselves on a schedule without any external trigger.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 1,
+            "explanation": "Smart contracts cannot run by themselves or on a schedule. They run when someone sends a transaction to call one of their functions."
+        },
+        {
+            "id": 11,
+            "question": "Which programming language is the main language for Ethereum smart contracts?",
+            "options": [
+                "Rust",
+                "Solidity",
+                "Python"
+            ],
+            "answer": 1,
+            "explanation": "Solidity is the main language for Ethereum and similar blockchains."
+        },
+        {
+            "id": 12,
+            "question": "A _______ attack tricks a contract into calling the attacker back before it finishes.",
+            "options": [
+                "reentrancy",
+                "overflow",
+                "front-running"
+            ],
+            "answer": 0,
+            "explanation": "Reentrancy attacks trick a contract into calling them back before it finishes, allowing attackers to repeat actions and steal tokens."
+        },
+        {
+            "id": 13,
+            "question": "Smart contracts can directly access real-world information like prices or weather data.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 1,
+            "explanation": "Smart contracts can't see real-world information without special services called oracles."
+        },
+        {
+            "id": 14,
+            "question": "Which type of function does not read or change any data stored in the contract?",
+            "options": [
+                "View functions",
+                "Pure functions",
+                "Public functions"
+            ],
+            "answer": 1,
+            "explanation": "Pure functions do not read or change any data stored in the contract."
+        },
+        {
+            "id": 15,
+            "question": "_______ contracts are a special type that can be upgraded if designed properly.",
+            "options": [
+                "Proxy",
+                "Simple",
+                "Basic"
+            ],
+            "answer": 0,
+            "explanation": "Proxy contracts are designed in a special way that allows them to be upgraded."
+        },
+        {
+            "id": 16,
+            "question": "Constructor functions run every time a smart contract function is called.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 1,
+            "explanation": "Constructor functions run only once when the contract is added to the blockchain."
+        },
+        {
+            "id": 17,
+            "question": "Which blockchain uses the Move programming language?",
+            "options": [
+                "Ethereum",
+                "Solana",
+                "Aptos"
+            ],
+            "answer": 2,
+            "explanation": "Move is used on Aptos and Sui blockchains, designed for handling digital assets safely."
+        },
+        {
+            "id": 18,
+            "question": "_______ are unique digital items like art or collectibles handled by smart contracts.",
+            "options": [
+                "NFTs",
+                "DAOs",
+                "DeFi"
+            ],
+            "answer": 0,
+            "explanation": "NFTs (Non-Fungible Tokens) are unique digital items like art or collectibles handled by smart contracts."
+        },
+        {
+            "id": 19,
+            "question": "Read operations on smart contracts always cost gas fees.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 1,
+            "explanation": "Read operations are free if run locally and do not change the contract."
+        },
+        {
+            "id": 20,
+            "question": "What does DAO stand for in the context of smart contracts?",
+            "options": [
+                "Decentralized Autonomous Organization",
+                "Digital Asset Operation",
+                "Distributed Application Object"
+            ],
+            "answer": 0,
+            "explanation": "DAO stands for Decentralized Autonomous Organization, where members vote on decisions using tokens."
+        }
+    ]
+}
