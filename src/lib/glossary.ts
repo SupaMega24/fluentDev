@@ -514,3 +514,7 @@ export function getTermsByLesson(lessonId: string): GlossaryTerm[] {
         term.lessonIds?.includes(lessonId)
     );
 }
+
+
+
+
