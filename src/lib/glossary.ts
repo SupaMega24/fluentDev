@@ -6,6 +6,7 @@ export type GlossaryTerm = {
     lessonIds?: string[];
 };
 
+
 export const glossaryTerms: GlossaryTerm[] = [
     {
         term: "Gas",
@@ -88,7 +89,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Cryptography",
         definition: "The practice of using mathematical techniques to secure data and communications from unauthorized access.",
         analogy: "Seals information with a secret code, only those with the right key can read or verify it.",
-        lessonIds: ["blockchain-basics", "explaining-technical-processes"],
+        lessonIds: ["blockchain-basics", "explaining-technical-processes", "cryptocurrency"],
         learnMore: ""
     },
     {
@@ -193,7 +194,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Public Key",
         definition: "A cryptographic key that allows others to send encrypted information or verify a digital signature.",
         analogy: "Think of it as your public address. Anyone can send you mail, but only you can open it with your private key.",
-        lessonIds: ["blockchain-basics"],
+        lessonIds: ["blockchain-basics", "cryptocurrency"],
         learnMore: ""
     },
     {
@@ -214,7 +215,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Private Key",
         definition: "A secret cryptographic key that proves ownership and allows control of blockchain assets.",
         analogy: "This is your master password. Whoever holds it controls the funds or identity tied to that key.",
-        lessonIds: ["blockchain-basics", "explaining-technical-processes"],
+        lessonIds: ["blockchain-basics", "explaining-technical-processes", "cryptocurrency"],
         learnMore: ""
     },
     {
@@ -339,8 +340,8 @@ export const glossaryTerms: GlossaryTerm[] = [
     {
         term: "NFT",
         definition: "Non-Fungible Token. A unique digital asset stored on a blockchain, often used to represent art, music, collectibles, or in-game items.",
-        analogy: "Think of an NFT as a digital certificate of authenticity—no two are exactly the same, even if they look similar.",
-        lessonIds: ["types-of-blockchains", "smart-contracts"],
+        analogy: "Think of an NFT as a digital certificate of authenticity/ No two are exactly the same, even if they look similar.",
+        lessonIds: ["types-of-blockchains", "smart-contracts", "cryptocurrency"],
         learnMore: ""
     },
     {
@@ -502,6 +503,41 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "A service that provides external data to a smart contract, allowing it to interact with the outside world.",
         analogy: "Oracles act like a messenger. They deliver real-world information, like prices or weather, to blockchain contracts that can’t see beyond their own network.",
         lessonIds: ["smart-contracts"],
+        learnMore: ""
+    },
+    {
+        term: "cryptocurrency",
+        definition: "A digital form of money that uses cryptography and blockchain technology instead of central banks to manage transactions and supply.",
+        analogy: "Think of it as programmable money that travels across the internet without needing a bank.",
+        lessonIds: ["cryptocurrency"],
+        learnMore: ""
+    },
+    {
+        term: "mint",
+        definition: "The process of creating new units of cryptocurrency or tokens and adding them to circulation, usually through a smart contract.",
+        analogy: "Similar to issuing new coins, but controlled by code instead of a central mint.",
+        lessonIds: ["cryptocurrency"],
+        learnMore: ""
+    },
+    {
+        term: "stablecoin",
+        definition: "A type of cryptocurrency designed to keep a stable value, often pegged to a fiat currency like the US dollar.",
+        analogy: "Acts as a digital version of a dollar, useful for trading or saving without price swings.",
+        lessonIds: ["cryptocurrency"],
+        learnMore: ""
+    },
+    {
+        term: "USDC",
+        definition: "A popular stablecoin backed 1:1 by U.S. dollars held in reserve, designed to maintain a consistent value of $1.",
+        analogy: "Moves like cryptocurrency, but stays steady like cash in your wallet.",
+        lessonIds: ["cryptocurrency"],
+        learnMore: ""
+    },
+    {
+        term: "DAI",
+        definition: "A decentralized stablecoin backed by crypto assets like ETH, designed to stay close to $1 using smart contracts and overcollateralization.",
+        analogy: "Operates like an algorithmic vault that keeps its value stable using crypto as collateral.",
+        lessonIds: ["cryptocurrency"],
         learnMore: ""
     }
 

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { glossaryTerms, GlossaryTerm } from '@/lib/glossary';
+import ScrollToTop from '@/components/ScrolToTop';
 
 export default function GlossaryPage() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -84,6 +85,7 @@ export default function GlossaryPage() {
                     </div>
                 </div>
             )}
+            <ScrollToTop />
         </main>
     );
 }

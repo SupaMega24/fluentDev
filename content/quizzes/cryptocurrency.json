@@ -1,0 +1,218 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Cryptocurrency is a type of _______ money that exists only in electronic form.",
+            "options": [
+                "digital",
+                "physical",
+                "paper"
+            ],
+            "answer": 0,
+            "explanation": "Cryptocurrency is a type of digital money that exists only in electronic form."
+        },
+        {
+            "id": 2,
+            "question": "What does it mean to 'mint' a cryptocurrency token or NFT?",
+            "options": [
+                "To delete it from the blockchain",
+                "To create it and record it on the blockchain",
+                "To transfer it between wallets"
+            ],
+            "answer": 1,
+            "explanation": "To mint a token or NFT means to create it and record it on the blockchain, making it unique and verifiable."
+        },
+        {
+            "id": 3,
+            "question": "The first and most famous cryptocurrency is Bitcoin, created by Satoshi Nakamoto.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 0,
+            "explanation": "Bitcoin was created in 2008 by an anonymous person or group called Satoshi Nakamoto and is the first and most famous cryptocurrency."
+        },
+        {
+            "id": 4,
+            "question": "What does 'decentralization' mean in cryptocurrency?",
+            "options": [
+                "One government controls all cryptocurrencies",
+                "No single authority controls it",
+                "Banks manage all cryptocurrency transactions"
+            ],
+            "answer": 1,
+            "explanation": "Decentralization means no single government, bank, or company controls most cryptocurrencies - they run on networks of computers around the world."
+        },
+        {
+            "id": 5,
+            "question": "Once a cryptocurrency transaction is confirmed on the blockchain, it's very difficult to reverse. This is called _______.",
+            "options": [
+                "immutability",
+                "transparency",
+                "volatility"
+            ],
+            "answer": 0,
+            "explanation": "Immutability means once a cryptocurrency transaction is confirmed on the blockchain, it's very difficult to reverse or change."
+        },
+        {
+            "id": 6,
+            "question": "What role does cryptography play in cryptocurrency?",
+            "options": [
+                "It hides user names on social media",
+                "It ensures secure transactions and ownership through encryption and digital signatures",
+                "It determines the value of the coin"
+            ],
+            "answer": 1,
+            "explanation": "Cryptography secures cryptocurrency transactions and wallets using encryption and digital signatures, ensuring only rightful owners can access their funds."
+        },
+        {
+            "id": 7,
+            "question": "Which type of cryptocurrency is designed to maintain a stable value?",
+            "options": [
+                "Privacy coins",
+                "Stablecoins",
+                "Meme coins"
+            ],
+            "answer": 1,
+            "explanation": "Stablecoins are designed to maintain a stable value, usually backed by traditional money or assets, with examples like USDC and DAI worth about $1."
+        },
+        {
+            "id": 8,
+            "question": "_______ coins focus on keeping transactions private and anonymous.",
+            "options": [
+                "Privacy",
+                "Payment",
+                "Governance"
+            ],
+            "answer": 0,
+            "explanation": "Privacy coins like Monero and Zcash focus on keeping transactions private and anonymous using special technology."
+        },
+        {
+            "id": 9,
+            "question": "Governance tokens give holders voting rights in decentralized organizations.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 0,
+            "explanation": "Governance tokens give holders voting rights in decentralized organizations, allowing them to vote on project development and fund spending."
+        },
+        {
+            "id": 10,
+            "question": "Your public key is like your _______ address where people can send you cryptocurrency.",
+            "options": [
+                "email",
+                "password",
+                "bank account"
+            ],
+            "answer": 0,
+            "explanation": "Your public key is like your email address - it's your address where people can send you cryptocurrency."
+        },
+        {
+            "id": 11,
+            "question": "What is the process called where special computers solve mathematical problems to verify Bitcoin transactions?",
+            "options": [
+                "Staking",
+                "Mining",
+                "Farming"
+            ],
+            "answer": 1,
+            "explanation": "In Bitcoin, mining is the process where special computers solve complex mathematical problems to verify transactions and are rewarded with new Bitcoin."
+        },
+        {
+            "id": 12,
+            "question": "Cryptocurrency wallets can only be software applications on phones or computers.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 1,
+            "explanation": "Cryptocurrency wallets can be apps on phones, programs on computers, or even physical devices - they help manage keys and interact with blockchains."
+        },
+        {
+            "id": 13,
+            "question": "What is the main purpose of a utility token like Ether (ETH) on a smart contract platform?",
+            "options": [
+                "To store digital art",
+                "To pay for gas fees when running smart contracts",
+                "To provide voting rights in DAOs"
+            ],
+            "answer": 1,
+            "explanation": "Utility tokens like Ether (ETH) can be used to pay for gas fees on smart contract platforms such as Ethereum."
+        },
+        {
+            "id": 14,
+            "question": "_______ use cryptocurrency technology to prove ownership of digital art and music.",
+            "options": [
+                "NFTs",
+                "DAOs",
+                "CBDCs"
+            ],
+            "answer": 0,
+            "explanation": "NFTs (Non-Fungible Tokens) use cryptocurrency technology to prove ownership of digital art, music, and other creative works."
+        },
+        {
+            "id": 15,
+            "question": "Most cryptocurrency transactions are used for illegal activities.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 1,
+            "explanation": "This is a misconception - studies show that the vast majority of cryptocurrency transactions are legal, and most major cryptocurrencies are easier to track than cash."
+        },
+        {
+            "id": 16,
+            "question": "You must buy a whole Bitcoin to own any Bitcoin.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 1,
+            "explanation": "This is a misconception - most cryptocurrencies can be divided into tiny fractions, so you can buy $10 worth of Bitcoin just like $10 worth of gold."
+        },
+        {
+            "id": 17,
+            "question": "Which risk involves cryptocurrency prices changing dramatically in short periods?",
+            "options": [
+                "Volatility",
+                "Lost keys",
+                "Regulatory uncertainty"
+            ],
+            "answer": 0,
+            "explanation": "Volatility is the risk where cryptocurrency prices can change dramatically in short periods, making them unpredictable investments."
+        },
+        {
+            "id": 18,
+            "question": "What happens if you lose your private keys?",
+            "options": [
+                "You can recover them from your bank",
+                "You lose access to your cryptocurrency forever",
+                "The government can restore them"
+            ],
+            "answer": 1,
+            "explanation": "If you lose your private keys, you lose access to your cryptocurrency forever - this is why key security is so important."
+        },
+        {
+            "id": 19,
+            "question": "_______ are government-created digital currencies that combine cryptocurrency convenience with government backing.",
+            "options": [
+                "CBDCs",
+                "Stablecoins",
+                "Privacy coins"
+            ],
+            "answer": 0,
+            "explanation": "CBDCs (Central Bank Digital Currencies) are digital currencies that governments are exploring to combine cryptocurrency convenience with government backing."
+        },
+        {
+            "id": 20,
+            "question": "Cryptocurrency will completely replace all traditional money in the future.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": 1,
+            "explanation": "This is a misconception - most experts believe cryptocurrencies will work alongside traditional money rather than replace it entirely, as each has its own strengths."
+        }
+    ]
+}
