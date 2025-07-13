@@ -1,0 +1,244 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Solana is __________ than Ethereum in terms of transaction speed.",
+            "options": [
+                "fast",
+                "faster",
+                "fastest",
+                "more fast"
+            ],
+            "answer": 1,
+            "explanation": "Comparative form is 'faster than' for the one-syllable adjective 'fast'."
+        },
+        {
+            "id": 2,
+            "question": "Polygon has __________ gas fees than Ethereum.",
+            "options": [
+                "cheap",
+                "cheaper",
+                "the cheapest",
+                "most cheap"
+            ],
+            "answer": 1,
+            "explanation": "'Cheaper than' is the correct comparative form of 'cheap'."
+        },
+        {
+            "id": 3,
+            "question": "Bitcoin is __________ cryptocurrency in terms of market recognition.",
+            "options": [
+                "more famous",
+                "the more famous",
+                "the most famous",
+                "most famous"
+            ],
+            "answer": 2,
+            "explanation": "'The most famous' is the superlative form for a two-syllable adjective."
+        },
+        {
+            "id": 4,
+            "question": "Ethereum is __________ expensive than Avalanche for contract deployment.",
+            "options": [
+                "more",
+                "much",
+                "more expensive",
+                "most expensive"
+            ],
+            "answer": 2,
+            "explanation": "'More expensive than' is correct for a multi-syllable adjective."
+        },
+        {
+            "id": 5,
+            "question": "__________ Ethereum, Bitcoin does not support smart contracts.",
+            "options": [
+                "Unlike",
+                "Although",
+                "Like",
+                "Because"
+            ],
+            "answer": 0,
+            "explanation": "'Unlike' is the correct contrast connector for showing difference."
+        },
+        {
+            "id": 6,
+            "question": "Both Solana __________ Sui offer high-speed transactions.",
+            "options": [
+                "and",
+                "or",
+                "but",
+                "also"
+            ],
+            "answer": 0,
+            "explanation": "'Both ... and ...' is the correct form to show similarity between two subjects."
+        },
+        {
+            "id": 7,
+            "question": "Polygon is more efficient, __________ it lacks some Layer 1 capabilities.",
+            "options": [
+                "however",
+                "like",
+                "because",
+                "for example"
+            ],
+            "answer": 0,
+            "explanation": "'However' is a contrast connector used between two clauses."
+        },
+        {
+            "id": 8,
+            "question": "Avalanche is __________ than Ethereum for handling many transactions quickly.",
+            "options": [
+                "most scalable",
+                "the most scalable",
+                "scalable",
+                "more scalable"
+            ],
+            "answer": 3,
+            "explanation": "'More scalable than' is the correct comparative form."
+        },
+        {
+            "id": 9,
+            "question": "__________ to Solana, Aptos has a lower market cap.",
+            "options": [
+                "Similarly",
+                "In contrast",
+                "In the same way",
+                "Compared"
+            ],
+            "answer": 3,
+            "explanation": "'Compared to' is the correct structure to introduce a comparison."
+        },
+        {
+            "id": 10,
+            "question": "Ethereum has higher fees. __________, it has a more secure ecosystem.",
+            "options": [
+                "Also",
+                "While",
+                "On the other hand",
+                "Both"
+            ],
+            "answer": 2,
+            "explanation": "'On the other hand' is a useful contrast connector."
+        },
+        {
+            "id": 11,
+            "question": "Choose the best sentence using correct word order and comparative form:\nScrambled: Ethereum / more / than / expensive / is / Polygon",
+            "options": [
+                "Ethereum than Polygon is more expensive.",
+                "Ethereum is more expensive than Polygon.",
+                "More expensive than Polygon Ethereum is.",
+                "Polygon is expensive than Ethereum more."
+            ],
+            "answer": 1,
+            "explanation": "Correct word order for a comparative sentence is: Subject + is + more + adjective + than + object. Ethereum's gas fees are typically higher than Polygon's."
+        },
+        {
+            "id": 12,
+            "question": "Choose the best sentence using correct word order and a superlative form:\nScrambled: the / Solana / fastest / blockchain / is",
+            "options": [
+                "Solana is the fastest blockchain.",
+                "Solana the fastest blockchain is.",
+                "Fastest blockchain is the Solana.",
+                "The Solana is blockchain fastest."
+            ],
+            "answer": 0,
+            "explanation": "Superlative sentences typically follow: Subject + is + the + adjective + noun. Solana is often considered one of the fastest major blockchains in terms of TPS."
+        },
+        {
+            "id": 13,
+            "question": "Choose the best sentence using correct connectors:\nScrambled: supports / Like / smart contracts / Optimism / Ethereum",
+            "options": [
+                "Like Ethereum, Optimism supports smart contracts.",
+                "Optimism like supports Ethereum smart contracts.",
+                "Like smart contracts supports Ethereum Optimism.",
+                "Supports like Optimism Ethereum smart contracts."
+            ],
+            "answer": 0,
+            "explanation": "This sentence compares smart contract support correctly using 'Like'. Optimism is an L2 built on Ethereum and supports smart contracts."
+        },
+        {
+            "id": 14,
+            "question": "Choose the best sentence using correct contrast:\nScrambled: is / secure / However / Bitcoin / slow / it / and",
+            "options": [
+                "Bitcoin is slow and secure, however it.",
+                "However, Bitcoin is secure and it is slow.",
+                "Bitcoin is secure. However, it is slow.",
+                "Secure and slow Bitcoin is however."
+            ],
+            "answer": 2,
+            "explanation": "'However' should follow a period when used to contrast two full ideas. Bitcoin is widely regarded as secure but is slower than many newer chains."
+        },
+        {
+            "id": 15,
+            "question": "Choose the best sentence using both… and…:\nScrambled: fast / Arbitrum / and / are / Solana / Both",
+            "options": [
+                "Both Solana and Arbitrum are fast.",
+                "Arbitrum and Solana fast both are.",
+                "Solana fast and Arbitrum both are.",
+                "Both fast Arbitrum and Solana are."
+            ],
+            "answer": 0,
+            "explanation": "This is the correct form using 'Both...and...'. Solana and Arbitrum both offer fast transaction finality and throughput."
+        },
+        {
+            "id": 16,
+            "question": "Choose the best sentence using comparative grammar:",
+            "options": [
+                "Ethereum is the most cheaper than Solana.",
+                "Ethereum is cheaper than Solana.",
+                "Ethereum is cheaper that Solana.",
+                "Ethereum more cheaper than Solana."
+            ],
+            "answer": 1,
+            "explanation": "'Cheaper than' is the correct comparative form. However, this statement is inaccurate: Solana is actually cheaper than Ethereum for transaction costs."
+        },
+        {
+            "id": 17,
+            "question": "Choose the best sentence using a connector for similarity:",
+            "options": [
+                "Ethereum also supports NFTs. Polygon does similar.",
+                "Polygon also supports NFTs. Ethereum does similar.",
+                "Ethereum supports NFTs. Polygon does.",
+                "Ethereum supports NFTs. Polygon also supports them."
+            ],
+            "answer": 3,
+            "explanation": "Correct structure for similarity with 'also' is: Subject + also + verb + object. Both Ethereum and Polygon support NFTs via smart contracts."
+        },
+        {
+            "id": 18,
+            "question": "Choose the best sentence using superlative grammar:",
+            "options": [
+                "Solana is more fastest blockchain.",
+                "Solana is the most fast blockchain.",
+                "Solana is fastest than others.",
+                "Solana is the fastest blockchain."
+            ],
+            "answer": 3,
+            "explanation": "'The fastest' is the correct superlative form of 'fast'. Solana is often benchmarked as one of the fastest L1 chains by TPS."
+        },
+        {
+            "id": 19,
+            "question": "Choose the best sentence showing contrast:",
+            "options": [
+                "Bitcoin supports contracts, on the other side Ethereum does not.",
+                "Unlike Bitcoin, Ethereum supports smart contracts.",
+                "Ethereum and Bitcoin not the same for contracts.",
+                "Bitcoin is good. Ethereum more better with contracts."
+            ],
+            "answer": 1,
+            "explanation": "'Unlike' is a proper connector for contrast. Ethereum has full smart contract support; Bitcoin does not support smart contracts natively."
+        },
+        {
+            "id": 20,
+            "question": "Choose the best sentence using comparative grammar:",
+            "options": [
+                "Polygon is efficiently than Ethereum.",
+                "Polygon is more efficient than Ethereum.",
+                "Polygon more efficient Ethereum than is.",
+                "Polygon is the efficient than Ethereum."
+            ],
+            "answer": 1,
+            "explanation": "'More efficient than' is the correct structure. Polygon offers lower gas fees and faster confirmations compared to Ethereum L1."
+        }
+    ]
+}

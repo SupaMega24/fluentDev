@@ -31,7 +31,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     },
     {
         term: "EVM",
-        definition: "The computer that runs all smart contracts and processes transactions on Ethereum.",
+        definition: "Ethereum Virtual Machine. The computer that runs all smart contracts and processes transactions on Ethereum.",
         analogy: "Like the engine of Ethereum, it's what actually does the work when you send a transaction.",
         lessonIds: ["explaining-technical-processes"],
         learnMore: ""
@@ -166,7 +166,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Layer-2",
         definition: "A blockchain or protocol that processes transactions off the main blockchain (Layer 1) while inheriting its security properties.",
         analogy: "Like building a second floor on a busy shop to serve more people without crowding the main floor.",
-        lessonIds: ["explaining-technical-processes"],
+        lessonIds: ["explaining-technical-processes", "comparing-and-contrasting-protocols"],
         learnMore: ""
     },
     {
@@ -222,7 +222,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Wallet",
         definition: "A tool (software, hardware, or paper) that stores and manages your public/private key pair and interacts with the blockchain.",
         analogy: "It doesn’t hold money directly, it holds the keys to access it.",
-        lessonIds: ["blockchain-basics"],
+        lessonIds: ["blockchain-basics", "comparing-and-contrasting-protocols"],
         learnMore: ""
     },
     {
@@ -327,7 +327,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "DeFi",
         definition: "Short for Decentralized Finance. It refers to blockchain-based financial applications that operate without traditional banks or intermediaries.",
         analogy: "It’s like rebuilding financial services (loans, exchanges, savings) using open-source software instead of relying on banks.",
-        lessonIds: ["types-of-blockchains", "smart-contracts"],
+        lessonIds: ["types-of-blockchains", "smart-contracts", "comparing-and-contrasting-protocols"],
         learnMore: ""
     },
     {
@@ -362,7 +362,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Throughput",
         definition: "The number of transactions a blockchain can process in a given amount of time, usually measured in transactions per second (TPS).",
         analogy: "Think of it as the lane capacity of a highway. The more lanes, the more traffic it can handle at once.",
-        lessonIds: ["consensus-algorithms"],
+        lessonIds: ["consensus-algorithms", "comparing-and-contrasting-protocols"],
         learnMore: ""
     },
     {
@@ -446,7 +446,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Composability",
         definition: "The ability of smart contracts to interact with and build upon each other like modular components.",
         analogy: "Smart contracts behave like Lego bricks. You can snap them together to build more complex systems.",
-        lessonIds: ["smart-contracts"],
+        lessonIds: ["smart-contracts", "comparing-and-contrasting-protocols"],
         learnMore: ""
     },
     {
@@ -495,7 +495,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "dApp",
         definition: "Short for decentralized application, a dApp is a program that runs on a blockchain using smart contracts instead of centralized servers.",
         analogy: "A dApp is like a web app, but instead of using a company’s backend, it runs entirely on public infrastructure and is controlled by users, not corporations.",
-        lessonIds: ["smart-contracts"],
+        lessonIds: ["smart-contracts", "comparing-and-contrasting-protocols"],
         learnMore: ""
     },
     {
@@ -539,6 +539,24 @@ export const glossaryTerms: GlossaryTerm[] = [
         analogy: "Operates like an algorithmic vault that keeps its value stable using crypto as collateral.",
         lessonIds: ["cryptocurrency"],
         learnMore: ""
+    },
+    {
+        term: "protocol",
+        definition: "A protocol is a set of rules that define how data is shared or transactions are executed on a blockchain.",
+        analogy: "Think of a protocol like the rules of a board game—everyone needs to follow the same rules for the game to work.",
+        lessonIds: ["comparing-and-contrasting-protocols"]
+    },
+    {
+        term: "altcoin",
+        definition: "Altcoin stands for 'alternative coin' and refers to any cryptocurrency other than Bitcoin.",
+        analogy: "If Bitcoin is like the first smartphone, altcoins are all the other models that came after, offering different features.",
+        lessonIds: ["comparing-and-contrasting-protocols"]
+    },
+    {
+        term: "layer-1",
+        definition: "Layer-1 refers to the base blockchain network, such as Ethereum or Solana, which processes and finalizes transactions on its own.",
+        analogy: "Layer-1 is like the highway. It’s the main road all cars drive on, while Layer-2s are like side roads that help reduce traffic.",
+        lessonIds: ["comparing-and-contrasting-protocols"]
     }
 
 
