@@ -62,7 +62,7 @@
         },
         {
             "id": 6,
-            "question": "Unscramble and choose the correct sentence: 'a / could / be / upgrade / postponed / the'",
+            "question": "Unscramble and choose the correct sentence: 'could / be / upgrade / postponed / the'",
             "options": [
                 "The upgrade could be postponed.",
                 "Postponed could be the upgrade.",
@@ -102,7 +102,7 @@
             "options": [
                 "It might seems like a good idea.",
                 "It might seem like a good idea.",
-                "It might seeming like a good idea.",
+                "It might be seem like a good idea.",
                 "It might to seem like a good idea."
             ],
             "answer": 1,
@@ -134,7 +134,7 @@
         },
         {
             "id": 12,
-            "question": "Unscramble and choose the correct sentence: 'that / case / be / may / a / for'",
+            "question": "Unscramble and choose the correct sentence: 'there / that / case / be / may / a / for'",
             "options": [
                 "There may be a case for that.",
                 "That for may be a case there.",
@@ -163,7 +163,7 @@
                 "may",
                 "may to",
                 "may are",
-                "may been"
+                "may be"
             ],
             "answer": 0,
             "explanation": "Correct modal structure: 'may' + base verb."
