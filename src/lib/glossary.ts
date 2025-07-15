@@ -557,8 +557,70 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "Layer-1 refers to the base blockchain network, such as Ethereum or Solana, which processes and finalizes transactions on its own.",
         analogy: "Layer-1 is like the highway. It’s the main road all cars drive on, while Layer-2s are like side roads that help reduce traffic.",
         lessonIds: ["comparing-and-contrasting-protocols"]
+    },
+    {
+        term: "testnet",
+        definition: "A blockchain network used for testing new features, contracts, or applications without real assets.",
+        analogy: "A safe playground where developers can experiment before going live.",
+        lessonIds: ["expressing-opinions-and-uncertainty"],
+        learnMore: ""
+    },
+    {
+        term: "mainnet",
+        definition: "The primary blockchain network where real transactions and assets are recorded and transferred.",
+        analogy: "The official highway where real money and vehicles are in motion.",
+        lessonIds: ["expressing-opinions-and-uncertainty"],
+        learnMore: ""
+    },
+    {
+        term: "attack vector",
+        definition: "A method or pathway that a hacker can use to exploit a system or smart contract.",
+        analogy: "A hidden door that attackers can find and sneak through.",
+        lessonIds: ["expressing-opinions-and-uncertainty"],
+        learnMore: ""
+    },
+    {
+        term: "hard fork",
+        definition: "A permanent and incompatible change to a blockchain’s rules that splits the network into two versions.",
+        analogy: "A road that splits in two directions, forcing travelers to choose one and leave the other behind.",
+        lessonIds: ["expressing-opinions-and-uncertainty"],
+        learnMore: ""
+    },
+    {
+        term: "soft fork",
+        definition: "A backward-compatible upgrade to a blockchain protocol that tightens existing rules without splitting the chain.",
+        analogy: "A software update that works with older systems but adds stricter controls.",
+        lessonIds: ["expressing-opinions-and-uncertainty"],
+        learnMore: ""
+    },
+    {
+        term: "UI",
+        definition: "Short for User Interface; the visual elements and layout that users interact with in an app or website.",
+        analogy: "The dashboard and controls you see when driving a car, how you interact with the system.",
+        lessonIds: ["expressing-opinions-and-uncertainty"],
+        learnMore: ""
+    },
+    {
+        term: "security audit",
+        definition: "A professional review of a smart contract or system to detect bugs, vulnerabilities, or design flaws.",
+        analogy: "A detailed inspection before a product is released to ensure it won’t break under pressure.",
+        lessonIds: ["expressing-opinions-and-uncertainty"],
+        learnMore: ""
+    },
+    {
+        term: "vulnerabilities",
+        definition: "Weak points in a smart contract or system that can be exploited by attackers.",
+        analogy: "Cracks in the foundation that make a structure unsafe.",
+        lessonIds: ["expressing-opinions-and-uncertainty"],
+        learnMore: ""
+    },
+    {
+        term: "contract logic",
+        definition: "The programmed rules and conditions that determine how a smart contract behaves.",
+        analogy: "The instruction manual that tells a vending machine when to release a snack.",
+        lessonIds: ["expressing-opinions-and-uncertainty"],
+        learnMore: ""
     }
-
 
 ].sort((a, b) => a.term.localeCompare(b.term));
 

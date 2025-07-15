@@ -1,0 +1,244 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "You ______ review the code before deploying it to mainnet.",
+            "options": [
+                "might to",
+                "should",
+                "musted",
+                "may be"
+            ],
+            "answer": 1,
+            "explanation": "'Should' is the correct modal verb for giving advice or recommendation."
+        },
+        {
+            "id": 2,
+            "question": "The contract ______ audited again before launch.",
+            "options": [
+                "should be",
+                "should is",
+                "should are",
+                "should been"
+            ],
+            "answer": 0,
+            "explanation": "Modal verb 'should' is correctly followed by 'be' + past participle for passive voice."
+        },
+        {
+            "id": 3,
+            "question": "Choose the correct sentence:",
+            "options": [
+                "This might to be a bug.",
+                "This might being a bug.",
+                "This might be a bug.",
+                "This be might a bug."
+            ],
+            "answer": 2,
+            "explanation": "Modals are followed by the base verb: 'might be'."
+        },
+        {
+            "id": 4,
+            "question": "Choose the correct sentence:",
+            "options": [
+                "It may worth exploring another chain.",
+                "It may be worth exploring another chain.",
+                "It be may worth exploring another chain.",
+                "It may be exploring worth another chain."
+            ],
+            "answer": 1,
+            "explanation": "'May be worth' is the correct modal collocation."
+        },
+        {
+            "id": 5,
+            "question": "We might want to ______ the launch if testing isn't complete.",
+            "options": [
+                "reconsider",
+                "reconsidering",
+                "to reconsider",
+                "reconsidered"
+            ],
+            "answer": 0,
+            "explanation": "Modal + base verb: 'might want to reconsider'."
+        },
+        {
+            "id": 6,
+            "question": "Unscramble and choose the correct sentence: 'a / could / be / upgrade / postponed / the'",
+            "options": [
+                "The upgrade could be postponed.",
+                "Postponed could be the upgrade.",
+                "Be could the upgrade postponed.",
+                "Upgrade could postponed be the."
+            ],
+            "answer": 0,
+            "explanation": "Correct word order for modal passive structure: 'could be postponed'."
+        },
+        {
+            "id": 7,
+            "question": "Choose the correct sentence:",
+            "options": [
+                "We must testing complete.",
+                "We must complete testing.",
+                "We must to complete testing.",
+                "We must completing testing."
+            ],
+            "answer": 1,
+            "explanation": "Modals are followed by the base verb: 'complete'."
+        },
+        {
+            "id": 8,
+            "question": "If the DAO approves the proposal, we ______ move forward.",
+            "options": [
+                "could",
+                "could to",
+                "could will",
+                "could be"
+            ],
+            "answer": 0,
+            "explanation": "'Could' is the correct modal in the conditional structure."
+        },
+        {
+            "id": 9,
+            "question": "Choose the correct sentence:",
+            "options": [
+                "It might seems like a good idea.",
+                "It might seem like a good idea.",
+                "It might seeming like a good idea.",
+                "It might to seem like a good idea."
+            ],
+            "answer": 1,
+            "explanation": "After 'might', use base form: 'seem'."
+        },
+        {
+            "id": 10,
+            "question": "The UI ______ be confusing to new users.",
+            "options": [
+                "must be",
+                "must being",
+                "must to be",
+                "musted be"
+            ],
+            "answer": 0,
+            "explanation": "'Must be' expresses logical conclusion."
+        },
+        {
+            "id": 11,
+            "question": "Choose the correct completion: 'That ______ a potential vulnerability.'",
+            "options": [
+                "could be",
+                "could to be",
+                "could is",
+                "could being"
+            ],
+            "answer": 0,
+            "explanation": "Modal 'could' is followed by base verb 'be'."
+        },
+        {
+            "id": 12,
+            "question": "Unscramble and choose the correct sentence: 'that / case / be / may / a / for'",
+            "options": [
+                "There may be a case for that.",
+                "That for may be a case there.",
+                "Case be there may that a for.",
+                "May there a be for case that."
+            ],
+            "answer": 0,
+            "explanation": "'There may be a case for that' is correct and natural."
+        },
+        {
+            "id": 13,
+            "question": "Choose the correct sentence:",
+            "options": [
+                "We might should take action.",
+                "We might taking action.",
+                "We might take action.",
+                "We might to take action."
+            ],
+            "answer": 2,
+            "explanation": "Correct modal structure: 'might take'."
+        },
+        {
+            "id": 14,
+            "question": "If testing is delayed, we ______ need to adjust the timeline.",
+            "options": [
+                "may",
+                "may to",
+                "may are",
+                "may been"
+            ],
+            "answer": 0,
+            "explanation": "Correct modal structure: 'may' + base verb."
+        },
+        {
+            "id": 15,
+            "question": "Unscramble and choose the correct sentence: 'interface / might / be / the / released / early'",
+            "options": [
+                "The interface might be released early.",
+                "Might released be interface the early.",
+                "Be might interface released the early.",
+                "Early be might the released interface."
+            ],
+            "answer": 0,
+            "explanation": "Correct word order for modal + passive structure."
+        },
+        {
+            "id": 16,
+            "question": "It ______ be worth running another user test.",
+            "options": [
+                "may",
+                "may to",
+                "may being",
+                "may is"
+            ],
+            "answer": 0,
+            "explanation": "'May be worth' is a common and correct collocation."
+        },
+        {
+            "id": 17,
+            "question": "Choose the correct sentence:",
+            "options": [
+                "You might want to double-check the logic.",
+                "You might to want double-check the logic.",
+                "You might wanting to double-check the logic.",
+                "You might want double-checking the logic."
+            ],
+            "answer": 0,
+            "explanation": "'Might want to' is followed by base verb: 'double-check'."
+        },
+        {
+            "id": 18,
+            "question": "Choose the correct sentence:",
+            "options": [
+                "This could turn out to be a great solution.",
+                "This could turned out to be a great solution.",
+                "This could turns out to be a great solution.",
+                "This could to turn out be a great solution."
+            ],
+            "answer": 0,
+            "explanation": "Modal 'could' is followed by base form: 'turn out'."
+        },
+        {
+            "id": 19,
+            "question": "Choose the correct sentence:",
+            "options": [
+                "If the patch is ready, we can launch Friday.",
+                "If the patch ready is, we can launch Friday.",
+                "Can we Friday launch if the patch is ready.",
+                "We can if the patch is ready launch Friday."
+            ],
+            "answer": 0,
+            "explanation": "Correct conditional structure: 'If + condition, modal + base verb'."
+        },
+        {
+            "id": 20,
+            "question": "It ______ be that users don’t fully understand the interface.",
+            "options": [
+                "could",
+                "could to",
+                "could been",
+                "could is"
+            ],
+            "answer": 0,
+            "explanation": "'It could be that...' is a common hedging phrase."
+        }
+    ]
+}
