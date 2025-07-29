@@ -12,7 +12,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Gas",
         definition: "A unit that measures the amount of computational effort required to execute operations.",
         analogy: "Gas is like the fuel your car needs to run. Without it, the blockchain can't process your transactions.",
-        lessonIds: ["explaining-technical-processes", "smart-contracts"],
+        lessonIds: ["explaining-technical-processes", "smart-contracts", "describing-smart-contract-functionality"],
         learnMore: ""
     },
     {
@@ -101,9 +101,9 @@ export const glossaryTerms: GlossaryTerm[] = [
     },
     {
         term: "State",
-        definition: "The current data stored on the blockchain, such as balances, contract values, and user actions.",
+        definition: "The current data stored on the blockchain, such as balances, contract values, and the results of user actions.",
         analogy: "Like the memory of a game showing each player’s score and position right now.",
-        lessonIds: [],
+        lessonIds: ["describing-smart-contract-functionality"],
         learnMore: ""
     },
     {
@@ -138,7 +138,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Nodes",
         definition: "Individual computers that participate in maintaining and verifying the blockchain network.",
         analogy: "Like librarians around the world, each keeping a synced copy of the same record book.",
-        lessonIds: ["blockchain-basics"],
+        lessonIds: ["blockchain-basics", "describing-smart-contract-functionality"],
         learnMore: ""
     },
     {
@@ -460,7 +460,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Immutable",
         definition: "A property of smart contracts that prevents them from being altered after deployment.",
         analogy: "Publishing a smart contract is like etching something in stone. You can’t edit it once it’s live.",
-        lessonIds: ["smart-contracts"],
+        lessonIds: ["smart-contracts", "describing-smart-contract-functionality"],
         learnMore: ""
     },
     {
@@ -488,7 +488,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Function",
         definition: "A block of code in a smart contract that performs a specific task when called.",
         analogy: "Functions are like buttons in an app. Press one, and something specific happens behind the scenes.",
-        lessonIds: ["smart-contracts"],
+        lessonIds: ["smart-contracts", "describing-smart-contract-functionality"],
         learnMore: ""
     },
     {
@@ -619,6 +619,34 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "The programmed rules and conditions that determine how a smart contract behaves.",
         analogy: "The instruction manual that tells a vending machine when to release a snack.",
         lessonIds: ["expressing-opinions-and-uncertainty"],
+        learnMore: ""
+    },
+    {
+        term: "Multisig",
+        definition: "A type of wallet or contract that requires multiple private key signatures to authorize a transaction.",
+        analogy: "A shared vault that can only be opened when several trusted keyholders turn their keys together.",
+        lessonIds: ["describing-smart-contract-functionality"],
+        learnMore: ""
+    },
+    {
+        term: "Oracle Network",
+        definition: "A system that delivers real-world data to smart contracts so they can respond to external events.",
+        analogy: "A relay team that brings reliable information from the outside world into the blockchain stadium.",
+        lessonIds: ["describing-smart-contract-functionality"],
+        learnMore: ""
+    },
+    {
+        term: "Cryptographic Proofs",
+        definition: "Mathematical evidence used to verify that a statement is true without revealing sensitive information.",
+        analogy: "Showing you’ve solved a puzzle without giving away the solution itself.",
+        lessonIds: ["describing-smart-contract-functionality"],
+        learnMore: ""
+    },
+    {
+        term: "Mapping",
+        definition: "A data structure in smart contracts that links keys to corresponding values, similar to a dictionary.",
+        analogy: "A locker system where each name is assigned a specific compartment with stored information.",
+        lessonIds: ["describing-smart-contract-functionality"],
         learnMore: ""
     }
 

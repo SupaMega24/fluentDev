@@ -63,7 +63,7 @@ export const courses = [
             },
             {
                 id: "describing-smart-contract-functionality",
-                title: "Describing Smart Contract Functionality: Passive Voice and Relative Clauses",
+                title: "Describing Smart Contract Functionality",
                 topic: "Describing Smart Contract Functionality"
             },
             {
@@ -71,6 +71,7 @@ export const courses = [
                 title: "Describing Risks and Safety of Cryptocurrency: Conditionals",
                 topic: "Describing Risks and Safety of Cryptocurrency"
             },
+
         ],
     },
     {

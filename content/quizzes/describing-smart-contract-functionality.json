@@ -1,0 +1,244 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "The contract __________ after the audit was completed.",
+            "options": [
+                "was deployed",
+                "deployed",
+                "is deploy",
+                "has deploy"
+            ],
+            "answer": 0,
+            "explanation": "Passive voice is formed with 'was' + past participle. 'Was deployed' is correct."
+        },
+        {
+            "id": 2,
+            "question": "Choose the correct passive sentence.",
+            "options": [
+                "The system triggers automatically.",
+                "The system was trigger automatically.",
+                "The system is triggered automatically.",
+                "The system be triggered automatically."
+            ],
+            "answer": 2,
+            "explanation": "'Is triggered' is the correct present simple passive form."
+        },
+        {
+            "id": 3,
+            "question": "Gas costs __________ by optimizing the contract.",
+            "options": [
+                "reduced",
+                "were reduced",
+                "was reduced",
+                "reducing"
+            ],
+            "answer": 1,
+            "explanation": "Past simple passive uses 'were' + past participle. 'Were reduced' is correct."
+        },
+        {
+            "id": 4,
+            "question": "A user __________ violates the contract rules will be banned.",
+            "options": [
+                "that",
+                "who",
+                "which",
+                "where"
+            ],
+            "answer": 1,
+            "explanation": "Use 'who' to refer to people in relative clauses."
+        },
+        {
+            "id": 5,
+            "question": "Choose the correct relative clause sentence.",
+            "options": [
+                "The contract, that handles bonuses, is live.",
+                "The contract who handles bonuses is live.",
+                "The contract, which handles bonuses, is live.",
+                "The contract where handles bonuses is live."
+            ],
+            "answer": 2,
+            "explanation": "'Which' is correct for non-defining clauses about things. It should also be preceded by a comma."
+        },
+        {
+            "id": 6,
+            "question": "The wallet __________ is protected by multisig approval prevents unauthorized access.",
+            "options": [
+                "who",
+                "where",
+                "that",
+                "what"
+            ],
+            "answer": 2,
+            "explanation": "'That' is used in defining relative clauses for things."
+        },
+        {
+            "id": 7,
+            "question": "Choose the correct sentence.",
+            "options": [
+                "Is transferred when tokens are the condition met.",
+                "Tokens are transferred when met the condition.",
+                "Tokens are transferred when the condition is met.",
+                "When tokens transferred are met is the condition."
+            ],
+            "answer": 2,
+            "explanation": "Only option 3 uses correct word order and passive voice."
+        },
+        {
+            "id": 8,
+            "question": "Which of the following best defines 'mapping' in smart contracts?",
+            "options": [
+                "A structure that creates randomness from external data",
+                "A mechanism for validating transactions",
+                "A data structure that connects keys to values",
+                "A wallet that requires multiple users"
+            ],
+            "answer": 2,
+            "explanation": "Mapping is a Solidity structure that links addresses (or other keys) to values."
+        },
+        {
+            "id": 9,
+            "question": "What is an 'oracle network' used for?",
+            "options": [
+                "Encrypting blockchain data",
+                "Providing off-chain data to smart contracts",
+                "Storing contract source code",
+                "Splitting tokens across chains"
+            ],
+            "answer": 1,
+            "explanation": "Oracle networks feed external data into blockchain environments."
+        },
+        {
+            "id": 10,
+            "question": "Which of the following is a correct passive construction?",
+            "options": [
+                "The logic triggers automatically.",
+                "The logic is triggered automatically.",
+                "The logic triggering automatically.",
+                "The logic was trigger automatically."
+            ],
+            "answer": 1,
+            "explanation": "Passive voice: 'is triggered' is correct present simple passive."
+        },
+        {
+            "id": 11,
+            "question": "__________ proofs are used to verify data without revealing sensitive details.",
+            "options": [
+                "Hashing",
+                "Cryptographic",
+                "Tokenized",
+                "Oracle"
+            ],
+            "answer": 1,
+            "explanation": "Cryptographic proofs enable verification while maintaining privacy."
+        },
+        {
+            "id": 12,
+            "question": "Which sentence uses a relative clause correctly?",
+            "options": [
+                "The function that handles bonuses is secure.",
+                "The function, that handles bonuses is secure.",
+                "The function handles that bonuses is secure.",
+                "The function which handles bonuses is secure."
+            ],
+            "answer": 0,
+            "explanation": "Option 1 uses a defining relative clause correctly with 'that'."
+        },
+        {
+            "id": 13,
+            "question": "Choose the correct gap fill: 'A protocol ______ validators are selected randomly ensures fairness.'",
+            "options": [
+                "who",
+                "where",
+                "which",
+                "what"
+            ],
+            "answer": 1,
+            "explanation": "'Where' is used for places or platforms in relative clauses."
+        },
+        {
+            "id": 14,
+            "question": "Which of the following best describes 'multisig'?",
+            "options": [
+                "A data structure for looped storage",
+                "A contract that locks tokens until release",
+                "A setup that needs multiple signatures for approval",
+                "An algorithm used to compress blockchain data"
+            ],
+            "answer": 2,
+            "explanation": "Multisig requires multiple signatures to approve a transaction."
+        },
+        {
+            "id": 15,
+            "question": "Choose the correct sentence.",
+            "options": [
+                "Are allocated bonuses after approval.",
+                "Bonuses are allocated after the approval.",
+                "Allocated are bonuses after approval.",
+                "After approval bonuses allocated are."
+            ],
+            "answer": 1,
+            "explanation": "Passive structure: 'Bonuses are allocated' is correct."
+        },
+        {
+            "id": 16,
+            "question": "The contract that __________ last year is now inactive.",
+            "options": [
+                "was developed",
+                "developed",
+                "has develop",
+                "was develop"
+            ],
+            "answer": 0,
+            "explanation": "Passive voice with correct past participle: 'was developed'."
+        },
+        {
+            "id": 17,
+            "question": "Choose the sentence with correct grammar.",
+            "options": [
+                "A wallet, who supports multisig, is more secure.",
+                "The bonus, that was allocated yesterday, is final.",
+                "The contract, which was deployed yesterday, is on Solana.",
+                "An address which registered employees belongs."
+            ],
+            "answer": 2,
+            "explanation": "Only option 3 correctly uses 'which' in a non-defining clause."
+        },
+        {
+            "id": 18,
+            "question": "__________ are used in smart contracts to link employee addresses to their bonuses.",
+            "options": [
+                "Mappings",
+                "Oracles",
+                "Signatures",
+                "Modals"
+            ],
+            "answer": 0,
+            "explanation": "Mappings connect addresses to specific values like bonuses."
+        },
+        {
+            "id": 19,
+            "question": "Which of the following correctly uses the passive voice?",
+            "options": [
+                "A new function adds employees.",
+                "The developer wrote the contract.",
+                "The function is executed when called.",
+                "Validators perform the task."
+            ],
+            "answer": 2,
+            "explanation": "'Is executed' is a correct passive voice structure."
+        },
+        {
+            "id": 20,
+            "question": "Choose the correct definition of 'cryptographic proofs'.",
+            "options": [
+                "Messages sent across smart contracts",
+                "Proof of work based on oracle data",
+                "Mathematical proofs for verifying truth without revealing info",
+                "Statements that define permissions"
+            ],
+            "answer": 2,
+            "explanation": "Cryptographic proofs verify accuracy without exposing private information."
+        }
+    ]
+}
