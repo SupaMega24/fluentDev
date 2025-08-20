@@ -80,7 +80,7 @@ export const FilterBar = ({ className, active }: BlogNavigationBarProps) => {
             {categories.map((category) => (
               <Link className="hover:text-blue-700 border-2 hover:border-blue-700 rounded-md"
                 href={
-                  category.tag === "latest" ? `/` : `/category/${category.tag}`
+                  category.tag === "latest" ? `/blog` : `/category/${category.tag}`
                 }
                 key={category.tag}
               >

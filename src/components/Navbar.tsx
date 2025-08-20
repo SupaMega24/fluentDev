@@ -15,7 +15,7 @@ export const Navbar = () => {
                 <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
                     {/* LEFT: Logo + Site Name */}
                     <div className="flex items-center gap-2">
-                        <Link href="/home" className="flex items-center gap-2">
+                        <Link href="/" className="flex items-center gap-2">
                             <Image src="/logo.png" alt="FluentDev Logo" width={32} height={32} />
                             <span className="text-3xl font-bold text-white hover:text-blue-500">fluentDev</span>
                         </Link>
@@ -23,12 +23,12 @@ export const Navbar = () => {
 
                     {/* CENTER: Page Links */}
                     <ul className="hidden md:flex gap-6 text-xl text-white absolute left-1/2 transform -translate-x-1/2">
-                        <li><Link href="/home" className="hover:underline hover:text-blue-500">Home</Link></li>
+                        <li><Link href="/" className="hover:underline hover:text-blue-500">Home</Link></li>
                         <li><Link href="/courses" className="hover:underline hover:text-blue-500">Courses</Link></li>
                         <li><Link href="/glossary" className="hover:underline hover:text-blue-500">Glossary</Link></li>
                         <li><Link href="/about" className="hover:underline hover:text-blue-500">About</Link></li>
                         <li><Link href="/contact" className="hover:underline hover:text-blue-500">Contact</Link></li>
-                        <li><Link href="/" className="hover:underline hover:text-blue-500">Blog</Link></li>
+                        <li><Link href="/blog" className="hover:underline hover:text-blue-500">Blog</Link></li>
                     </ul>
 
                     {/* RIGHT: Social Icons + Hamburger */}
@@ -70,7 +70,7 @@ export const Navbar = () => {
                     <nav>
                         <ul className="flex flex-col gap-8 text-3xl text-white text-center">
                             <li>
-                                <Link href="/home" onClick={() => setIsOpen(false)} className="hover:underline">
+                                <Link href="/" onClick={() => setIsOpen(false)} className="hover:underline">
                                     Home
                                 </Link>
                             </li>
@@ -95,7 +95,7 @@ export const Navbar = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/" className="hover:underline hover:text-blue-500">
+                                <Link href="/blog" onClick={() => setIsOpen(false)} className="hover:underline hover:text-blue-500">
                                     Blog
                                 </Link>
                             </li>

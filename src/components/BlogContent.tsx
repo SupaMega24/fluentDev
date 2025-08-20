@@ -39,7 +39,7 @@ export const BlogContent = ({
         title={title}
         description=""
         breadcrumb={[
-          { label: "Home", href: "/" },
+          { label: "Blog", href: "/blog" },
           { label: title, href: "" },
         ]}
       />
