@@ -58,7 +58,12 @@ export default function Quiz({
 
     return (
         <div className="mt-12 border-t border-gray-700 pt-8">
-            <h2 className="text-2xl font-bold mb-6">Knowledge Check</h2>
+            <h2 className="text-2xl font-bold mb-6">🎓 Quiz: Test Your Blockchain Knowledge</h2>
+            <p className="text-lg text-gray-300 mb-6">
+                Ready to put your skills to the test? Take this short quiz to test your
+                understanding of the lesson's core concepts. Solidify your knowledge before
+                moving on to the next topic in your learning path.
+            </p>
 
             {/* Progress Bar */}
             <div className="mb-6 h-4 bg-gray-700 rounded overflow-hidden">

@@ -15,13 +15,12 @@ export default function GlossaryCards({ terms, lessonId }: { terms: GlossaryTerm
 
     return (
         <div className="max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-semibold mb-4">🧠 Terms to Know</h2>
+            <h2 className="text-3xl font-semibold mb-4">🧠 Essential Blockchain Vocabulary</h2>
             <p className="text-lg text-gray-300 mb-4">
                 Before diving deeper into <strong className="text-blue-400">{title}</strong>,
-                it is important to get familiar with the foundational
-                terms of the lesson. These definitions and real-world analogies will help you
-                build a mental model of how things work. By understanding these terms, you will be
-                better equipped to grasp the concepts and technologies discussed in the lesson.
+                build your Web3 vocabulary with our essential terms. These definitions and real-world analogies
+                are designed to help you create a mental model of how blockchain concepts work. By mastering this
+                technical terminology, you’ll be better equipped to understand the technologies discussed in this lesson.
             </p>
             <p className="text-lg text-gray-300 mb-8">
                 Each term has been selected to support your understanding of <strong>{title}</strong> at both a conceptual and practical level.
@@ -31,7 +30,7 @@ export default function GlossaryCards({ terms, lessonId }: { terms: GlossaryTerm
                     <div
                         key={term.term}
                         onClick={() => setSelectedTerm(term)}
-                        className="cursor-pointer bg-gray-800 hover:bg-gray-700 p-4 rounded-xl shadow-md transition
+                        className="cursor-pointer bg-blue-800 hover:bg-gray-700 p-4 rounded-xl shadow-md transition
                             flex items-center justify-center text-center min-h-[80px]"
                     >
                         <h3 className="text-xl font-bold text-white">{term.term}</h3>

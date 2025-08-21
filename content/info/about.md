@@ -23,7 +23,7 @@ Whether you're preparing for a hackathon, applying for grants, or working on a D
 
 ### 1. Essential Web3 & Blockchain Knowledge
 
-T1. Essential Web3 & Blockchain Knowledge
+Essential Web3 & Blockchain Knowledge
 These courses focus on developing deep knowledge of blockchain technologies and Web3 infrastructure. Ideal for advanced or native English speakers who want to strengthen their understanding of the technical landscape.
 
 **Who is it for?**

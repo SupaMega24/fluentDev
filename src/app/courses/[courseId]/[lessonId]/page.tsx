@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import LessonClientWrapper from '@/components/LessonClientWrapper';
 import ComingSoon from '@/components/ComingSoon';
 import { getCourse } from '@/lib/data';
@@ -15,6 +16,72 @@ import { processTableOfContents } from '@/lib/lessonTOC';
 //import { TableOfContents } from '@/components/TOC';
 
 const GlossaryCards = dynamic(() => import('@/components/GlossaryCards'));
+
+// This is the new function for dynamic metadata generation
+export async function generateMetadata({ params,
+}: {
+    params: Promise<{ courseId: string; lessonId: string; }>;
+}): Promise<Metadata> {
+
+    const { courseId, lessonId } = await params;
+
+    // Use the same logic as your component to find the lesson data
+    const course = getCourse(courseId);
+    const lesson = course?.lessons.find((l) => l.id === lessonId);
+
+    if (!lesson) {
+        return {};
+    }
+
+    const folders = ['web3-fundamentals', 'english-for-web3', 'defi-essentials'];
+    let mdContent;
+    for (const folder of folders) {
+        const mdPath = path.join(process.cwd(), 'content', 'lessons', folder, `${lessonId}.md`);
+        try {
+            mdContent = await fs.readFile(mdPath, 'utf8');
+            break;
+        } catch (error) {
+            continue;
+        }
+    }
+
+    if (!mdContent) {
+        return {};
+    }
+
+    // Extract frontmatter (title, description, image) from the markdown file
+    const { data } = matter(mdContent);
+    const { title, description, image } = data;
+
+    const absoluteUrl = `https://fluentdev.com/courses/${courseId}/${lessonId}`;
+
+    return {
+        title: `${title} | FluentDev`,
+        description: description,
+        openGraph: {
+            title: title,
+            description: description,
+            url: absoluteUrl,
+            siteName: 'FluentDev',
+            images: [
+                {
+                    url: `https://fluentdev.com${image}`,
+                    width: 1200,
+                    height: 630,
+                    alt: title,
+                },
+            ],
+            type: 'article',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: title,
+            description: description,
+            images: [`https://fluentdev.com${image}`],
+        },
+    };
+}
+
 
 export default async function LessonPage({
     params,
@@ -41,9 +108,31 @@ export default async function LessonPage({
     let modifiedHtml = '';
 
     try {
-        const mdPath = path.join(process.cwd(), 'content', 'lessons', `${lessonId}.md`);
-        console.log("Markdown path:", mdPath);
-        const mdContent = await fs.readFile(mdPath, 'utf8');
+        const folders = ['web3-fundamentals', 'english-for-web3', 'defi-essentials'];
+        let mdContent;
+        let foundPath;
+
+        // Try each folder until we find the file
+        for (const folder of folders) {
+            const mdPath = path.join(process.cwd(), 'content', 'lessons', folder, `${lessonId}.md`);
+            try {
+                console.log("Trying path:", mdPath);
+                mdContent = await fs.readFile(mdPath, 'utf8');
+                foundPath = mdPath;
+                console.log("Found markdown at:", foundPath);
+                break; // File found, exit loop
+            } catch (error) {
+                // File not found in this folder, continue to next
+                continue;
+            }
+        }
+
+        // If no file was found in any folder
+        if (!mdContent) {
+            console.log(`Lesson ${lessonId} not found in any folder`);
+            return <ComingSoon />;
+        }
+
         const { content } = matter(mdContent);
 
         const processed = await remark().use(html).process(content);
@@ -56,12 +145,9 @@ export default async function LessonPage({
         });
 
         modifiedHtml = tocResult.modifiedHtml;
-        //tableOfContents = tocResult.tableOfContents;
 
-        //htmlContent = processedHtml;
-
-
-    } catch {
+    } catch (error) {
+        console.error("Error processing lesson:", error);
         return <ComingSoon />;
     }
 
@@ -82,13 +168,6 @@ export default async function LessonPage({
                     <h1 className="text-3xl md:text-4xl font-bold">{lesson.title}</h1>
                 </div>
 
-                {/* Glossary Terms Section */}
-                {terms.length > 0 && (
-                    <div className="max-w-3xl mx-auto mb-12">
-                        <GlossaryCards terms={terms} lessonId={lessonId} />
-                    </div>
-                )}
-
                 {/* Lesson Content */}
                 <div className="max-w-3xl mx-auto">
                     <article
@@ -98,8 +177,21 @@ export default async function LessonPage({
 
                 </div>
 
+                {/* Glossary Terms Section */}
+                {terms.length > 0 && (
+                    <div className="max-w-3xl mx-auto my-12">
+                        <GlossaryCards terms={terms} lessonId={lessonId} />
+                    </div>
+                )}
+
                 {/* Reading assignment modal */}
-                <LessonClientWrapper lessonId={lessonId} />
+                <div className="max-w-3xl mx-auto mb-12">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4">📘 Challenge Yourself</h2>
+                    <p className="text-lg text-gray-300 mb-8">
+                        Ready to go hands-on? Complete the reading assignment to reinforce this lesson's concepts. Then, take the short quiz to test your technical fluency.
+                    </p>
+                    <LessonClientWrapper lessonId={lessonId} />
+                </div>
 
                 {/* Lesson Quiz */}
                 <div className="max-w-3xl mx-auto">

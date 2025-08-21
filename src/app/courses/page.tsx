@@ -2,16 +2,38 @@ import Link from "next/link";
 import Image from "next/image";
 import { courses } from "@/lib/data";
 
+export const metadata = {
+    title: "FluentDev Courses | Learn English for Web3",
+    description:
+        "Explore all our English courses for Web3 professionals and developers. Learn blockchain concepts and improve your communication skills with our practical lessons.",
+    openGraph: {
+        title: "All Courses - FluentDev",
+        description:
+            "Find the right English and Web3 course for you. From blockchain basics to advanced communication for developers.",
+        url: "https://fluentdev.vercel.app/courses",
+        siteName: "FluentDev",
+        images: [
+            {
+                url: "/coursesOpenGraph.png",
+                width: 1200,
+                height: 630,
+                alt: "A graphic showing different English and Web3 courses",
+            },
+        ],
+        type: "website",
+    },
+};
 
 export default function CoursesPage() {
     return (
         <main className="min-h-screen bg-gray-900 text-white">
             <section className="container mx-auto px-4 py-16">
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Courses</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-4">Courses for Web3 Professionals and Learners</h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                        Learn blockchain principles and improve your English skills with our curated courses.
-                        Whether you&apos;re a beginner or looking to enhance your knowledge, we have something for everyone.
+                        Explore our curated English courses designed specifically for Web3 developers and professionals.
+                        We help you master blockchain principles and advanced communication skills, whether you&apos;re a beginner
+                        or looking to enhance your expertise.
                     </p>
                 </div>
 
@@ -42,7 +64,7 @@ export default function CoursesPage() {
                                 <div className="flex justify-between text-sm text-gray-400">
                                     <span>⏱️ {course.duration}</span>
                                     <span className="text-blue-400 group-hover:text-blue-300">
-                                        Start Learning →
+                                        Start learning {course.title} →
                                     </span>
                                 </div>
                             </div>

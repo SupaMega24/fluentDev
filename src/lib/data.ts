@@ -5,7 +5,7 @@ export const courses = [
         id: "web3-fundamentals",
         title: "Web3 Fundamentals",
         description:
-            "For learners who want to understand blockchain and decentralized technologies in plain, accessible English.",
+            "Designed for learners seeking a solid foundation, this course provides a clear guide to Web3 fundamentals. You will master essential blockchain basics and understand complex decentralized technologies like smart contracts and cryptocurrency. Learn the language of Web3 and build your technical vocabulary in plain, accessible English.",
         image: "/courses/web3-fundamentals.jpg",
         duration: "10 hours",
         skill: "Vocabulary",
@@ -41,7 +41,7 @@ export const courses = [
         id: "english-for-web3-1",
         title: "English for Web3 Professionals 1",
         description:
-            "Improve your English communication while mastering blockchain concepts",
+            "Built for Web3 professionals and intermediate English learners, this course combines essential blockchain concepts with advanced technical English. You will improve your grammar, expand your vocabulary, and develop the communication skills needed to write proposals, deliver presentations, and thrive in global tech teams.",
         image: "/courses/english.jpg",
         duration: "10 hours",
         skill: "Language",
@@ -75,9 +75,10 @@ export const courses = [
         ],
     },
     {
-        id: "web3-essentials",
-        title: "Web3 Essentials",
-        description: "Master liquidity pools, yield farming, and DEXs",
+        id: "defi-essentials",
+        title: "DeFi Essentials",
+        description:
+            "Learn the fundamentals of DeFi with our beginner's guide. This course covers everything from smart decentralized exchanges (DEXs) and liquidity pools to lending, borrowing, and yield farming. Master the blockchain technology behind decentralized finance and speak confidently about the future of money.",
         image: "/courses/web3-essentials.jpg",
         duration: "10 hours",
         skill: "Vocabulary",
