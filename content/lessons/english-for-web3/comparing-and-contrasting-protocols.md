@@ -1,32 +1,25 @@
 ---
 id: "comparing-and-contrasting-protocols"
 title: "Comparing and Contrasting Protocols: Comparative, Superlative, and Connectors"
+description: "Master the English needed to compare and contrast Web3 protocols like Solana and Ethereum. Learn to use comparative and superlative language to make confident recommendations in professional settings."
+image: "/lessons/lesson-omparing-and-contrasting-protocols.png"
 ---
 
-In fast-moving tech environments, professionals are often required to evaluate competing technologies, explain their reasoning, and make clear recommendations to colleagues, clients, or stakeholders. Being able to confidently compare products or platforms in English, not just technically but also linguistically, helps professionals participate in global discussions, influence decisions, and present ideas with clarity and impact. This lesson builds those essential communication skills.
+![A simple graphic illustrating the concept of a blockchain transaction](/lessons/lesson-omparing-and-contrasting-protocols.png)
 
-## 📚 Learning Steps
+## 🧭 Lesson Overview: Comparing and Contrasting Protocols
 
-1. ✅ Familiarize yourself with the key terms above.
+In fast-moving tech environments, the ability to clearly compare and contrast competing technologies is a critical skill. This lesson empowers Web3 professionals to evaluate blockchain platforms and make informed recommendations with confidence.
 
-2. 📖 Complete the reading assignment below.
+You will learn to use the correct English language to describe the differences between protocols. By exploring the real-world case of Solana vs. Ethereum, you'll practice using comparative and superlative language as well as key connector phrases.  This will build your ability to discuss speed, cost, security, and ecosystem in a professional context.
 
-3. 📝 Take the language quiz when you're ready.
+By the end of this lesson, you will be able to engage in decision-making discussions using fluent comparative structures, ensuring your technical insights are delivered with clarity and impact. This lesson is your guide to mastering the linguistic tools needed to succeed in a global tech landscape.
 
-## 🧭 Lesson Overview
+## 📚 Learning Steps: Your Path to Technical Fluency
 
-By the end of this lesson, learners will be able to:
+1. **✅ Master the Vocabulary:** Familiarize yourself with all essential blockchain terms so you can talk confidently about them.
 
-- Use correct English languege to compare blockchain technologies.
+2. **📖 Go Hands-on:** Complete the reading assignment to reinforce your understanding English grammar and expressions for talking about blockchain technology and it's core concepts. 
 
-- Apply connectors to compare and contrast technical features.
-
-- Understand the differences between Solana and Ethereum in terms of speed, cost, security, and ecosystem.
-
-- Engage in decision-making dialogue using fluent comparative structures.
-
-### 🧩 Real-World Context
-Learners will explore a realistic decision-making scenario where a product team chooses between Solana and Ethereum. This encourages them to use comparison language fluently in a professional tech setting.
-
-📘 Click the Reading Assignment button below to view the reading assignment. When you are ready, take the quiz to solidify your learning before moving on to the next lesson.
+3. **📝 Test Your Knowledge:** Take the comprehension quiz to solidify your learning and ensure you're ready for the next lesson.
 

@@ -15,6 +15,7 @@ import ScrollToTop from '@/components/ScrolToTop';
 import { processTableOfContents } from '@/lib/lessonTOC';
 //import { TableOfContents } from '@/components/TOC';
 
+
 const GlossaryCards = dynamic(() => import('@/components/GlossaryCards'));
 
 // This is the new function for dynamic metadata generation
@@ -146,6 +147,8 @@ export default async function LessonPage({
 
         modifiedHtml = tocResult.modifiedHtml;
 
+
+
     } catch (error) {
         console.error("Error processing lesson:", error);
         return <ComingSoon />;
@@ -157,14 +160,14 @@ export default async function LessonPage({
         <main className="min-h-screen bg-gray-900 text-white">
             <section className="container mx-auto px-4 py-16">
 
-                {/* Table of Contents
-                <div className="max-w-3xl mx-auto mb-12 p-4 border border-gray-700 rounded-lg">
+                {/* Table of Contents */}
+                {/* <div className="max-w-3xl mx-auto mb-12 p-4 border border-gray-700 rounded-lg">
                     <h2 className="text-xl font-bold mb-4">Table of Contents</h2>
                     <TableOfContents items={tableOfContents} />
                 </div> */}
 
 
-                <div className="text-center mb-12">
+                <div className="max-w-3xl mx-auto my-12">
                     <h1 className="text-3xl md:text-4xl font-bold">{lesson.title}</h1>
                 </div>
 

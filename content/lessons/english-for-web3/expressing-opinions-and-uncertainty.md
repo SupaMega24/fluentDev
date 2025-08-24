@@ -1,20 +1,24 @@
 ---
 id: "expressing-opinions-and-uncertainty"
 title: "Expressing Opinions and Uncertainty: Modal Verbs"
+description: "Master the use of modal verbs and hedging phrases to express opinions, suggestions, and uncertainty. This lesson provides the language tools for professional and diplomatic communication in Web3."
+image: "/lessons/lesson-expressing-uncertainty.png"
 ---
 
-## 📚 Learning Steps
+![A simple graphic illustrating uncertainty](/lessons/lesson-expressing-uncertainty.png)
 
-1. ✅ Familiarize yourself with the key terms above.
+## 🧭 Lesson Overview: Expressing Opinions and Uncertainty
 
-2. 📖 Complete the reading assignment below.
+In the fast-paced world of blockchain and Web3, making proposals and navigating technical conversations requires more than just knowing the facts—it requires mastering the language of diplomacy. This lesson is your guide to using modal verbs to express uncertainty, suggest ideas, and offer opinions professionally.
 
-3. 📝 Take the language quiz when you're ready.
+You'll learn to express yourself with confidence by applying advanced modal verb structures in a business context. We’ll cover how to soften statements with hedging phrases and speculate about future outcomes of a project or technology. You’ll also learn how to use modal verbs in common workplace situations by mastering phrases and collocations that give your communication clarity and impact.
 
-## 🧭 Lesson Overview
+By the end of this lesson, you'll be able to communicate effectively and diplomatically, whether you're discussing a new strategy or a technical proposal.
 
-In business and blockchain, decisions are rarely black and white. Professionals often need to express uncertainty, suggest ideas without sounding pushy, or offer opinions diplomatically. Mastering modal verbs gives you the language tools to communicate clearly, respectfully, and with confidence. This is essential when discussing strategy, making proposals, or navigating technical conversations.
+## 📚 Learning Steps: Your Path to Technical Fluency
 
-By the end of this lesson, learners will be able to express opinions, uncertainty, and professional suggestions using advanced modal verb structures. They will understand how to soften statements with hedging phrases, speculate about outcomes, and use modal verbs with passive and conditional forms. Learners will also become more fluent in workplace communication by applying common modal collocations in realistic business and blockchain contexts.
+1. **✅ Master the Vocabulary:** Familiarize yourself with all essential blockchain terms so you can talk confidently about them.
 
-📘 Click the Reading Assignment button below to view the reading assignment. When you are ready, take the quiz to solidify your learning before moving on to the next lesson.
+2. **📖 Go Hands-on:** Complete the reading assignment to reinforce your understanding English grammar and expressions for talking about blockchain technology and it's core concepts. 
+
+3. **📝 Test Your Knowledge:** Take the comprehension quiz to solidify your learning and ensure you're ready for the next lesson.
