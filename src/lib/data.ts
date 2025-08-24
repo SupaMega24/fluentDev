@@ -1,4 +1,13 @@
 
+export const getLessonPath = (lessonId: string): string | null => {
+    for (const course of courses) {
+        const lesson = course.lessons.find(l => l.id === lessonId);
+        if (lesson) {
+            return `/courses/${course.id}/${lesson.id}`;
+        }
+    }
+    return null; // not found
+};
 
 export const courses = [
     {

@@ -9,7 +9,7 @@ import { remark } from 'remark';
 import html from 'remark-html';
 import Quiz from '@/components/Quiz';
 import { loadQuiz } from '@/lib/loadQuiz';
-import { getTermsByLesson } from '@/lib/glossary';
+import { getTermsByLesson } from '@/lib/glossary/glossary';
 import dynamic from 'next/dynamic';
 import ScrollToTop from '@/components/ScrolToTop';
 import { processTableOfContents } from '@/lib/lessonTOC';

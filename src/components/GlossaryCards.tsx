@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { GlossaryTerm } from '@/lib/glossary';
+import { GlossaryTerm } from '@/lib/glossary/glossary';
 import { getLessonTitle } from '@/lib/getLessonTitle';
 
 // This component is responsible for displaying the glossary terms in a card format.
