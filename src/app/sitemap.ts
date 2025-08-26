@@ -1,35 +1,47 @@
-export const dynamic = "force-dynamic";
-export const revalidate = 360; // 1 hour
+// app/sitemap.ts
+import { MetadataRoute } from "next";
+import { glossaryTerms } from "@/lib/glossary/glossary";
+import { courses } from "@/lib/data";
 
-import type { MetadataRoute } from "next";
-import urlJoin from "url-join";
-import { wisp } from "../lib/wisp";
-import { config } from "@/config";
+export const revalidate = 360; // rebuild sitemap roughly hourly
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const postsResult = await wisp.getPosts({
-    limit: "all",
-  });
-  const tagsResult = await wisp.getTags();
-  return [
-    {
-      url: config.baseUrl,
+const baseUrl = "https://fluentdev.vercel.app"; // TODO: switch to your canonical domain
+
+const toSlug = (s: string) => s.toLowerCase().replace(/\s+/g, "-");
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  // Static pages
+  const staticPages: MetadataRoute.Sitemap = [
+    "",
+    "/about",
+    "/contact",
+    "/glossary",
+    "/courses",
+    "/blog",
+  ].map((path) => ({
+    url: `${baseUrl}${path}`,
+    lastModified: new Date(),
+  }));
+
+  // Glossary term pages
+  const glossaryPages: MetadataRoute.Sitemap = glossaryTerms.map((term) => ({
+    url: `${baseUrl}/glossary/${toSlug(term.term)}`,
+    lastModified: new Date(),
+  }));
+
+  // Course index pages
+  const coursePages: MetadataRoute.Sitemap = courses.map((course) => ({
+    url: `${baseUrl}/courses/${course.id}`,
+    lastModified: new Date(),
+  }));
+
+  // Lesson pages (/courses/[courseId]/[lessonId])
+  const lessonPages: MetadataRoute.Sitemap = courses.flatMap((course) =>
+    (course.lessons || []).map((lesson) => ({
+      url: `${baseUrl}/courses/${course.id}/${lesson.id}`,
       lastModified: new Date(),
-      priority: 1,
-    },
-    ...postsResult.posts.map((post) => {
-      return {
-        url: urlJoin(config.baseUrl, "post", post.slug),
-        lastModified: new Date(post.updatedAt),
-        priority: 0.8,
-      };
-    }),
-    ...tagsResult.tags.map((tag) => {
-      return {
-        url: urlJoin(config.baseUrl, "category", tag.id),
-        lastModified: new Date(),
-        priority: 0.5,
-      };
-    }),
-  ];
+    }))
+  );
+
+  return [...staticPages, ...glossaryPages, ...coursePages, ...lessonPages];
 }

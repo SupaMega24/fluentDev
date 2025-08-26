@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Providers } from "./providers";
 import { Analytics } from "@vercel/analytics/next"
 import { Navbar } from "@/components/Navbar";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const fontSans = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -20,7 +21,11 @@ export const metadata: Metadata = {
       url: "/logo.png",
       type: "image/png",
     }
-  ]
+  ],
+  // Add the Google Search Console verification tag here
+  verification: {
+    google: "adg3MVFlHsiJ_TYDhp53F8c5pLiocsJ2WjvM3B_yjvw",
+  },
 };
 
 export default function RootLayout({
@@ -38,6 +43,7 @@ export default function RootLayout({
           <Footer />
         </Providers>
       </body>
+      <GoogleAnalytics gaId="G-SHH52T1YSX" />
     </html>
   );
 }
