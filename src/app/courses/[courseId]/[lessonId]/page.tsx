@@ -42,6 +42,7 @@ export async function generateMetadata({ params,
             mdContent = await fs.readFile(mdPath, 'utf8');
             break;
         } catch (error) {
+            console.error(error)
             continue;
         }
     }
@@ -123,6 +124,7 @@ export default async function LessonPage({
                 console.log("Found markdown at:", foundPath);
                 break; // File found, exit loop
             } catch (error) {
+                console.error(error)
                 // File not found in this folder, continue to next
                 continue;
             }
@@ -191,7 +193,7 @@ export default async function LessonPage({
                 <div className="max-w-3xl mx-auto mb-12">
                     <h2 className="text-2xl md:text-3xl font-bold mb-4">📘 Challenge Yourself</h2>
                     <p className="text-lg text-gray-300 mb-8">
-                        Ready to go hands-on? Complete the reading assignment to reinforce this lesson's concepts. Then, take the short quiz to test your technical fluency.
+                        Ready to go hands-on? Complete the reading assignment to reinforce this lesson&apos;s concepts. Then, take the short quiz to test your technical fluency.
                     </p>
                     <LessonClientWrapper lessonId={lessonId} />
                 </div>

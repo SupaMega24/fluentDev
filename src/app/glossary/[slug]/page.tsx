@@ -35,11 +35,12 @@ export async function generateMetadata({ params }: PageProps) {
     if (!term) return {};
 
     // Try to read markdown frontmatter
-    const mdPath = path.join(process.cwd(), "content", "glossary-explainers", `${slug}.md`);
+    const mdPath = path.join(process.cwd(), "content", "glossary", `${slug}.md`);
     let mdContent = "";
     try {
         mdContent = await fs.readFile(mdPath, "utf8");
     } catch (error) {
+        console.error(error)
         // fallback: no MD file
     }
 
@@ -89,6 +90,7 @@ export default async function GlossaryTermPage({ params }: PageProps) {
         const processed = await remark().use(html).process(content);
         mdHtml = processed.toString();
     } catch (error) {
+        console.error(error)
         // fallback: no long-form content
     }
 

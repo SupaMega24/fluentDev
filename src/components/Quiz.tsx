@@ -61,7 +61,7 @@ export default function Quiz({
             <h2 className="text-2xl font-bold mb-6">🎓 Quiz: Test Your Blockchain Knowledge</h2>
             <p className="text-lg text-gray-300 mb-6">
                 Ready to put your skills to the test? Take this short quiz to test your
-                understanding of the lesson's core concepts. Solidify your knowledge before
+                understanding of the lesson&apos;s core concepts. Solidify your knowledge before
                 moving on to the next topic in your learning path.
             </p>
 

@@ -31,7 +31,7 @@ export default function GlossaryPage() {
                 <h1 className="text-4xl font-bold mb-6 text-center">Blockchain Glossary for Web3 Developers and Professionals</h1>
 
                 <p className="text-lg text-gray-300 mb-8">
-                    Explore FluentDev's blockchain glossary designed for Web3 developers, DeFi professionals,
+                    Explore FluentDev&apos;s blockchain glossary designed for Web3 developers, DeFi professionals,
                     and English language learners. Learn essential terms like gas, smart contracts, signatures,
                     NFTs, and more in clear, simple English to help you master blockchain concepts quickly and confidently.
                 </p>
