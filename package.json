@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
-    "build": "npm run create-glossary && next build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "create-glossary": "ts-node ./lib/createGlossaryPlaceholders.ts"
+    "lint": "next lint"
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",
