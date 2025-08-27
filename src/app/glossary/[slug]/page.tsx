@@ -97,23 +97,23 @@ export default async function GlossaryTermPage({ params }: PageProps) {
     return (
         <main className="min-h-screen bg-gray-900 text-white">
             <section className="container mx-auto px-4 py-16 flex flex-col w-full max-w-3xl">
-                <Link href="/glossary" className="text-blue-400 hover:text-blue-300 mb-6 inline-block">
+                <Link href="/glossary" className="text-blue-400 hover:text-blue-300 mb-6 inline-block text-xl">
                     ← Back to Glossary List
                 </Link>
 
                 <h1 className="text-4xl font-bold mb-4">{term.term}</h1>
-                <p className="text-xl text-gray-300 mb-6">{term.definition}</p>
+                <p className="text-xl text-gray-200 mb-6">{term.definition}</p>
 
                 {term.analogy && (
-                    <div className="mb-6 p-4 bg-gray-800 rounded ">
+                    <div className="mb-6 p-4 bg-blue-600 rounded ">
                         <h2 className="text-2xl font-semibold mb-2">To put it in plain English</h2>
-                        <p className="text-gray-300">{term.analogy}</p>
+                        <p className="text-gray-200 text-lg">{term.analogy}</p>
                     </div>
                 )}
 
                 {/* Long-form Markdown content */}
                 {mdHtml && (
-                    <div className="mt-8 max-w-3xl prose prose-invert" dangerouslySetInnerHTML={{ __html: mdHtml }} />
+                    <div className="text-xl mt-8 max-w-3xl prose prose-invert text-gray-300" dangerouslySetInnerHTML={{ __html: mdHtml }} />
                 )}
 
                 {term.learnMore && (
@@ -126,14 +126,14 @@ export default async function GlossaryTermPage({ params }: PageProps) {
 
                 {/* Related Lessons */}
                 {term.lessonIds?.length && (
-                    <div className="mb-6 max-w-3xl">
+                    <div className="my-6 max-w-3xl">
                         <h2 className="text-2xl font-semibold mb-2">Related Lessons</h2>
                         <ul className="list-disc list-inside text-gray-300">
                             {term.lessonIds.map((lessonId) => {
                                 const path = getLessonPath(lessonId);
                                 return path ? (
                                     <li key={lessonId}>
-                                        <Link href={path} target="_blank" className="text-blue-400 hover:text-blue-300">
+                                        <Link href={path} target="_blank" className="text-xl text-blue-400 hover:text-blue-300">
                                             {lessonId.replace(/-/g, " ")}
                                         </Link>
                                     </li>

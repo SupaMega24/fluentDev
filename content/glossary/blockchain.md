@@ -3,6 +3,20 @@ title: "What is Blockchain"
 description: "Learn about blockchain technology and how it works."
 ---
 
+## Using Blockchain in English
+
+### Blockchain
+
+The word **blockchain** is a noun. It is the name for the technology itself.
+
+**Example Sentence**: "**Blockchain** is the decentralized ledger that powers cryptocurrencies."
+
+### Blockchain-based
+
+The word **blockchain-based** is an adjective. It is used to describe something that is built on or uses blockchain technology.
+
+**Example Sentence:** "The company is launching a new **blockchain-based** voting system."
+
 ## What is a Blockchain?
 
 A blockchain is a decentralized, distributed digital ledger that records transactions across many computers. Think of it as a shared, unchangeable record book. Instead of a single bank or company holding all the records, a blockchain distributes copies of the ledger to all participants in the network. This makes the data transparent and highly secure, as it's nearly impossible to alter a record without every participant agreeing to the change.
