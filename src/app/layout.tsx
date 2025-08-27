@@ -6,6 +6,7 @@ import { Providers } from "./providers";
 import { Analytics } from "@vercel/analytics/next"
 import { Navbar } from "@/components/Navbar";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const fontSans = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -42,6 +43,7 @@ export default function RootLayout({
           <Analytics />
           <Footer />
         </Providers>
+        <SpeedInsights />
       </body>
       <GoogleAnalytics gaId="G-SHH52T1YSX" />
     </html>
