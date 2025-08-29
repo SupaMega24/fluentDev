@@ -1,9 +1,7 @@
 import Quiz from '@/components/Quiz';
 import { loadQuiz } from '@/lib/loadQuiz';
 
-interface QuizPageProps {
-    params: { lessonId: string };
-}
+
 
 export default async function QuizPage({
     params,
@@ -14,7 +12,7 @@ export default async function QuizPage({
     const quizData = await loadQuiz(lessonId);
 
     if (!quizData) {
-        return <p className="p-8">No quiz found for "{lessonId}"</p>;
+        return <p className="p-8">No quiz found for &quot;{lessonId}&quot;</p>;
     }
 
     return (
