@@ -39,12 +39,12 @@ export default function MailerLiteForm() {
                         >
                             <div className="ml-form-formContent ">
                                 <div className="ml-form-fieldRow ml-last-item" >
-                                    <div className="ml-field-group ml-field-email ml-validate-email ml-validate-required text-xl mt-4 ">
+                                    <div className="ml-field-group ml-field-email ml-validate-email ml-validate-required text-black text-xl mt-4 ">
                                         <input
                                             aria-label="email"
                                             aria-required="true"
                                             type="email"
-                                            className="form-control w-full rounded-md"
+                                            className="form-control w-full rounded-sm px-2 py-1"
                                             name="fields[email]"
                                             placeholder="Email"
                                             autoComplete="email"
