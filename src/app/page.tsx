@@ -11,7 +11,7 @@ import {
   ArrowRightCircleIcon,
 } from "@heroicons/react/24/solid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBluesky, faYoutube, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube, faInstagram, faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 
 export const metadata: Metadata = {
@@ -259,17 +259,17 @@ export default function HomePage() {
           {/* Bluesky */}
           <div className="flex flex-col items-center">
             <Link
-              href="https://bsky.app/profile/fluentdev1.bsky.social"
+              href="https://discord.gg/mQbkQzPkVZ"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon
-                icon={faBluesky}
+                icon={faDiscord}
                 className="text-white hover:text-blue-300 transition-colors"
                 size="3x"
               />
             </Link>
-            <p className="mt-3 text-sm">Updates & Snippets</p>
+            <p className="mt-3 text-sm">Updates & Discussion</p>
           </div>
 
           {/* Instagram */}
@@ -285,7 +285,7 @@ export default function HomePage() {
                 size="3x"
               />
             </Link>
-            <p className="mt-3 text-sm">Mini-lessons & Trivia</p>
+            <p className="mt-3 text-sm">Concepts & Trivia</p>
           </div>
         </div>
       </section>
