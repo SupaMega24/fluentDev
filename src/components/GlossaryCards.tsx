@@ -54,6 +54,17 @@ export default function GlossaryCards({ terms, lessonId }: { terms: GlossaryTerm
                                 Analogy: {selectedTerm.analogy}
                             </p>
                         )}
+
+                        {selectedTerm.learnMore && (
+                            <a
+                                href={selectedTerm.learnMore}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 hover:text-blue-800 font-semibold mt-4 inline-block"
+                            >
+                                Learn more about {selectedTerm.term} →
+                            </a>
+                        )}
                     </div>
                 </div>
             )}

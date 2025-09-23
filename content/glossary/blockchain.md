@@ -9,7 +9,13 @@ description: "Learn about blockchain technology and how it works."
 
 The word **blockchain** is a noun. It is the name for the technology itself.
 
-**Example Sentence**: "**Blockchain** is the decentralized ledger that powers cryptocurrencies."
+**Example Sentence:** "**Blockchain** is the decentralized ledger that powers cryptocurrencies."
+
+### Blockchain network
+
+The phrase **blockchain network** is a noun phrase. It refers to the connected system of computers that maintain a blockchain.
+
+**Example Sentence:** "The **blockchain network** consists of thousands of nodes worldwide, validating transactions."
 
 ### Blockchain-based
 
@@ -27,7 +33,7 @@ In its simplest form, a blockchain is a chain of blocks. Each block contains a l
 
 ### What is blockchain technology?
 
-Blockchain is a foundational technology—much like the internet itself—that allows for the creation of secure, decentralized systems. It's the engine behind cryptocurrencies like Bitcoin and Ethereum, but its applications extend far beyond money. Blockchain technology is a system of recording information in a way that makes it difficult or impossible to change, hack, or cheat the system. It uses cryptographic principles to link blocks together, creating a permanent and immutable record of all transactions.
+Blockchain is a foundational technology, much like the internet itself, that allows for the creation of secure, decentralized systems. It's the engine behind cryptocurrencies like Bitcoin and Ethereum, but its applications extend far beyond money. Blockchain technology is a system of recording information in a way that makes it difficult or impossible to change, hack, or cheat the system. It uses cryptographic principles to link blocks together, creating a permanent and immutable record of all transactions.
 
 ### How does blockchain work?
 

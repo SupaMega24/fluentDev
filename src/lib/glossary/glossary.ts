@@ -83,7 +83,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "A type of distributed ledger where data is stored in blocks that are linked together and secured using cryptography.",
         analogy: "Think of it as a digital chain of sealed boxes, each containing a record of transactions, permanently linked to form a timeline.",
         lessonIds: ["blockchain-basics", "smart-contracts"],
-        learnMore: ""
+        learnMore: "https://fluentdev.vercel.app/glossary/blockchain"
     },
     {
         term: "Cryptography",
