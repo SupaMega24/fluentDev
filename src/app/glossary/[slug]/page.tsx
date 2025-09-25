@@ -89,6 +89,9 @@ export default async function GlossaryTermPage({ params }: PageProps) {
         const { content } = matter(mdContent);
         const processed = await remark().use(html).process(content);
         mdHtml = processed.toString();
+
+        // Add target="_blank" to all links
+        mdHtml = mdHtml.replace(/<a href="/g, '<a target="_blank" rel="noopener noreferrer" href="');
     } catch (error) {
         console.error(error)
         // fallback: no long-form content
@@ -113,15 +116,18 @@ export default async function GlossaryTermPage({ params }: PageProps) {
 
                 {/* Long-form Markdown content */}
                 {mdHtml && (
-                    <div className="text-xl mt-8 max-w-3xl prose prose-invert text-gray-300" dangerouslySetInnerHTML={{ __html: mdHtml }} />
-                )}
-
-                {term.learnMore && (
-                    <div className="mt-8">
-                        <Link href={term.learnMore} className="text-blue-400 hover:text-blue-300 font-semibold">
-                            Learn more about {term.term} →
-                        </Link>
-                    </div>
+                    <div
+                        className="text-xl mt-8 max-w-3xl prose prose-invert text-gray-300
+                                   prose-h1:text-4xl prose-h1:font-bold prose-h1:mt-8 prose-h1:mb-4
+                                   prose-h2:text-3xl prose-h2:font-semibold prose-h2:mt-6 prose-h2:mb-3 prose-h2:text-blue-400
+                                   prose-h3:text-xl prose-h3:font-semibold prose-h3:mt-6 prose-h3:mb-3
+                                   prose-p:text-lg prose-p:text-gray-200 prose-p:mb-4
+                                   prose-strong:text-blue-400 prose-strong:font-semibold
+                                   prose-a:text-blue-400 hover:prose-a:text-blue-300
+                                   prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:text-gray-300
+                                   prose-li:mb-1 prose-li:text-lg"
+                        dangerouslySetInnerHTML={{ __html: mdHtml }}
+                    />
                 )}
 
                 {/* Related Lessons */}
@@ -147,4 +153,3 @@ export default async function GlossaryTermPage({ params }: PageProps) {
         </main>
     );
 }
-
