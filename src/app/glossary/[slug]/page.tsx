@@ -88,6 +88,7 @@ export default async function GlossaryTermPage({ params }: PageProps) {
         const mdContent = await fs.readFile(mdPath, "utf8");
         const { content } = matter(mdContent);
         const processed = await remark().use(html).process(content);
+
         mdHtml = processed.toString();
 
         // Add target="_blank" to all links
