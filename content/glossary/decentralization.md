@@ -11,7 +11,7 @@ In blockchain, **decentralization** means that authority and decision-making are
 
 ### Why is decentralization important?
 
-Decentralization is the principle that allows [blockchai](https://fluentdev.vercel.app/glossary/blockchain) systems to function without a central authority. Its main benefits include:
+Decentralization is the principle that allows [blockchain](https://fluentdev.vercel.app/glossary/blockchain) systems to function without a central authority. Its main benefits include:
 
 - **Security:** By removing single points of failure, decentralized networks are harder to attack or shut down.  
 - **Transparency:** Public blockchains make all [transactions](https://fluentdev.vercel.app/glossary/transaction) visible, so anyone can verify activity.  
@@ -56,7 +56,7 @@ Decentralization isn’t limited to how a blockchain [validates](https://fluentd
 
 - **Decentralized applications** ([dApps](https://fluentdev.vercel.app/glossary/dapp)): Apps that run on smart contracts instead of company servers.  
 - **Decentralized finance** ([DeFi](https://fluentdev.vercel.app/glossary/defi)): Financial services (loans, trading, savings) built without banks.  
-- **Decentralized exchanges**([DEXs](https://fluentdev.vercel.app/glossary/dex)): Platforms like Uniswap where users trade directly from wallets.  
+- **Decentralized exchanges** ([DEXs](https://fluentdev.vercel.app/glossary/dex)): Platforms like Uniswap where users trade directly from wallets.  
 - **Decentralized autonomous organizations** ([DAOs](https://fluentdev.vercel.app/glossary/dao)): Internet-native communities governed by tokens and voting.  
 - **Decentralized oracle networks** ([DONs](https://fluentdev.vercel.app/glossary/oracle-network)): Networks like Chainlink that connect blockchains to real-world data.  
 - [Cryptocurrencies:](https://fluentdev.vercel.app/glossary/cryptocurrency) Digital money like Bitcoin or Ether that no central bank controls.  
