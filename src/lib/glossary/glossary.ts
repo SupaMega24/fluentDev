@@ -90,7 +90,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "The practice of using mathematical techniques to secure data and communications from unauthorized access.",
         analogy: "Seals information with a secret code, only those with the right key can read or verify it.",
         lessonIds: ["blockchain-basics", "explaining-technical-processes", "cryptocurrency"],
-        learnMore: ""
+        learnMore: "https://fluentdev.vercel.app/glossary/cryptography"
     },
     {
         term: "Externally-owned Account (EOA)",
@@ -125,7 +125,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "Units of data that hold a batch of transactions and are linked to form the blockchain.",
         analogy: "Each block is a page in a ledger book, permanently glued to the page before it.",
         lessonIds: ["blockchain-basics"],
-        learnMore: ""
+        learnMore: "https://fluentdev.vercel.app/glossary/blocks"
     },
     {
         term: "Distributed Ledger Technology (DLT)",
@@ -146,7 +146,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "A protocol that allows a decentralized network of nodes to agree on a single version of truth.",
         analogy: "It’s a democratic process where a majority of participants must approve any new page before it’s added to the book.",
         lessonIds: ["blockchain-basics", "explaining-technical-processes"],
-        learnMore: ""
+        learnMore: "https://fluentdev.vercel.app/glossary/consensus-mechanism"
     },
     {
         term: "Validators",
@@ -237,7 +237,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "A system design where control and decision-making are distributed across many participants rather than held by a central authority.",
         analogy: "Like a community garden where everyone contributes and no single person is in charge of all decisions.",
         lessonIds: ["blockchain-basics", "types-of-blockchains"],
-        learnMore: ""
+        learnMore: "https://fluentdev.vercel.app/glossary/decentralization"
     },
     {
         term: "Proof of Work",

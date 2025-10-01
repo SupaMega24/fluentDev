@@ -47,7 +47,7 @@ export default function HomePage() {
       {/* Section 1: What is FluentDev? */}
       <section className="my-8 min-h-screen flex flex-col justify-center items-center px-6 text-center bg-white dark:bg-gray-900">
         <h1 className="text-6xl font-bold mb-6 text-blue-600">
-          English for Web3 Professionals
+          Education for Web3 Professionals
         </h1>
         <p className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-8">
           Learn Blockchain. Improve Your English. Advance Your Career.
@@ -130,16 +130,16 @@ export default function HomePage() {
             <p className="text-gray-700 dark:text-gray-300 mb-4 text-lg">
               Master English communication skills essential for Web3 developers, from explaining smart contracts to delivering technical demos and proposals.
             </p>
-            <Link href="/courses" className="inline-block text-blue-600 hover:underline font-semibold">
+            <Link href="/courses/english-for-web3-1" className="inline-block text-blue-600 hover:underline font-semibold">
               Browse Technical English Courses →
             </Link>
           </div>
           <div className="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md p-8">
-            <h3 className="text-2xl font-semibold mb-4">Grammar & Vocabulary</h3>
+            <h3 className="text-2xl font-semibold mb-4">Core Concept Explainers</h3>
             <p className="text-gray-700 dark:text-gray-300 mb-4 text-lg">
-              Learn grammar structures and Web3 concepts in context, with scenario-based lessons and interactive practice.
+              Learn Web3 concepts in context, with scenario-based lessons and interactive practice. Understand blockchain fundamentals while improving your skills.
             </p>
-            <Link href="/courses" className="inline-block text-blue-600 hover:underline font-semibold">
+            <Link href="/courses/web3-fundamentals" className="inline-block text-blue-600 hover:underline font-semibold">
               Explore English for Web3 Courses →
             </Link>
           </div>
@@ -148,7 +148,7 @@ export default function HomePage() {
           href="/courses"
           className="mt-12 bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-semibold transition"
         >
-          View All of Our English for Web3 Courses
+          View All of Our Web3 Courses
         </Link>
       </section>
 

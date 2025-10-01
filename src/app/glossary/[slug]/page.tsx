@@ -6,6 +6,7 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import remarkGfm from "remark-gfm"; // Add this import
 import { getLessonPath } from "@/lib/data";
 import ScrollToTop from '@/components/ScrolToTop';
 
@@ -87,7 +88,10 @@ export default async function GlossaryTermPage({ params }: PageProps) {
     try {
         const mdContent = await fs.readFile(mdPath, "utf8");
         const { content } = matter(mdContent);
-        const processed = await remark().use(html).process(content);
+        const processed = await remark()
+            .use(remarkGfm) // Add this line
+            .use(html)
+            .process(content);
 
         mdHtml = processed.toString();
 
@@ -124,9 +128,11 @@ export default async function GlossaryTermPage({ params }: PageProps) {
                                    prose-h3:text-xl prose-h3:font-semibold prose-h3:mt-6 prose-h3:mb-3
                                    prose-p:text-lg prose-p:text-gray-200 prose-p:mb-4
                                    prose-strong:text-blue-400 prose-strong:font-semibold
-                                   prose-a:text-blue-400 hover:prose-a:text-blue-300
-                                   prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:text-gray-300
-                                   prose-li:mb-1 prose-li:text-lg"
+                                   prose-a:text-blue-400 hover:prose-a:text-blue-300 
+                                   prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:ml-10 prose-blockquote:italic prose-blockquote:text-gray-300                                   
+                                   prose-li:mb-1 prose-li:text-lg
+                                   "
+
                         dangerouslySetInnerHTML={{ __html: mdHtml }}
                     />
                 )}

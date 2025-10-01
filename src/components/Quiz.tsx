@@ -193,7 +193,7 @@ export default function Quiz({
                 </div>
             )}
 
-            {/* 🆕 Quiz Result Modal */}
+            {/* Quiz Result Modal */}
             {showResultModal && (
                 <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center">
                     <div className="bg-gray-900 rounded-lg shadow-lg p-8 max-w-lg w-full relative border border-gray-700 text-center">
