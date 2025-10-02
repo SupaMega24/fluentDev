@@ -128,11 +128,11 @@ export const glossaryTerms: GlossaryTerm[] = [
         learnMore: "https://fluentdev.vercel.app/glossary/blocks"
     },
     {
-        term: "Distributed Ledger Technology (DLT)",
+        term: "Distributed Ledger Technology",
         definition: "A system where identical copies of a ledger are maintained across multiple computers (nodes) and updated collectively.",
         analogy: "Imagine a shared online spreadsheet that thousands of people update together, but no one can secretly change past entries.",
         lessonIds: ["blockchain-basics"],
-        learnMore: ""
+        learnMore: "https://fluentdev.vercel.app/glossary/distributed-ledger-technology"
     },
     {
         term: "Nodes",
