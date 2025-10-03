@@ -41,7 +41,7 @@ While DLTs bring many benefits, there are also technical and practical limitatio
 DLT is a broad category, and blockchain is just one type. Understanding the difference helps clarify how systems operate:
 
 - **Blockchain:** Groups transactions into [blocks](https://fluentdev.vercel.app/glossary/blocks), cryptographically linked to form a chain.  
-- [Directed Acyclic Graphs (DAGs):](https://atomicwallet.io/academy/articles/what-is-iota) Organize transactions in a web-like structure rather than linear blocks.
+- **DAG-based ledgers:** Organize transactions in a web-like structure, [Directed Acyclic Graphs (DAGs):](https://atomicwallet.io/academy/articles/what-is-iota) rather than linear blocks.
 - **Hashgraph:** Uses a [“gossip about gossip”](https://hedera.com/learning/hedera-hashgraph/what-is-gossip-about-gossip?) protocol where nodes share information about transactions with each other. This allows for fast, fair ordering without mining.  
 - **Holochain:** Stores data [agent-centrically](https://www.holochain.org/what-holochain/), meaning each user maintains their own chain that can link with others in an encrypted peer-to-peer network. It emphasizes scalability and autonomy rather than consensus across the whole network.
 
