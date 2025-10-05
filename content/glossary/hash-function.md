@@ -19,7 +19,19 @@ Every block in a blockchain contains the hash of the previous block, creating a 
 
 ## How do hash functions work?
 
-When you run data through a hash function, it processes that data using complex mathematical operations to produce a unique hash value. The same data will always give the same hash, but the hash cannot be reversed to reveal the original input. 
+When you run data through a hash function, it processes that data using complex mathematical rules to produce a unique hash value. The same data will always give the same hash, but the hash cannot be reversed to reveal the original input.
+
+Here’s the step-by-step process:
+
+- **Input processing:** The hash function accepts an input (called a message), which can be of any size or format.
+
+- **Segmentation:** The input is divided into smaller, manageable parts.
+
+- **Mathematical operations:** Each part is transformed through a sequence of algorithmic steps.
+
+- **Output:** The results are combined into a single fixed-length value, the hash.
+
+![hashing diagram](./hashing.png) 
 
 **NOTE:** Tools like [Ethereum Transaction Decoder](https://www.ethereumdecoder.com/) don't "decode" hashes in the [cryptographic](https://fluentdev.vercel.app/glossary/cryptography) sense. Instead, they use the transaction hash as a lookup ID. You can look at it like using a tracking number to find a package. The actual transaction data (sender, receiver, [gas fees](https://fluentdev.vercel.app/glossary/gas-fee)) is stored on the blockchain, and the hash simply points to it.
 
