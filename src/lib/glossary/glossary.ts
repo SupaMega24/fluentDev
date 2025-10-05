@@ -118,7 +118,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "A function that transforms any input into a fixed-length string of characters, uniquely representing the original data.",
         analogy: "Works like a fingerprint for data: unique, tamper-evident, and impossible to reverse.",
         lessonIds: ["blockchain-basics"],
-        learnMore: ""
+        learnMore: "https://fluentdev.vercel.app/glossary/hash-function"
     },
     {
         term: "Blocks",
