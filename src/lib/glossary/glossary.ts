@@ -195,7 +195,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "A cryptographic key that allows others to send encrypted information or verify a digital signature.",
         analogy: "Think of it as your public address. Anyone can send you mail, but only you can open it with your private key.",
         lessonIds: ["blockchain-basics", "cryptocurrency"],
-        learnMore: ""
+        learnMore: "https://fluentdev.vercel.app/glossary/public-key/"
     },
     {
         term: "ECDSA",
@@ -216,7 +216,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "A secret cryptographic key that proves ownership and allows control of blockchain assets.",
         analogy: "This is your master password. Whoever holds it controls the funds or identity tied to that key.",
         lessonIds: ["blockchain-basics", "explaining-technical-processes", "cryptocurrency"],
-        learnMore: ""
+        learnMore: "https://fluentdev.vercel.app/glossary/private-key"
     },
     {
         term: "Wallet",
