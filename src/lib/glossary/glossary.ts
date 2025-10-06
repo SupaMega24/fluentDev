@@ -139,7 +139,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "Individual computers that participate in maintaining and verifying the blockchain network.",
         analogy: "Like librarians around the world, each keeping a synced copy of the same record book.",
         lessonIds: ["blockchain-basics", "describing-smart-contract-functionality"],
-        learnMore: ""
+        learnMore: "https://fluentdev.vercel.app/glossary/nodes"
     },
     {
         term: "Consensus Mechanism",
