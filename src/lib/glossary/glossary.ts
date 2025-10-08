@@ -258,7 +258,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "A consensus mechanism where only pre-approved, trusted validators can validate transactions and create blocks.",
         analogy: "Like a private club where only verified members can vote - faster but less decentralized.",
         lessonIds: ["blockchain-basics"],
-        learnMore: ""
+        learnMore: "https://fluentdev.vercel.app/glossary/proof-of-authority"
     },
     {
         term: "Transaction",
