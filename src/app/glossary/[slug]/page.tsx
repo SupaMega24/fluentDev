@@ -104,7 +104,7 @@ export default async function GlossaryTermPage({ params }: PageProps) {
         // fallback: no long-form content
     }
 
-    let tableOfContents: { id: string; text: string; level: number }[] = [];
+    const tableOfContents: { id: string; text: string; level: number }[] = [];
     if (mdHtml) {
         const root = parse(mdHtml);
         const headers = root.querySelectorAll("h1, h2, h3");
@@ -113,7 +113,7 @@ export default async function GlossaryTermPage({ params }: PageProps) {
         headers.forEach((header) => {
             const level = parseInt(header.tagName.charAt(1));
             const text = header.text;
-            let id = slugify(text, { lower: true, strict: true });
+            const id = slugify(text, { lower: true, strict: true });
 
             // Ensure unique IDs
             let uniqueId = id;
