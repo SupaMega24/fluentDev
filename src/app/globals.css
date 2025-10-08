@@ -77,6 +77,17 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+  h1[id],
+  h2[id],
+  h3[id] {
+    @apply scroll-mt-28;
+    /* ~80px offset for anchor scroll */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 .blog-content img {

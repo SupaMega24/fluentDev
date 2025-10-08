@@ -223,7 +223,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "A tool (software, hardware, or paper) that stores and manages your public/private key pair and interacts with the blockchain.",
         analogy: "It doesn’t hold money directly, it holds the keys to access it.",
         lessonIds: ["blockchain-basics", "comparing-and-contrasting-protocols"],
-        learnMore: ""
+        learnMore: "https://fluentdev.vercel.app/glossary/wallet"
     },
     {
         term: "Token",

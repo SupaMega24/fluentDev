@@ -9,6 +9,8 @@ import html from "remark-html";
 import remarkGfm from "remark-gfm"; // Add this import
 import { getLessonPath } from "@/lib/data";
 import ScrollToTop from '@/components/ScrolToTop';
+import { parse } from 'node-html-parser';
+import slugify from 'slugify';
 
 interface PageProps {
     params: Promise<{ slug: string }>;
@@ -102,6 +104,32 @@ export default async function GlossaryTermPage({ params }: PageProps) {
         // fallback: no long-form content
     }
 
+    let tableOfContents: { id: string; text: string; level: number }[] = [];
+    if (mdHtml) {
+        const root = parse(mdHtml);
+        const headers = root.querySelectorAll("h1, h2, h3");
+        const usedIds = new Set<string>();
+
+        headers.forEach((header) => {
+            const level = parseInt(header.tagName.charAt(1));
+            const text = header.text;
+            let id = slugify(text, { lower: true, strict: true });
+
+            // Ensure unique IDs
+            let uniqueId = id;
+            let counter = 1;
+            while (usedIds.has(uniqueId)) {
+                uniqueId = `${id}-${counter++}`;
+            }
+            usedIds.add(uniqueId);
+
+            header.setAttribute('id', uniqueId);
+            tableOfContents.push({ id: uniqueId, text, level });
+        });
+
+        mdHtml = root.toString();
+    }
+
     return (
         <main className="min-h-screen bg-gray-900 text-white">
             <section className="container mx-auto px-4 py-16 flex flex-col w-full max-w-3xl">
@@ -117,6 +145,20 @@ export default async function GlossaryTermPage({ params }: PageProps) {
                         <h2 className="text-2xl font-semibold mb-2">To put it in plain English</h2>
                         <p className="text-gray-200 text-lg">{term.analogy}</p>
                     </div>
+                )}
+
+                {/* Table of Contents */}
+                {tableOfContents.length > 0 && (
+                    <nav className="my-6 p-4 bg-gray-600 rounded">
+                        <h2 className="text-3xl font-semibold mb-2">Table of Contents</h2>
+                        <ul className="ml-4 text-lg">
+                            {tableOfContents.map(item => (
+                                <li key={item.id} style={{ marginLeft: (item.level - 1) * 16 }}>
+                                    <a href={`#${item.id}`} className="hover:text-blue-400 hover:underline">{item.text}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
                 )}
 
                 {/* Long-form Markdown content */}
