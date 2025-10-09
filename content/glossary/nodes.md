@@ -29,7 +29,7 @@ Different types of nodes serve different purposes depending on how much data the
 
 - **Full node:** Stores the entire blockchain and independently verifies every transaction and block.  
 - **Light node:** Stores only essential data and relies on full nodes for full transaction verification.  
-- **Archived node:** Keeps historical blockchain states, often used by explorers or analytics tools.  
+- **Archive node:** Keeps historical blockchain states, often used by explorers or analytics tools.  
 - **Pruned node:** Starts as a full node but deletes old data to save space, keeping only the most recent blocks.  
 - **Consensus node:** Takes part in block validation and consensus processes (e.g., validators in Solana or Ethereum).  
 - **Remote Procedure Call (RPC) node:** Provides an interface that lets developers and decentralized apps ([dApps](https://fluentdev.vercel.app/glossary/dapp)) interact with the blockchain.  
