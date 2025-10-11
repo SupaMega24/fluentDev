@@ -106,16 +106,62 @@ Always check the recipient address, amount, and fees before confirming a transac
 
 Here are common ways the term "private key" appears in blockchain and cybersecurity contexts:
 
-> "Never share your **private key** with anyone — it gives complete control of your funds."
+### Warning others about security
 
-> "Your wallet generates a **private key** that must be kept secret and backed up safely."
+The most important rule in crypto is never sharing your private key, as it grants full access to your funds.
 
-> "Transactions are signed with your **private key** and verified using your public key."
+Structure: Never share your private key + consequence
 
-> "If you lose your **private key**, there is no way to recover your cryptocurrency."
+> Never share your **private key** with anyone. It gives them complete control of your funds.
 
-> "**Private key management** is the most critical aspect of cryptocurrency security."
+> Keep your **private key** secret. No legitimate service will ever ask for it.
 
-> "Hardware wallets keep your **private key** isolated from internet-connected devices."
+### Explaining wallet setup and backup
 
-> "The **seed phrase** can regenerate all your private keys if you need to restore your wallet."
+When creating a wallet, users must understand the importance of securing and backing up their private key.
+
+Structure: Your wallet generates a private key + security instruction
+
+> Your wallet generates a **private key** that must be kept secret and backed up safely.
+
+> Write down your **private key** or seed phrase and store it offline in a secure location.
+
+### Describing transaction signing
+
+Private keys are used to cryptographically sign transactions, proving you authorized them.
+
+Structure: Transactions are signed with private key + verification method
+
+> Transactions are signed with your **private key** and verified using your public key.
+
+> Your **private key** creates a digital signature that proves the transaction came from you.
+
+### Warning about loss and recovery
+
+Unlike traditional accounts, there's no password reset for blockchain. Losing your private key means losing access forever.
+
+Structure: If you lose your private key + consequence
+
+> If you lose your **private key**, there is no way to recover your cryptocurrency.
+
+> Without your **private key**, your funds are permanently inaccessible, even to you.
+
+### Discussing security best practices
+
+Proper private key storage is the foundation of cryptocurrency security.
+
+Structure: Private key management/storage + importance/method
+
+> **Private key management** is the most critical aspect of cryptocurrency security.
+
+> Hardware wallets keep your **private key** isolated from internet-connected devices.
+
+### Explaining seed phrases and recovery
+
+Seed phrases serve as a backup that can restore all your private keys if needed.
+
+Structure: Seed phrase + relationship to private keys
+
+> The **seed phrase** can regenerate all your private keys if you need to restore your wallet.
+
+> Your **seed phrase** is a backup of your **private key.** Protect it like the key itself.
