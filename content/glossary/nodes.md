@@ -48,13 +48,13 @@ For example, **Bitcoin Core** runs Bitcoin nodes, **Solana Validator** software 
 ## Using node in English
 
 ### Discussing network reliability
-> “Running multiple **nodes** helps ensure the network remains online even if one fails.”
+> Running multiple **nodes** helps ensure the network remains online even if one fails.
 
 ### Explaining project infrastructure  
-> “Our dApp relies on **RPC nodes** to connect users’ transactions to the blockchain.”
+> Our dApp relies on **RPC nodes** to connect users’ transactions to the blockchain.
 
 ### Talking about system performance  
-> “We deployed a **pruned node** to balance storage costs with fast data access.”
+> We deployed a **pruned node** to balance storage costs with fast data access.
 
 
 
