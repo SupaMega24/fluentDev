@@ -195,14 +195,13 @@
         },
         {
             "id": 19,
-            "question": "_______ are government-created digital currencies that combine cryptocurrency convenience with government backing.",
+            "question": "Stablecoins are government-created digital currencies that combine cryptocurrency convenience with government backing.",
             "options": [
-                "CBDCs",
-                "Stablecoins",
-                "Privacy coins"
+                "False",
+                "True"
             ],
             "answer": 0,
-            "explanation": "CBDCs (Central Bank Digital Currencies) are digital currencies that governments are exploring to combine cryptocurrency convenience with government backing."
+            "explanation": "CBDCs (Central Bank Digital Currencies), not stablecoins, are digital currencies that governments are exploring to combine cryptocurrency convenience with government backing."
         },
         {
             "id": 20,
