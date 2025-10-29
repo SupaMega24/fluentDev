@@ -241,23 +241,23 @@ export const glossaryTerms: GlossaryTerm[] = [
     },
     {
         term: "Proof of Work",
-        definition: "A consensus mechanism where participants compete to solve complex puzzles to validate transactions.",
+        definition: "Part of a consensus mechanism where participants compete to solve complex puzzles to validate transactions.",
         analogy: "Like a race where miners solve math problems, and the first to finish gets to write the next ledger page.",
-        lessonIds: ["blockchain-basics", "types-of-blockchains"],
-        learnMore: ""
+        lessonIds: ["blockchain-basics", "types-of-blockchains", "consensus-algorithms"],
+        learnMore: "https://fluentdev.vercel.app/glossary/proof-of-work"
     },
     {
         term: "Proof of Stake",
-        definition: "A consensus mechanism where validators stake cryptocurrency as collateral and are pseudo-randomly selected to create blocks.",
+        definition: "Part of a consensus mechanism where validators stake cryptocurrency as collateral and are pseudo-randomly selected to create blocks.",
         analogy: "Like a weighted lottery where you must buy tickets (stake) to enter, then winners are randomly chosen to validate.",
-        lessonIds: ["blockchain-basics", "types-of-blockchains"],
-        learnMore: ""
+        lessonIds: ["blockchain-basics", "types-of-blockchains", "consensus-algorithms"],
+        learnMore: "https://fluentdev.vercel.app/glossary/proof-of-stake"
     },
     {
         term: "Proof of Authority",
-        definition: "A consensus mechanism where only pre-approved, trusted validators can validate transactions and create blocks.",
+        definition: "Part of a consensus mechanism where only pre-approved, trusted validators can validate transactions and create blocks.",
         analogy: "Like a private club where only verified members can vote. It's faster, but less decentralized.",
-        lessonIds: ["blockchain-basics"],
+        lessonIds: ["blockchain-basics", "consensus-algorithms"],
         learnMore: "https://fluentdev.vercel.app/glossary/proof-of-authority"
     },
     {
