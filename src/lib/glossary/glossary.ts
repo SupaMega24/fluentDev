@@ -229,8 +229,8 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "Token",
         definition: "A digital unit of value or utility issued on a blockchain, often used to represent currency, rights, or access.",
         analogy: "Like arcade tokens. They have value in a specific environment and let you use certain machines or services.",
-        lessonIds: ["blockchain-basics"],
-        learnMore: ""
+        lessonIds: ["blockchain-basics", "cryptocurrency"],
+        learnMore: "https://fluentdev.vercel.app/glossary/token"
     },
     {
         term: "Decentralization",
@@ -241,7 +241,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     },
     {
         term: "Proof of Work",
-        definition: "Part of a consensus mechanism where participants compete to solve complex puzzles to validate transactions.",
+        definition: "Part of a consensus mechanism where participants compete to solve complex puzzles to validate transactions and create new blocks.",
         analogy: "Like a race where miners solve math problems, and the first to finish gets to write the next ledger page.",
         lessonIds: ["blockchain-basics", "types-of-blockchains", "consensus-algorithms"],
         learnMore: "https://fluentdev.vercel.app/glossary/proof-of-work"

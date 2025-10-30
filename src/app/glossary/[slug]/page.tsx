@@ -182,7 +182,7 @@ export default async function GlossaryTermPage({ params }: PageProps) {
                 {/* Related Lessons */}
                 {term.lessonIds?.length && (
                     <div className="my-6 max-w-3xl">
-                        <h2 className="text-2xl font-semibold mb-2">Related Lessons</h2>
+                        <h2 className="text-2xl font-semibold mb-2">Keep Learning! Check out these related lessons</h2>
                         <ul className="list-disc list-inside text-gray-300">
                             {term.lessonIds.map((lessonId) => {
                                 const path = getLessonPath(lessonId);
