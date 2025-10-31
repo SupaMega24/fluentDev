@@ -37,7 +37,7 @@ With a few clicks, she deploys the contract to the Ethereum blockchain. The crys
 
 ## Different use cases
 
-As Alex leaves with their new tokens. Another customer, a nonprofit organizer named Jordan, enters.
+Another customer, a nonprofit organizer named Jordan, enters.
 
 > I want to create [DAO](https://fluentdev.vercel.app/glossary/dao) tokens so our community can vote on which projects to fund, Jordan says.
 
