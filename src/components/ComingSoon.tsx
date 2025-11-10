@@ -1,4 +1,4 @@
-import Image from "next/image";
+//import Image from "next/image";
 import TallySignupForm from "@/components/TallySignupForm";
 import Countdown from "./Countdown";
 
