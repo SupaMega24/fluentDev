@@ -11,7 +11,8 @@ import {
   ArrowRightCircleIcon,
 } from "@heroicons/react/24/solid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faYoutube, faInstagram, faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube, faInstagram, faDiscord, faPatreon } from "@fortawesome/free-brands-svg-icons";
+import Countdown from "@/components/Countdown";
 
 
 export const metadata: Metadata = {
@@ -37,13 +38,66 @@ export const metadata: Metadata = {
   },
 };
 
-
-
-
-
 export default function HomePage() {
   return (
     <main className="overflow-x-hidden">
+      {/* Section: #100DaysOfDeFi Cohort */}
+      <section className="pt-20 pb-8 min-h-screen flex flex-col justify-center items-center px-6 bg-gray-50 dark:bg-gray-900">
+        <div className="max-w-5xl mx-auto">
+          <h1 className="text-6xl font-bold mb-6 text-blue-600">
+            #100DaysOfDeFi
+          </h1>
+
+          <h1 className="text-4xl font-bold mb-6 text-blue-600">
+            February 2nd, 2026
+          </h1>
+
+          <p className="text-2xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-3xl">
+            Join other professionals learning <span className="font-semibold text-blue-600">decentralized finance</span> together.
+            <br />
+            <br />
+            <span className="font-medium">#100DaysOfDeFi</span> is a 10-week guided journey into Web3, from wallets to yield farming,
+            built for curious professionals who want to understand how DeFi really works.
+          </p>
+
+          {/* Countdown Timer */}
+          <Countdown />
+
+          <ul className="text-2xl space-y-3 my-10 text-gray-700 dark:text-gray-300">
+            <li>✅ Weekly lessons with real-world DeFi examples</li>
+            <li>✅ Assignments and group discussion in Discord</li>
+            <li>✅ Designed for busy professionals & eager learners</li>
+            <li>✅ No prior blockchain experience required</li>
+          </ul>
+
+          <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
+            🔥Ready to get started? Register to learn more!🔥
+          </h3>
+
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <a
+              href="https://tally.so/r/68J5VO"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-semibold text-lg transition"
+            >
+              Register for #100DaysOfDeFi
+            </a>
+          </div>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center my-4 gap-4">
+            <a
+              href="https://discord.gg/q5KpUY2w9H"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline font-medium text-lg"
+            >
+              Already registered? Join Discord →
+            </a>
+          </div>
+
+        </div>
+      </section>
+
       {/* Section 1: What is FluentDev? */}
       <section className="my-8 min-h-screen flex flex-col justify-center items-center px-6 text-center bg-white dark:bg-gray-900">
         <h1 className="text-6xl font-bold mb-6 text-blue-600">
@@ -286,6 +340,22 @@ export default function HomePage() {
               />
             </Link>
             <p className="mt-3 text-sm">Concepts & Trivia</p>
+          </div>
+
+          {/* Patreon */}
+          <div className="flex flex-col items-center">
+            <Link
+              href="https://www.patreon.com/c/fluentdev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faPatreon}
+                className="text-white hover:text-blue-300 transition-colors"
+                size="3x"
+              />
+            </Link>
+            <p className="mt-3 text-sm">Extras & Narratives</p>
           </div>
         </div>
       </section>

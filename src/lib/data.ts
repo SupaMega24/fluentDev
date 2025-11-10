@@ -89,7 +89,7 @@ export const courses = [
         description:
             "Learn the fundamentals of DeFi with our beginner's guide. This course covers everything from smart decentralized exchanges (DEXs) and liquidity pools to lending, borrowing, and yield farming. Master the blockchain technology behind decentralized finance and speak confidently about the future of money.",
         image: "/courses/web3-essentials.jpg",
-        duration: "10 hours",
+        duration: "10 weeks",
         skill: "Vocabulary",
         lessons: [
             // {

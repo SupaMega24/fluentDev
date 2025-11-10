@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faYoutube, faInstagram, faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube, faInstagram, faDiscord, faPatreon } from "@fortawesome/free-brands-svg-icons";
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -36,9 +36,9 @@ export const Navbar = () => {
                         <Link href="https://www.youtube.com/channel/UCOcS-HD2YMLvUgwsb8UAm-A" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faYoutube} className="text-white hover:text-blue-500" />
                         </Link>
-                        {/* <Link href="https://bsky.app/profile/fluentdev1.bsky.social" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faBluesky} className="text-white hover:text-blue-500" />
-                        </Link> */}
+                        <Link href="https://www.patreon.com/c/fluentdev" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faPatreon} className="text-white hover:text-blue-500" />
+                        </Link>
                         <Link href="https://www.instagram.com/fluent_dev/" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faInstagram} className="text-white hover:text-blue-500" />
                         </Link>
