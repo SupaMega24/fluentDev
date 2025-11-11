@@ -42,61 +42,71 @@ export default function HomePage() {
   return (
     <main className="overflow-x-hidden">
       {/* Section: #100DaysOfDeFi Cohort */}
-      <section className="pt-20 pb-8 min-h-screen flex flex-col justify-center items-center px-6 bg-gray-50 dark:bg-gray-900">
-        <div className="max-w-5xl mx-auto">
-          <h1 className="text-6xl font-bold mb-6 text-blue-600">
+      <section className="pt-16 pb-12 min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 bg-gray-50 dark:bg-gray-900 overflow-hidden">
+        <div className="w-full max-w-5xl text-center sm:text-left">
+          <h1 className="text-6xl text-center sm:text-5xl md:text-6xl font-bold mb-4 text-blue-600">
+            100 Days Of DeFi
+          </h1>
+
+          <h2 className="text-2xl text-center sm:text-3xl md:text-4xl font-bold mb-6 text-blue-600">
             #100DaysOfDeFi
-          </h1>
+          </h2>
 
-          <h1 className="text-4xl font-bold mb-6 text-blue-600">
-            February 2nd, 2026
-          </h1>
+          <h2 className="text-2xl text-center sm:text-3xl md:text-4xl font-bold mb-6 text-blue-600">
+            Starts February 2nd, 2026
+          </h2>
 
-          <p className="text-2xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-3xl">
-            Join other professionals learning <span className="font-semibold text-blue-600">decentralized finance</span> together.
+          <p className="text-base sm:ml-48 sm:text-lg md:text-2xl text-gray-700 dark:text-gray-300 mb-8 max-w-3xl">
+            Join other professionals learning{" "}
+            <span className="font-semibold text-blue-600">decentralized finance</span>{" "}
+            together.
             <br />
             <br />
-            <span className="font-medium">#100DaysOfDeFi</span> is a 10-week guided journey into Web3, from wallets to yield farming,
-            built for curious professionals who want to understand how DeFi really works.
+            <span className="font-medium">#100DaysOfDeFi</span> is a 10-week guided
+            journey into Web3, from wallets to yield farming, built for curious
+            professionals who want to understand how DeFi really works.
           </p>
 
           {/* Countdown Timer */}
-          <Countdown />
+          <div className="mb-10">
+            <Countdown />
+          </div>
 
-          <ul className="text-2xl space-y-3 my-10 text-gray-700 dark:text-gray-300">
+          <ul className="text-left sm:text-lg md:text-2xl space-y-3 my-8 sm:ml-52 text-gray-700 dark:text-gray-300">
             <li>✅ Weekly lessons with real-world DeFi examples</li>
             <li>✅ Assignments and group discussion in Discord</li>
             <li>✅ Designed for busy professionals & eager learners</li>
             <li>✅ No prior blockchain experience required</li>
           </ul>
 
-          <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
-            🔥Ready to get started? Register to learn more!🔥
+          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-8 text-center">
+            🔥 Ready to get started? Register to learn more! 🔥
           </h3>
 
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="https://tally.so/r/68J5VO"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-semibold text-lg transition"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 mb-6 rounded-lg font-semibold text-base sm:text-lg transition w-full sm:w-auto text-center"
             >
               Register for #100DaysOfDeFi
             </a>
           </div>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center my-4 gap-4">
+
+          <div className="flex flex-col sm:flex-row items-center justify-center mt-4 gap-2">
             <a
               href="https://discord.gg/q5KpUY2w9H"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline font-medium text-lg"
+              className="text-blue-600 hover:underline font-medium text-base sm:text-lg"
             >
               Already registered? Join Discord →
             </a>
           </div>
-
         </div>
       </section>
+
 
       {/* Section 1: What is FluentDev? */}
       <section className="my-8 min-h-screen flex flex-col justify-center items-center px-6 text-center bg-white dark:bg-gray-900">
@@ -242,7 +252,7 @@ export default function HomePage() {
           </div>
         </div>
         {/* Sample Glossary Entry Preview */}
-        <div className="mt-12 max-w-3xl mx-auto p-6 rounded-2xl shadow-lg bg-gray-50 dark:bg-gray-800 border border-blue-600">
+        <div className="my-12 max-w-3xl mx-auto p-6 rounded-2xl shadow-lg bg-gray-50 dark:bg-gray-800 border border-blue-600">
           <h3 className="text-3xl font-semibold text-blue-600 mb-4">What is Blockchain?</h3>
           <p className="text-gray-700 dark:text-gray-300 mb-4 text-lg">
             A blockchain is a shared digital ledger where transactions are recorded in
@@ -285,7 +295,7 @@ export default function HomePage() {
       </section> */}
 
       {/* Section: Community CTA */}
-      <section className="py-20 bg-blue-600 text-white text-center">
+      <section className="py-20 px-6 bg-blue-600 text-white text-center">
         <h2 className="text-5xl font-bold mb-4">Join the fluentDev Community</h2>
         <p className="max-w-2xl mx-auto text-lg mb-10">
           Keep learning about blockchain and growing your English skills.
@@ -293,7 +303,7 @@ export default function HomePage() {
         </p>
 
         {/* Social Links */}
-        <div className="flex justify-center space-x-12">
+        <div className="flex justify-center space-x-12 px-6">
           {/* YouTube */}
           <div className="flex flex-col items-center">
             <Link
