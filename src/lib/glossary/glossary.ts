@@ -544,19 +544,22 @@ export const glossaryTerms: GlossaryTerm[] = [
         term: "protocol",
         definition: "A protocol is a set of rules that define how data is shared or transactions are executed on a blockchain.",
         analogy: "Think of a protocol like the rules of a board game—everyone needs to follow the same rules for the game to work.",
-        lessonIds: ["comparing-and-contrasting-protocols"]
+        lessonIds: ["comparing-and-contrasting-protocols"],
+        learnMore: ""
     },
     {
         term: "altcoin",
         definition: "Altcoin stands for 'alternative coin' and refers to any cryptocurrency other than Bitcoin.",
         analogy: "If Bitcoin is like the first smartphone, altcoins are all the other models that came after, offering different features.",
-        lessonIds: ["comparing-and-contrasting-protocols"]
+        lessonIds: ["comparing-and-contrasting-protocols"],
+        learnMore: ""
     },
     {
         term: "layer-1",
         definition: "Layer-1 refers to the base blockchain network, such as Ethereum or Solana, which processes and finalizes transactions on its own.",
         analogy: "Layer-1 is like the highway. It’s the main road all cars drive on, while Layer-2s are like side roads that help reduce traffic.",
-        lessonIds: ["comparing-and-contrasting-protocols"]
+        lessonIds: ["comparing-and-contrasting-protocols"],
+        learnMore: ""
     },
     {
         term: "testnet",
@@ -647,6 +650,69 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "A data structure in smart contracts that links keys to corresponding values, similar to a dictionary.",
         analogy: "A locker system where each name is assigned a specific compartment with stored information.",
         lessonIds: ["describing-smart-contract-functionality"],
+        learnMore: ""
+    },
+    {
+        term: "Tokenization",
+        definition: "The process of converting rights to an asset into a digital token on a blockchain that can be owned, transferred, and traded.",
+        analogy: "Like converting a physical concert ticket into a digital QR code that holds the same access rights but can be easily transferred online.",
+        lessonIds: ["defi-primatives"],
+        learnMore: ""
+    },
+    {
+        term: "RWA",
+        definition: "Real World Assets - physical or traditional financial assets like real estate, commodities, or bonds that are represented as tokens on a blockchain.",
+        analogy: "A digital receipt that proves you own a slice of a real apartment building, which you can trade with others without moving the actual building.",
+        lessonIds: ["defi-primatives"],
+        learnMore: ""
+    },
+    {
+        term: "Liquidity Pool",
+        definition: "A collection of tokens locked in a smart contract that enables trading by providing liquidity for decentralized exchanges.",
+        analogy: "A communal pot where people contribute different currencies so others can easily exchange between them, with contributors earning fees for providing this service.",
+        lessonIds: ["defi-primatives"],
+        learnMore: ""
+    },
+    {
+        term: "Liquidity Provider",
+        definition: "A user who deposits tokens into a liquidity pool to facilitate trading and earns a portion of the trading fees in return.",
+        analogy: "Like a person who stocks a vending machine with drinks and snacks, earning a share of the profits whenever someone makes a purchase.",
+        lessonIds: ["defi-primatives"],
+        learnMore: ""
+    },
+    {
+        term: "AMM",
+        definition: "Automated Market Maker - a protocol that uses mathematical formulas to price assets and enable trades without traditional order books or intermediaries.",
+        analogy: "A self-operating currency exchange booth that automatically calculates fair exchange rates based on how much of each currency is available.",
+        lessonIds: ["defi-primatives"],
+        learnMore: ""
+    },
+    {
+        term: "Yield Farming",
+        definition: "The practice of depositing, staking, or moving crypto assets in DeFi protocols to earn returns through interest, rewards, or token incentives.",
+        analogy: "Like depositing money in a high-yield savings account or staking it in investment products to earn interest and bonuses.",
+        lessonIds: ["defi-primatives"],
+        learnMore: ""
+    },
+    {
+        term: "Impermanent Loss",
+        definition: "The loss liquidity providers face when the price ratio of deposited tokens changes compared to when they deposited them. It is 'impermanent' only while funds remain in the pool and becomes permanent once withdrawn.",
+        analogy: "Like putting $100 in quarters and $100 in dimes into a shared jar, but when you withdraw them, quarters are now worth more - you'd have been better off just holding the quarters.",
+        lessonIds: ["defi-primatives"],
+        learnMore: ""
+    },
+    {
+        term: "Slippage",
+        definition: "The difference between the expected price of a trade and the actual executed price, often occurring during periods of high volatility or low liquidity.",
+        analogy: "Like trying to buy an item online that shows $10, but by the time you click 'purchase,' the price has changed to $10.50 due to high demand.",
+        lessonIds: ["defi-primatives"],
+        learnMore: ""
+    },
+    {
+        term: "Total Value Locked",
+        definition: "The total amount of cryptocurrency deposited in a DeFi protocol or platform, serving as a key metric for measuring its adoption and size.",
+        analogy: "The total amount of money deposited in a bank - a larger TVL suggests more people trust and use the service.",
+        lessonIds: ["defi-primatives"],
         learnMore: ""
     }
 

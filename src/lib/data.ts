@@ -92,11 +92,11 @@ export const courses = [
         duration: "10 weeks",
         skill: "Vocabulary",
         lessons: [
-            // {
-            //     id: "",
-            //     title: "",
-            //     topic: ""
-            // },
+            {
+                id: "defi-primatives",
+                title: "DeFi Primitives: Building Blocks of Decentralized Finance",
+                topic: "DeFi Primitives"
+            },
             // {
             //     id: "",
             //     title: "",
