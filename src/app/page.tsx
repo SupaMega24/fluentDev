@@ -11,7 +11,7 @@ import {
   ArrowRightCircleIcon,
 } from "@heroicons/react/24/solid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faYoutube, faInstagram, faDiscord, faPatreon } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube, faInstagram, faTelegram, faPatreon } from "@fortawesome/free-brands-svg-icons";
 import Countdown from "@/components/Countdown";
 
 
@@ -74,7 +74,7 @@ export default function HomePage() {
 
           <ul className="text-left sm:text-lg md:text-2xl space-y-3 my-8 sm:ml-52 text-gray-700 dark:text-gray-300">
             <li>✅ Weekly lessons with real-world DeFi examples</li>
-            <li>✅ Assignments and group discussion in Discord</li>
+            <li>✅ Assignments and group discussion in Telegram group</li>
             <li>✅ Designed for busy professionals & eager learners</li>
             <li>✅ No prior blockchain experience required</li>
           </ul>
@@ -96,12 +96,12 @@ export default function HomePage() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center mt-4 gap-2">
             <a
-              href="https://discord.gg/q5KpUY2w9H"
+              href="https://t.me/+-B8kyhB3wbc5YzBl"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline font-medium text-base sm:text-lg"
             >
-              Already registered? Join Discord →
+              Already registered? Join our Telegram group →
             </a>
           </div>
         </div>
@@ -320,15 +320,15 @@ export default function HomePage() {
             <p className="mt-3 text-sm">Lessons & Tutorials</p>
           </div>
 
-          {/* Bluesky */}
+          {/* Telegram */}
           <div className="flex flex-col items-center">
             <Link
-              href="https://discord.gg/mQbkQzPkVZ"
+              href="https://t.me/fluentDev"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon
-                icon={faDiscord}
+                icon={faTelegram}
                 className="text-white hover:text-blue-300 transition-colors"
                 size="3x"
               />

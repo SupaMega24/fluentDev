@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faYoutube, faInstagram, faDiscord, faPatreon } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube, faInstagram, faTelegram, faPatreon } from "@fortawesome/free-brands-svg-icons";
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -42,8 +42,8 @@ export const Navbar = () => {
                         <Link href="https://www.instagram.com/fluent_dev/" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faInstagram} className="text-white hover:text-blue-500" />
                         </Link>
-                        <Link href="https://discord.gg/mQbkQzPkVZ" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faDiscord} className="text-white hover:text-blue-500" />
+                        <Link href="https://t.me/fluentDev" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faTelegram} className="text-white hover:text-blue-500" />
                         </Link>
                     </div>
 
