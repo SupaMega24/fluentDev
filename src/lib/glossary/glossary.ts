@@ -524,7 +524,7 @@ export const glossaryTerms: GlossaryTerm[] = [
         definition: "A type of cryptocurrency designed to keep a stable value, often pegged to a fiat currency like the US dollar.",
         analogy: "Acts as a digital version of a dollar, useful for trading or saving without price swings.",
         lessonIds: ["cryptocurrency"],
-        learnMore: ""
+        learnMore: "https://fluentdev.vercel.app/glossary/stablecoin"
     },
     {
         term: "USDC",
