@@ -12,7 +12,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube, faInstagram, faTelegram, faPatreon } from "@fortawesome/free-brands-svg-icons";
-import Countdown from "@/components/Countdown";
+//import Countdown from "@/components/Countdown";
 
 
 export const metadata: Metadata = {
@@ -42,7 +42,7 @@ export default function HomePage() {
   return (
     <main className="overflow-x-hidden">
       {/* Section: #100DaysOfDeFi Cohort */}
-      <section className="pt-16 pb-12 min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 bg-gray-50 dark:bg-gray-900 overflow-hidden">
+      {/* <section className="pt-16 pb-12 min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 bg-gray-50 dark:bg-gray-900 overflow-hidden">
         <div className="w-full max-w-5xl text-center sm:text-left">
           <h1 className="text-6xl text-center sm:text-5xl md:text-6xl font-bold mb-4 text-blue-600">
             100 Days Of DeFi
@@ -65,10 +65,10 @@ export default function HomePage() {
             <span className="font-medium">#100DaysOfDeFi</span> is a 10-week guided
             journey into Web3, from wallets to yield farming, built for curious
             professionals who want to understand how DeFi really works.
-          </p>
+          </p> */}
 
-          {/* Countdown Timer */}
-          <div className="mb-10">
+      {/* Countdown Timer */}
+      {/* <div className="mb-10">
             <Countdown />
           </div>
 
@@ -105,7 +105,7 @@ export default function HomePage() {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* Section 1: What is FluentDev? */}
