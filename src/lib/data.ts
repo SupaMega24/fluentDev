@@ -83,42 +83,23 @@ export const courses = [
 
         ],
     },
-    {
-        id: "defi-essentials",
-        title: "DeFi Essentials",
-        description:
-            "Learn the fundamentals of DeFi with our beginner's guide. This course covers everything from smart decentralized exchanges (DEXs) and liquidity pools to lending, borrowing, and yield farming. Master the blockchain technology behind decentralized finance and speak confidently about the future of money.",
-        image: "/courses/web3-essentials.jpg",
-        duration: "10 weeks",
-        skill: "Vocabulary",
-        lessons: [
-            {
-                id: "defi-primatives",
-                title: "DeFi Primitives: Building Blocks of Decentralized Finance",
-                topic: "DeFi Primitives"
-            },
-            // {
-            //     id: "",
-            //     title: "",
-            //     topic: ""
-            // },
-            // {
-            //     id: "",
-            //     title: "",
-            //     topic: ""
-            // },
-            // {
-            //     id: "",
-            //     title: "",
-            //     topic: ""
-            // },
-            // {
-            //     id: "",
-            //     title: "",
-            //     topic: ""
-            // },
-        ],
-    },
+    // {
+    //     id: "defi-essentials",
+    //     title: "DeFi Essentials",
+    //     description:
+    //         "Learn the fundamentals of DeFi with our beginner's guide. This course covers everything from smart decentralized exchanges (DEXs) and liquidity pools to lending, borrowing, and yield farming. Master the blockchain technology behind decentralized finance and speak confidently about the future of money.",
+    //     image: "/courses/web3-essentials.jpg",
+    //     duration: "10 weeks",
+    //     skill: "Vocabulary",
+    //     lessons: [
+    //         {
+    //             id: "defi-primatives",
+    //             title: "DeFi Primitives: Building Blocks of Decentralized Finance",
+    //             topic: "DeFi Primitives"
+    //         },
+
+    //     ],
+    // },
 ];
 
 export const getCourse = (id: string) => courses.find(course => course.id === id);
