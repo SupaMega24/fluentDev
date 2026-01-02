@@ -13,12 +13,12 @@ import ScrollToTop from '@/components/ScrolToTop';
 const { title, description } = config;
 
 export const metadata: Metadata = {
-    title: "Improve Your Web3 English | Blockchain Tutorials by FluentDev",
-    description: "The FluentDev blog helps global web3 professionals improve their English. Learn to explain blockchain concepts with clarity through immersive, story-driven tutorials.",
+    title: "Improve Your Technical Skills | Tutorials by FluentDev",
+    description: "The FluentDev blog helps global tech professionals improve their skills and knowledge. Learn to explain blockchain concepts with clarity through immersive, story-driven tutorials.",
     openGraph: {
-        title: "Improve Your Web3 English | Blockchain Tutorials by FluentDev",
-        description: "The FluentDev blog helps global web3 professionals improve their English. Learn to explain blockchain concepts with clarity through immersive, story-driven tutorials.",
-        images: [getOgImageUrl("Improve Your Web3 English | Blockchain Tutorials by FluentDev")],
+        title: "Improve Your Technical Skills | Tutorials by FluentDev",
+        description: "The FluentDev blog helps global tech professionals improve their skills and knowledge. Learn to explain blockchain concepts with clarity through immersive, story-driven tutorials.",
+        images: [getOgImageUrl("Improve Your Technical Skills | Tutorials by FluentDev")],
     },
 };
 

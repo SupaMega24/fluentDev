@@ -5,7 +5,7 @@ import { courses } from "@/lib/data";
 export const metadata = {
     title: "FluentDev Courses | Learn English for Web3",
     description:
-        "Explore all our English courses for Web3 professionals and developers. Learn blockchain concepts and improve your communication skills with our practical lessons.",
+        "Explore all our tutorials for professionals and developers. Learn technical concepts and improve your skills with our practical lessons.",
     openGraph: {
         title: "All Courses - FluentDev",
         description:
@@ -29,9 +29,9 @@ export default function CoursesPage() {
         <main className="min-h-screen bg-gray-900 text-white">
             <section className="container mx-auto px-4 py-16">
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">Courses for Web3 Professionals and Learners</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-4">Courses for Technical Professionals and Learners</h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                        Explore our curated English courses designed specifically for Web3 developers and professionals.
+                        Explore our curated courses and tutorials designed specifically for Web developers and tech professionals.
                         We help you master blockchain principles and advanced communication skills, whether you&apos;re a beginner
                         or looking to enhance your expertise.
                     </p>
