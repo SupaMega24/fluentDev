@@ -4,7 +4,6 @@ import {
   CodeBracketIcon,
   BookOpenIcon,
   LightBulbIcon,
-  AcademicCapIcon,
 } from "@heroicons/react/24/solid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
